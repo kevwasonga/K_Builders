@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website for a home construction company in Kenya, built with React, TypeScript, and Tailwind CSS.
 
-## 🚀 Features
+## Features
 
 - **Modern Design**: Clean, professional design with smooth animations
 - **Responsive Layout**: Fully responsive design that works on all devices
@@ -11,7 +11,7 @@ A modern, responsive portfolio website for a home construction company in Kenya,
 - **TypeScript**: Full TypeScript support for better development experience
 - **Accessibility**: WCAG compliant with proper semantic HTML and ARIA labels
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend Framework**: React 18.3.1
 - **Language**: TypeScript 5.5.3
@@ -21,7 +21,7 @@ A modern, responsive portfolio website for a home construction company in Kenya,
 - **Linting**: ESLint with TypeScript support
 - **Package Manager**: npm
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 project/
@@ -51,7 +51,7 @@ project/
 └── vite.config.ts        # Vite configuration
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -87,7 +87,7 @@ project/
 - `npm run lint` - Run ESLint
 - `npm run typecheck` - Run TypeScript type checking
 
-## 🎨 Customization
+## Customization
 
 ### Colors and Styling
 
@@ -116,14 +116,14 @@ Replace images in the `public/` directory:
 - `home_construction.jpg` - Complete home construction image
 - `vite.svg` - Favicon
 
-## 📱 Responsive Design
+## Responsive Design
 
 The website is fully responsive with breakpoints:
 - Mobile: < 768px
 - Tablet: 768px - 1024px
 - Desktop: > 1024px
 
-## 🔧 Configuration Files
+## Configuration Files
 
 ### Vite Configuration (`vite.config.ts`)
 - React plugin setup
@@ -143,7 +143,7 @@ The website is fully responsive with breakpoints:
 - TypeScript integration
 - React refresh plugin
 
-## 🚀 Deployment
+## Deployment
 
 ### Build for Production
 
@@ -173,7 +173,7 @@ This creates a `dist/` folder with optimized production files.
 4. **Traditional Web Hosting**
    - Upload the contents of `dist/` folder to your web server
 
-## 🔍 SEO Optimization
+## SEO Optimization
 
 The website includes:
 - Semantic HTML structure
@@ -182,14 +182,14 @@ The website includes:
 - Alt text for images
 - Descriptive page titles
 
-## 🎯 Performance
+## Performance
 
 - **Vite**: Fast development and optimized builds
 - **Code Splitting**: Automatic code splitting for better loading
 - **Image Optimization**: Properly sized images
 - **CSS Purging**: Unused CSS removed in production
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -209,11 +209,11 @@ The website includes:
    - Clear node_modules and reinstall: `rm -rf node_modules package-lock.json && npm install`
    - Check for TypeScript errors: `npm run typecheck`
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -221,13 +221,13 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📞 Support
+## Support
 
 For support and questions:
 - Email: info@buildkenya.co.ke
 - Phone: +254 700 123 456
 
-## 🔄 Version History
+## Version History
 
 - **v1.0.0** - Initial release with core features
   - Responsive design
@@ -238,4 +238,4 @@ For support and questions:
 
 ---
 
-Built with ❤️ for BuildKenya Home Construction
+Built for BuildKenya Home Construction
