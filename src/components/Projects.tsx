@@ -4,46 +4,46 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 function Projects() {
   const projects = [
     {
-      title: 'Modern Kitchen Construction',
-      category: 'Kitchen Renovation',
+      title: 'Custom Kitchen Cabinets',
+      category: 'Kitchen Design',
       location: 'Karen, Nairobi',
-      description: 'Complete kitchen renovation with modern appliances, custom cabinetry, and granite countertops.',
-      image: '/kitchen_construction.jpg'
+      description: 'Modern kitchen with custom-built cabinets, granite countertops, and stainless steel appliances.',
+      image: '/kitchen_cabinets_project.jpg'
     },
     {
-      title: 'Professional Roofing Services',
-      category: 'Roofing Work',
-      location: 'Kiambu, Kenya',
-      description: 'Quality roofing installation using durable materials, ensuring weather protection and longevity.',
-      image: '/roofing_work.jpg'
-    },
-    {
-      title: 'Foundation & Structural Work',
-      category: 'Foundation Construction',
+      title: 'Gypsum Ceiling Installation',
+      category: 'Ceiling Work',
       location: 'Westlands, Nairobi',
-      description: 'Solid foundation construction ensuring structural integrity and long-lasting home stability.',
-      image: '/foundation_work.jpg'
+      description: 'Professional gypsum ceiling installation with modern lighting integration and smooth finishes.',
+      image: '/gypsum_ceiling_project.jpg'
     },
     {
-      title: 'Interior Finishing',
-      category: 'Interior Work',
-      location: 'Diani, Mombasa',
-      description: 'Complete interior finishing including flooring, ceiling work, and custom built-in furniture.',
-      image: '/interior_work.jpg'
+      title: 'Office Partition Systems',
+      category: 'Commercial Interiors',
+      location: 'CBD, Nairobi',
+      description: 'Aluminium and glass office partitions creating functional workspace divisions.',
+      image: '/office_partition_project.jpg'
     },
     {
-      title: 'Professional Painting',
-      category: 'Painting Services',
+      title: 'Wardrobe & Storage Solutions',
+      category: 'Custom Furniture',
+      location: 'Kiambu, Kenya',
+      description: 'Built-in wardrobes with optimized storage solutions and modern sliding door systems.',
+      image: '/wardrobe_project.jpg'
+    },
+    {
+      title: 'Marble Countertop Installation',
+      category: 'Stone Work',
       location: 'Nakuru, Kenya',
-      description: 'Expert painting services for both interior and exterior, using high-quality paints and finishes.',
-      image: '/painting_work.jpg'
+      description: 'Premium marble countertops with precision cutting and professional installation.',
+      image: '/marble_work_project.jpg'
     },
     {
-      title: 'Complete Home Construction',
-      category: 'Full Construction',
-      location: 'Nyeri, Kenya',
-      description: 'End-to-end home construction from foundation to finishing, delivering your dream home.',
-      image: '/home_construction.jpg'
+      title: 'Complete Office Makeover',
+      category: 'Renovation',
+      location: 'Kisumu, Kenya',
+      description: 'Full office renovation including partitions, furniture, lighting, and modern finishes.',
+      image: '/office_furniture_project.jpg'
     }
   ];
 
@@ -81,11 +81,11 @@ function Projects() {
     <section id="projects" className="py-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-slate-800 mb-4">Our Homes</h2>
+          <h2 className="text-4xl font-bold text-slate-800 mb-4">Our Projects</h2>
           <div className="w-24 h-1 bg-slate-600 mx-auto mb-6"></div>
           <p className="text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            Explore our portfolio of beautifully crafted homes across Kenya, showcasing our
-            expertise in residential construction and design excellence.
+            Explore our portfolio of interior design and construction projects across Kenya, showcasing our
+            expertise in custom furniture, ceiling work, and space transformation.
           </p>
         </div>
 

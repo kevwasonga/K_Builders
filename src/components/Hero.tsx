@@ -12,8 +12,8 @@ function Hero() {
     <section id="home" className="relative h-screen">
       <div className="absolute inset-0">
         <img
-          src="/kitchen_construction.jpg"
-          alt="Kitchen Construction"
+          src="/interior_design_project.jpg"
+          alt="Interior Design"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-slate-900 bg-opacity-60"></div>

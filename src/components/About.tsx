@@ -9,7 +9,6 @@ function About() {
 
         <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow mb-12 max-w-4xl mx-auto text-center">
           <h3 className="text-2xl font-bold text-slate-800 mb-4">
-            ABOUT US
           </h3>
           <p className="text-slate-600 leading-relaxed">
             Clause Interior Fits provides reliable interior and exterior solutions across Western Kenya and the country at large. For over seven years, we've offered quality workmanship in interior design, glass installations, stainless steel work, and general exterior improvements.
