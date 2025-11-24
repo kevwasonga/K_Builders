@@ -1,48 +1,62 @@
-import { Building, Palette, Zap, Trees, Cog, Home } from 'lucide-react';
+import { Package, Wrench, Square, Layers, Building2, Eye, Home, Briefcase } from 'lucide-react';
 
 function Services() {
   const services = [
     {
-      icon: Building,
-      title: 'New Building Construction',
-      description: 'Whatever your construction requirements we can help you - from new builds to refurbishments.',
+      icon: Package,
+      title: 'Wardrobes & Kitchen Cabinets',
+      description: 'Custom-designed wardrobes and kitchen cabinets tailored to your space and storage needs.',
       color: 'bg-slate-500',
       hoverColor: 'hover:bg-slate-600'
     },
     {
-      icon: Palette,
-      title: 'Architectural Designs',
-      description: 'Building Design, Interior Design, Structural Design, 3D Visualization.',
+      icon: Wrench,
+      title: 'Stainless Steel & Glazing Works',
+      description: 'Professional stainless steel fabrication and glazing installations for modern finishes.',
       color: 'bg-slate-600',
       hoverColor: 'hover:bg-slate-700'
     },
     {
-      icon: Zap,
-      title: 'Commercial and Electrical Installations',
-      description: 'We install and cable associated devices such as switches, distribution boards, sockets, and light fittings in a structure.',
+      icon: Square,
+      title: 'Marble Work',
+      description: 'Premium marble installations and custom stonework for countertops, flooring, and decorative elements.',
       color: 'bg-slate-700',
       hoverColor: 'hover:bg-slate-800'
     },
     {
-      icon: Trees,
-      title: 'Landscaping & External Works',
-      description: 'Hard landscaping projects create an interesting outside area to your property and will add to its value.',
+      icon: Layers,
+      title: 'Gypsum Ceilings & Acoustic Ceilings',
+      description: 'Professional ceiling installations including gypsum and acoustic solutions for optimal sound control.',
       color: 'bg-slate-400',
       hoverColor: 'hover:bg-slate-500'
     },
     {
-      icon: Cog,
-      title: 'Mechanical and Renewables',
-      description: 'We design, install, commission, maintain and service a vast range of mechanical equipment in Private Housing, Social Housing and Commercial properties.',
+      icon: Building2,
+      title: 'Aluminium Works & Office Partitions',
+      description: 'Modern aluminium installations and office partition systems for commercial and residential spaces.',
       color: 'bg-slate-800',
       hoverColor: 'hover:bg-slate-900'
     },
     {
-      icon: Home,
-      title: 'Roofing Installation',
-      description: 'We provide effective, service-oriented roofing and consistently providing our clients with materials of the highest quality.',
+      icon: Eye,
+      title: '3D Renders & Consultancy',
+      description: 'Professional 3D visualization and design consultancy services to bring your vision to life.',
       color: 'bg-slate-300',
       hoverColor: 'hover:bg-slate-400'
+    },
+    {
+      icon: Home,
+      title: 'House Makeover & Renovation',
+      description: 'Complete home transformation services from concept to completion with attention to detail.',
+      color: 'bg-slate-600',
+      hoverColor: 'hover:bg-slate-700'
+    },
+    {
+      icon: Briefcase,
+      title: 'Office Desk, Counter Layout & Marble Work',
+      description: 'Custom office furniture, counter designs, and premium marble installations for professional spaces.',
+      color: 'bg-slate-500',
+      hoverColor: 'hover:bg-slate-600'
     }
   ];
 
@@ -58,7 +72,7 @@ function Services() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
             <div 
               key={index} 
