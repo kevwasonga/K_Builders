@@ -8,7 +8,7 @@ function Contact() {
           <h2 className="text-4xl font-bold text-slate-800 mb-4">Get In Touch</h2>
           <div className="w-24 h-1 bg-slate-600 mx-auto mb-6"></div>
           <p className="text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            Ready to build your dream home? Contact us today for a consultation and let's bring your vision to life.
+            Ready to transform your space? Contact us today for a consultation and let's bring your vision to life.
           </p>
         </div>
 
@@ -75,7 +75,7 @@ function Contact() {
               <textarea
                 rows={6}
                 className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:border-slate-500"
-                placeholder="Tell us about your dream home..."
+                placeholder="Tell us about your project..."
               ></textarea>
             </div>
             <button

@@ -6,9 +6,9 @@ function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">BuildKenya</h3>
+            <h3 className="text-xl font-bold mb-4">Clause Interior Fits</h3>
             <p className="text-slate-300 leading-relaxed">
-              Building Kenya's future, one home at a time.
+              Transforming spaces with exceptional interior design and construction.
             </p>
           </div>
 
@@ -53,7 +53,7 @@ function Footer() {
         </div>
 
         <div className="border-t border-slate-700 pt-8 text-center text-slate-400">
-          <p>&copy; 2024 BuildKenya Civil Engineering. All rights reserved.</p>
+          <p>&copy; 2025 Clause Interior Fits. All rights reserved.</p>
         </div>
       </div>
     </footer>

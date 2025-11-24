@@ -24,7 +24,8 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <span className="text-2xl font-bold text-slate-800">BuildKenya</span>
+              <img src="/logo.jpg" alt="Clause Interior Fits" className="h-10 w-auto mr-3" />
+              <span className="text-2xl font-bold text-slate-800">Clause Interior Fits</span>
             </div>
 
             <div className="hidden md:flex items-center space-x-8">

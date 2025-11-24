@@ -31,7 +31,7 @@ function Hero() {
             onClick={scrollToAbout}
             className="bg-slate-700 text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-slate-600 transition-colors"
           >
-View Our Homes
+View Our Projects
           </button>
         </div>
       </div>

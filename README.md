@@ -1,6 +1,6 @@
-# BuildKenya - Home Construction Portfolio Website
+# Clause Interior Fits - Interior Design Portfolio Website
 
-A modern, responsive portfolio website for a home construction company in Kenya, built with React, TypeScript, and Tailwind CSS.
+A modern, responsive portfolio website for an interior design and construction company, built with React, TypeScript, and Tailwind CSS.
 
 ## Features
 
@@ -238,4 +238,4 @@ For support and questions:
 
 ---
 
-Built for BuildKenya Home Construction
+Built for Clause Interior Fits

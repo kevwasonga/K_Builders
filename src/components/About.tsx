@@ -11,18 +11,18 @@ function About() {
           <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
             <h3 className="text-2xl font-bold text-slate-800 mb-4">Our Mission</h3>
             <p className="text-slate-600 leading-relaxed">
-              To build exceptional homes that enhance the quality of life for families across Kenya.
-              We are committed to excellence, sustainability, and innovation in every home we construct,
-              creating spaces where memories are made and dreams come true.
+              To create exceptional interior spaces that enhance the quality of life for our clients.
+              We are committed to excellence, sustainability, and innovation in every project we undertake,
+              transforming spaces where memories are made and dreams come true.
             </p>
           </div>
 
           <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
             <h3 className="text-2xl font-bold text-slate-800 mb-4">Our Vision</h3>
             <p className="text-slate-600 leading-relaxed">
-              To be Kenya's most trusted home building company, recognized for our unwavering commitment
-              to quality, safety, and environmental stewardship. We envision communities filled with
-              beautiful, sustainable homes that stand as lasting testaments to superior craftsmanship.
+              To be the most trusted interior design and construction company, recognized for our unwavering commitment
+              to quality, safety, and environmental stewardship. We envision spaces filled with
+              beautiful, functional designs that stand as lasting testaments to superior craftsmanship.
             </p>
           </div>
         </div>
