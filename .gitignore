@@ -247,6 +247,9 @@ src-tauri/target/
 # Generated files
 *.generated.*
 
+# Design prompts and documentation
+prompt.txt
+
 # Test files
 coverage/
 .coverage
