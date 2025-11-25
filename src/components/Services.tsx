@@ -11,7 +11,7 @@ function Services() {
       description: 'Custom-designed wardrobes and kitchen cabinets tailored to your space and storage needs with premium materials.',
       features: ['Custom Design', 'Premium Materials', 'Space Optimization'],
       color: 'from-emerald-500 to-teal-600',
-      bgImage: 'kitchen_cabinets_project.jpg'
+      bgImage: '/K_Builders/kitchen_cabinets_project.jpg'
     },
     {
       icon: Wrench,
@@ -19,7 +19,7 @@ function Services() {
       description: 'Professional stainless steel fabrication and glazing installations for modern, durable finishes.',
       features: ['Modern Finishes', 'Durable Materials', 'Professional Install'],
       color: 'from-blue-500 to-indigo-600',
-      bgImage: 'stainless_steel_bg.jpg'
+      bgImage: '/K_Builders/stainless_steel_bg.jpg'
     },
     {
       icon: Square,
@@ -27,7 +27,7 @@ function Services() {
       description: 'Premium marble installations and custom stonework for countertops, flooring, and decorative elements.',
       features: ['Premium Stone', 'Custom Cutting', 'Expert Installation'],
       color: 'from-purple-500 to-pink-600',
-      bgImage: 'marble_work_project.jpg'
+      bgImage: '/K_Builders/marble_work_project.jpg'
     },
     {
       icon: Layers,
@@ -35,7 +35,7 @@ function Services() {
       description: 'Professional ceiling installations including gypsum and acoustic solutions for optimal sound control.',
       features: ['Sound Control', 'Modern Design', 'Quality Install'],
       color: 'from-orange-500 to-red-600',
-      bgImage: 'acoustic_ceiling_bg.jpg'
+      bgImage: '/K_Builders/acoustic_ceiling_bg.jpg'
     },
     {
       icon: Building2,
@@ -43,7 +43,7 @@ function Services() {
       description: 'Modern aluminium installations and office partition systems for commercial and residential spaces.',
       features: ['Space Division', 'Modern Systems', 'Commercial Grade'],
       color: 'from-cyan-500 to-blue-600',
-      bgImage: 'aluminium_works_bg.jpg'
+      bgImage: '/K_Builders/aluminium_works_bg.jpg'
     },
     {
       icon: Eye,
@@ -51,7 +51,7 @@ function Services() {
       description: 'Professional 3D visualization and design consultancy services to bring your vision to life.',
       features: ['3D Visualization', 'Design Consultation', 'Vision Realization'],
       color: 'from-yellow-500 to-orange-600',
-      bgImage: 'renders_consultancy_bg.jpg'
+      bgImage: '/K_Builders/renders_consultancy_bg.jpg'
     },
     {
       icon: Home,
@@ -59,7 +59,7 @@ function Services() {
       description: 'Complete home transformation services from concept to completion with attention to detail.',
       features: ['Full Renovation', 'Concept to Completion', 'Detail Focused'],
       color: 'from-green-500 to-emerald-600',
-      bgImage: 'house_makeover_bg.jpg'
+      bgImage: '/K_Builders/house_makeover_bg.jpg'
     },
     {
       icon: Briefcase,
@@ -67,7 +67,7 @@ function Services() {
       description: 'Custom office furniture, counter designs, and premium marble installations for professional spaces.',
       features: ['Custom Furniture', 'Professional Design', 'Premium Materials'],
       color: 'from-indigo-500 to-purple-600',
-      bgImage: 'office_furniture_project.jpg'
+      bgImage: '/K_Builders/office_furniture_project.jpg'
     }
   ];
 
