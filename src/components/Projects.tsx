@@ -8,42 +8,42 @@ function Projects() {
       category: 'Kitchen Design',
       location: 'Karen, Nairobi',
       description: 'Modern kitchen with custom-built cabinets, granite countertops, and stainless steel appliances featuring premium finishes.',
-      image: 'kitchen_cabinets_project.jpg'
+      image: 'assets/kitchen_cabinets_project.jpg'
     },
     {
       title: 'Executive Gypsum Ceiling',
       category: 'Ceiling Work',
       location: 'Westlands, Nairobi',
       description: 'Professional gypsum ceiling installation with modern lighting integration and smooth finishes for corporate office.',
-      image: 'gypsum_ceiling_project.jpg'
+      image: 'assets/gypsum_ceiling_project.jpg'
     },
     {
       title: 'Modern Office Partitions',
       category: 'Commercial Interiors',
       location: 'CBD, Nairobi',
       description: 'Aluminium and glass office partitions creating functional workspace divisions with contemporary design.',
-      image: 'office_partition_project.jpg'
+      image: 'assets/office_partition_project.jpg'
     },
     {
       title: 'Premium Wardrobe Solutions',
       category: 'Custom Furniture',
       location: 'Kiambu, Kenya',
       description: 'Built-in wardrobes with optimized storage solutions and modern sliding door systems for master bedroom.',
-      image: 'wardrobe_project.jpg'
+      image: 'assets/wardrobe_project.jpg'
     },
     {
       title: 'Marble Countertop Excellence',
       category: 'Stone Work',
       location: 'Nakuru, Kenya',
       description: 'Premium marble countertops with precision cutting and professional installation for luxury kitchen.',
-      image: 'marble_work_project.jpg'
+      image: 'assets/marble_work_project.jpg'
     },
     {
       title: 'Complete Office Makeover',
       category: 'Renovation',
       location: 'Kisumu, Kenya',
       description: 'Full office renovation including partitions, furniture, lighting, and modern finishes for tech startup.',
-      image: 'office_furniture_project.jpg'
+      image: 'assets/office_furniture_project.jpg'
     }
   ];
 
