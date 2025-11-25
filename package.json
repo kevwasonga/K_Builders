@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://kevwasonga.github.io/K_Builders",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
