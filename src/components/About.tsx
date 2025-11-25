@@ -134,24 +134,24 @@ function About() {
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <img 
-                  src="./kitchen_cabinets_project.jpg" 
+                  src="kitchen_cabinets_project.jpg" 
                   alt="Kitchen Project" 
                   className="w-full h-48 object-cover rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                 />
                 <img 
-                  src="./office_furniture_project.jpg" 
+                  src="office_furniture_project.jpg" 
                   alt="Office Project" 
                   className="w-full h-32 object-cover rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                 />
               </div>
               <div className="space-y-4 mt-8">
                 <img 
-                  src="./gypsum_ceiling_project.jpg" 
+                  src="gypsum_ceiling_project.jpg" 
                   alt="Ceiling Project" 
                   className="w-full h-32 object-cover rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                 />
                 <img 
-                  src="./marble_work_project.jpg" 
+                  src="marble_work_project.jpg" 
                   alt="Marble Project" 
                   className="w-full h-48 object-cover rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                 />

@@ -6,10 +6,10 @@ function Hero() {
   const [isVisible, setIsVisible] = useState(false);
 
   const heroImages = [
-    './hero_bg.jpg',
-    './interior_design_project.jpg',
-    './kitchen_cabinets_project.jpg',
-    './office_furniture_project.jpg'
+    'hero_bg.jpg',
+    'interior_design_project.jpg',
+    'kitchen_cabinets_project.jpg',
+    'office_furniture_project.jpg'
   ];
 
   const stats = [
@@ -119,7 +119,7 @@ function Hero() {
               <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20 shadow-2xl">
                 <div className="mb-6">
                   <img 
-                    src="./kitchen_cabinets_project.jpg" 
+                    src="kitchen_cabinets_project.jpg" 
                     alt="Featured Project" 
                     className="w-full h-48 object-cover rounded-xl"
                   />
