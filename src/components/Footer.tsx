@@ -2,7 +2,7 @@ import { Phone, Mail, MapPin } from 'lucide-react';
 
 function Footer() {
   return (
-    <footer className="bg-slate-800 text-white py-12">
+    <footer className="bg-slate-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
@@ -15,11 +15,11 @@ function Footer() {
           <div>
             <h4 className="font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-slate-300">
-              <li><a href="#home" className="hover:text-white transition-colors">Home</a></li>
-              <li><a href="#about" className="hover:text-white transition-colors">About</a></li>
-              <li><a href="#services" className="hover:text-white transition-colors">Services</a></li>
-              <li><a href="#projects" className="hover:text-white transition-colors">Projects</a></li>
-              <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
+              <li><button onClick={() => document.getElementById('home')?.scrollIntoView({behavior: 'smooth'})} className="hover:text-yellow-400 transition-colors cursor-pointer">Home</button></li>
+              <li><button onClick={() => document.getElementById('about')?.scrollIntoView({behavior: 'smooth'})} className="hover:text-yellow-400 transition-colors cursor-pointer">About</button></li>
+              <li><button onClick={() => document.getElementById('services')?.scrollIntoView({behavior: 'smooth'})} className="hover:text-yellow-400 transition-colors cursor-pointer">Services</button></li>
+              <li><button onClick={() => document.getElementById('projects')?.scrollIntoView({behavior: 'smooth'})} className="hover:text-yellow-400 transition-colors cursor-pointer">Projects</button></li>
+              <li><button onClick={() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'})} className="hover:text-yellow-400 transition-colors cursor-pointer">Contact</button></li>
             </ul>
           </div>
 
@@ -38,11 +38,11 @@ function Footer() {
             <ul className="space-y-3 text-slate-300">
               <li className="flex items-start">
                 <Phone size={18} className="mr-2 mt-1 flex-shrink-0" />
-                <span>+254 700 123 456</span>
+                <a href="tel:+254700123456" className="hover:text-yellow-400 transition-colors">+254 700 123 456</a>
               </li>
               <li className="flex items-start">
                 <Mail size={18} className="mr-2 mt-1 flex-shrink-0" />
-                <span>info@buildkenya.co.ke</span>
+                <a href="mailto:info@buildkenya.co.ke" className="hover:text-yellow-400 transition-colors">info@buildkenya.co.ke</a>
               </li>
               <li className="flex items-start">
                 <MapPin size={18} className="mr-2 mt-1 flex-shrink-0" />
