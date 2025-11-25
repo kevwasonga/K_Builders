@@ -1,3 +1,6 @@
+/* Logo Styling */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -27,6 +30,10 @@
   }
 }
 
+.font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
 @keyframes slowZoom {
   0%, 100% {
     transform: scale(1.1);
@@ -43,13 +50,6 @@
   50% {
     transform: translateY(-20px) rotate(180deg);
   }
-}
-
-/* Logo Styling */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&display=swap');
-
-.font-serif {
-  font-family: 'Playfair Display', serif;
 }
 
 /* Custom scrollbar */
