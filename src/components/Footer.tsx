@@ -1,62 +1,192 @@
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Phone, Mail, MapPin, MessageCircle, Calendar, Video } from 'lucide-react';
 
 function Footer() {
   return (
-    <footer className="bg-slate-900 text-white py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
-          <div>
-            <h3 className="text-xl font-bold mb-4">Clause Interior Fits</h3>
-            <p className="text-slate-300 leading-relaxed">
-              Transforming spaces with exceptional interior design and construction.
-            </p>
+    <div className="bg-gradient-to-br from-slate-800 to-slate-900">
+      {/* CTA Section */}
+      <div className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h3 className="text-5xl font-display font-bold text-white mb-6">Let's Create Something Amazing</h3>
+          <p className="text-xl text-slate-300 mb-12 max-w-3xl mx-auto">
+            Choose your preferred way to connect with us. We're here to transform your vision into reality.
+          </p>
+          
+          {/* Contact Methods */}
+          <div className="grid md:grid-cols-5 gap-6 mb-16">
+            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/20 transition-all cursor-pointer group">
+              <div className="w-16 h-16 bg-green-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                <Phone size={28} className="text-white" />
+              </div>
+              <h4 className="font-bold text-white mb-2">Call Now</h4>
+              <p className="text-slate-300 text-sm">Instant Response</p>
+            </div>
+            
+            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/20 transition-all cursor-pointer group">
+              <div className="w-16 h-16 bg-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                <Mail size={28} className="text-white" />
+              </div>
+              <h4 className="font-bold text-white mb-2">Email Us</h4>
+              <p className="text-slate-300 text-sm">24hr Response</p>
+            </div>
+            
+            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/20 transition-all cursor-pointer group">
+              <div className="w-16 h-16 bg-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                <MessageCircle size={28} className="text-white" />
+              </div>
+              <h4 className="font-bold text-white mb-2">Live Chat</h4>
+              <p className="text-slate-300 text-sm">Online Now</p>
+            </div>
+            
+            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/20 transition-all cursor-pointer group">
+              <div className="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                <Calendar size={28} className="text-white" />
+              </div>
+              <h4 className="font-bold text-white mb-2">Book Meeting</h4>
+              <p className="text-slate-300 text-sm">Schedule Call</p>
+            </div>
+            
+            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/20 transition-all cursor-pointer group">
+              <div className="w-16 h-16 bg-red-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                <Video size={28} className="text-white" />
+              </div>
+              <h4 className="font-bold text-white mb-2">Virtual Tour</h4>
+              <p className="text-slate-300 text-sm">See Our Work</p>
+            </div>
           </div>
-
-          <div>
-            <h4 className="font-bold mb-4">Quick Links</h4>
-            <ul className="space-y-2 text-slate-300">
-              <li><button onClick={() => document.getElementById('home')?.scrollIntoView({behavior: 'smooth'})} className="hover:text-yellow-400 transition-colors cursor-pointer">Home</button></li>
-              <li><button onClick={() => document.getElementById('about')?.scrollIntoView({behavior: 'smooth'})} className="hover:text-yellow-400 transition-colors cursor-pointer">About</button></li>
-              <li><button onClick={() => document.getElementById('services')?.scrollIntoView({behavior: 'smooth'})} className="hover:text-yellow-400 transition-colors cursor-pointer">Services</button></li>
-              <li><button onClick={() => document.getElementById('projects')?.scrollIntoView({behavior: 'smooth'})} className="hover:text-yellow-400 transition-colors cursor-pointer">Projects</button></li>
-              <li><button onClick={() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'})} className="hover:text-yellow-400 transition-colors cursor-pointer">Contact</button></li>
-            </ul>
+          
+          {/* Main CTAs */}
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-20">
+            <button className="bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 px-10 py-4 rounded-2xl text-lg font-bold hover:from-yellow-500 hover:to-orange-600 transition-all transform hover:scale-105">
+              Start Virtual Tour
+            </button>
+            <button className="bg-white/10 backdrop-blur-sm text-white px-10 py-4 rounded-2xl text-lg font-medium hover:bg-white/20 transition-all border border-white/20">
+              Get Directions →
+            </button>
           </div>
-
-          <div>
-            <h4 className="font-bold mb-4">Services</h4>
-            <ul className="space-y-2 text-slate-300">
-              <li>Custom Home Design</li>
-              <li>Home Construction</li>
-              <li>Home Renovations</li>
-              <li>Interior Finishing</li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-bold mb-4">Contact Info</h4>
-            <ul className="space-y-3 text-slate-300">
-              <li className="flex items-start">
-                <Phone size={18} className="mr-2 mt-1 flex-shrink-0" />
-                <a href="tel:+254700123456" className="hover:text-yellow-400 transition-colors">+254 700 123 456</a>
-              </li>
-              <li className="flex items-start">
-                <Mail size={18} className="mr-2 mt-1 flex-shrink-0" />
-                <a href="mailto:info@buildkenya.co.ke" className="hover:text-yellow-400 transition-colors">info@buildkenya.co.ke</a>
-              </li>
-              <li className="flex items-start">
-                <MapPin size={18} className="mr-2 mt-1 flex-shrink-0" />
-                <span>Kimathi Street, Nairobi</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="border-t border-slate-700 pt-8 text-center text-slate-400">
-          <p>&copy; 2025 Clause Interior Fits. All rights reserved.</p>
         </div>
       </div>
-    </footer>
+      
+      {/* Send Us a Message Section */}
+      <div className="py-16 border-t border-slate-700">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-display font-bold text-white mb-4">Send Us a Message</h3>
+            <p className="text-slate-300">Tell us about your project and we'll get back to you within 24 hours</p>
+          </div>
+          
+          <form className="grid md:grid-cols-2 gap-6">
+            <div>
+              <label className="block text-white mb-2 font-medium">Name</label>
+              <input
+                type="text"
+                className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-yellow-400 focus:bg-white/20 transition-all"
+                placeholder="Your name"
+              />
+            </div>
+            <div>
+              <label className="block text-white mb-2 font-medium">Phone</label>
+              <input
+                type="tel"
+                className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-yellow-400 focus:bg-white/20 transition-all"
+                placeholder="Your phone"
+              />
+            </div>
+            <div>
+              <label className="block text-white mb-2 font-medium">Email</label>
+              <input
+                type="email"
+                className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-yellow-400 focus:bg-white/20 transition-all"
+                placeholder="your@email.com"
+              />
+            </div>
+            <div>
+              <label className="block text-white mb-2 font-medium">Subject</label>
+              <input
+                type="text"
+                className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-yellow-400 focus:bg-white/20 transition-all"
+                placeholder="Project inquiry"
+              />
+            </div>
+            <div className="md:col-span-2">
+              <label className="block text-white mb-2 font-medium">Message</label>
+              <textarea
+                rows={4}
+                className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-yellow-400 focus:bg-white/20 transition-all resize-none"
+                placeholder="Tell us about your project..."
+              ></textarea>
+            </div>
+            <div className="md:col-span-2 text-center">
+              <button
+                type="submit"
+                className="bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 px-12 py-4 rounded-2xl text-lg font-bold hover:from-yellow-500 hover:to-orange-600 transition-all transform hover:scale-105"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      {/* Footer */}
+      <div className="border-t border-slate-700">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div className="grid md:grid-cols-4 gap-12">
+            <div>
+              <h3 className="text-2xl font-display font-bold text-white mb-4">CLAUSE INTERIOR FITS</h3>
+              <p className="text-slate-300 mb-6">Transforming spaces with exceptional interior design and construction.</p>
+              <div className="text-slate-400 text-sm">
+                <div className="mb-2">7+ Years Experience</div>
+                <div className="mb-2">500+ Projects Completed</div>
+                <div>24/7 Support Available</div>
+              </div>
+            </div>
+            
+            <div>
+              <h4 className="font-bold text-white mb-6">Quick Links</h4>
+              <ul className="space-y-3 text-slate-300">
+                <li><a href="#home" className="hover:text-yellow-400 transition-colors">Home</a></li>
+                <li><a href="#about" className="hover:text-yellow-400 transition-colors">About</a></li>
+                <li><a href="#services" className="hover:text-yellow-400 transition-colors">Services</a></li>
+                <li><a href="#projects" className="hover:text-yellow-400 transition-colors">Projects</a></li>
+                <li><a href="#contact" className="hover:text-yellow-400 transition-colors">Contact</a></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 className="font-bold text-white mb-6">Services</h4>
+              <ul className="space-y-3 text-slate-300">
+                <li>Kitchen Cabinets</li>
+                <li>Marble Work</li>
+                <li>Gypsum Ceilings</li>
+                <li>Office Partitions</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 className="font-bold text-white mb-6">Contact Info</h4>
+              <div className="space-y-4 text-slate-300">
+                <div className="flex items-center">
+                  <Phone size={18} className="mr-3 text-yellow-400" />
+                  <span>+254 700 123 456</span>
+                </div>
+                <div className="flex items-center">
+                  <Mail size={18} className="mr-3 text-yellow-400" />
+                  <span>info@buildkenya.co.ke</span>
+                </div>
+                <div className="flex items-center">
+                  <MapPin size={18} className="mr-3 text-yellow-400" />
+                  <span>Kimathi Street, Nairobi</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="border-t border-slate-700 pt-8 mt-12 text-center text-slate-400">
+            <p>&copy; 2025 Clause Interior Fits. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 
