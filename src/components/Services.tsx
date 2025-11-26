@@ -1,4 +1,4 @@
-import { Package, Wrench, Square, Layers, Building2, Eye, Home, Briefcase, Phone, Mail, MapPin, MessageCircle, Calendar, Video } from 'lucide-react';
+import { Package, Wrench, Square, Layers, Building2, Eye, Home, Briefcase, Tv, Phone, Mail, MapPin, MessageCircle, Calendar, Video } from 'lucide-react';
 import { useState } from 'react';
 
 function Services() {
@@ -68,6 +68,14 @@ function Services() {
       features: ['Custom Furniture', 'Professional Design', 'Premium Materials'],
       color: 'from-indigo-500 to-purple-600',
       bgImage: 'assets/office_furniture_project.jpg'
+    },
+    {
+      icon: Tv,
+      title: 'Television Mounting',
+      description: 'Professional TV mounting services with cable management and optimal viewing angle positioning.',
+      features: ['Professional Mounting', 'Cable Management', 'Optimal Positioning'],
+      color: 'from-slate-500 to-gray-600',
+      bgImage: 'assets/tv_mounting_bg.jpg'
     }
   ];
 
