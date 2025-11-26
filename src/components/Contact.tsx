@@ -41,51 +41,7 @@ function Contact() {
           </div>
         </div>
 
-        <div className="mt-12 bg-white p-8 rounded-lg shadow-sm">
-          <h3 className="text-2xl font-bold text-slate-800 mb-6 text-center">Send Us a Message</h3>
-          <form className="max-w-2xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-6 mb-6">
-              <div>
-                <label className="block text-slate-700 mb-2 font-medium">Name</label>
-                <input
-                  type="text"
-                  className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:border-slate-500"
-                  placeholder="Your name"
-                />
-              </div>
-              <div>
-                <label className="block text-slate-700 mb-2 font-medium">Email</label>
-                <input
-                  type="email"
-                  className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:border-slate-500"
-                  placeholder="your@email.com"
-                />
-              </div>
-            </div>
-            <div className="mb-6">
-              <label className="block text-slate-700 mb-2 font-medium">Subject</label>
-              <input
-                type="text"
-                className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:border-slate-500"
-                placeholder="Project inquiry"
-              />
-            </div>
-            <div className="mb-6">
-              <label className="block text-slate-700 mb-2 font-medium">Message</label>
-              <textarea
-                rows={6}
-                className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:border-slate-500"
-                placeholder="Tell us about your project..."
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-slate-700 text-white py-3 rounded-lg font-medium hover:bg-slate-600 transition-colors"
-            >
-              Send Message
-            </button>
-          </form>
-        </div>
+
       </div>
     </section>
   );
