@@ -5,7 +5,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Services from './components/Services';
 import Contact from './components/Contact';
-import Footer from './components/Footer';
+
 
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -155,12 +155,12 @@ function App() {
       <main>
         <Hero />
         <About />
-        <Services />
         <Projects />
+        <Services />
         <Contact />
       </main>
 
-      <Footer />
+
     </div>
   );
 }

@@ -64,12 +64,11 @@ function Hero() {
       {/* Main Content */}
       <div className="relative h-full flex items-center justify-center z-10">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left Side - Text Content */}
-            <div className={`text-left transform transition-all duration-1000 ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
+          <div className="text-center">
+            <div className={`transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
 
               
-              <h1 className="text-5xl sm:text-6xl md:text-7xl font-display font-bold text-white mb-6 leading-tight">
+              <h1 className="text-6xl sm:text-7xl md:text-8xl font-display font-bold text-white mb-8 leading-tight">
                 Design That
                 <span className="block bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
                   Transforms
@@ -77,67 +76,46 @@ function Hero() {
                 Lives
               </h1>
               
-              <p className="text-xl sm:text-2xl text-slate-200 mb-8 leading-relaxed max-w-2xl">
+              <p className="text-2xl sm:text-3xl text-slate-200 mb-12 leading-relaxed max-w-4xl mx-auto">
                 Creating exceptional spaces with innovative design, quality craftsmanship, and attention to every detail across Kenya.
               </p>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 mb-12">
+              <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
                 <button
                   onClick={scrollToAbout}
-                  className="btn-primary group"
+                  className="bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 px-12 py-5 rounded-2xl text-xl font-bold hover:from-yellow-500 hover:to-orange-600 transition-all transform hover:scale-105 shadow-2xl group"
                 >
                   Start Your Project
-                  <span className="ml-2 group-hover:translate-x-1 transition-transform inline-block">→</span>
+                  <span className="ml-3 group-hover:translate-x-2 transition-transform inline-block text-2xl">→</span>
                 </button>
                 
-                <button className="btn-secondary group flex items-center justify-center">
-                  <Play size={20} className="mr-2" />
+                <button className="bg-white/10 backdrop-blur-lg text-white px-12 py-5 rounded-2xl text-xl font-medium hover:bg-white/20 transition-all border border-white/30 group flex items-center justify-center">
+                  <Play size={24} className="mr-3" />
                   Watch Our Story
                 </button>
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-3 gap-6">
-                {stats.map((stat, index) => {
-                  const IconComponent = stat.icon;
-                  return (
-                    <div key={index} className="text-center">
-                      <div className="w-12 h-12 bg-gradient-to-r from-yellow-400/20 to-orange-500/20 rounded-full flex items-center justify-center mx-auto mb-2">
-                        <IconComponent size={24} className="text-yellow-400" />
+              <div className="flex justify-center">
+                <div className="grid grid-cols-3 gap-12 max-w-2xl">
+                  {stats.map((stat, index) => {
+                    const IconComponent = stat.icon;
+                    return (
+                      <div key={index} className="text-center">
+                        <div className="w-16 h-16 bg-gradient-to-r from-yellow-400/20 to-orange-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                          <IconComponent size={32} className="text-yellow-400" />
+                        </div>
+                        <div className="text-3xl font-display font-bold text-white mb-2">{stat.number}</div>
+                        <div className="text-slate-300">{stat.label}</div>
                       </div>
-                      <div className="text-2xl font-bold text-white">{stat.number}</div>
-                      <div className="text-sm text-slate-300">{stat.label}</div>
-                    </div>
-                  );
-                })}
+                    );
+                  })}
+                </div>
               </div>
             </div>
 
-            {/* Right Side - Featured Project Card */}
-            <div className={`transform transition-all duration-1000 delay-300 ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}>
-              <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20 shadow-2xl">
-                <div className="mb-6">
-                  <img 
-                    src="assets/kitchen_cabinets_project.jpg" 
-                    alt="Featured Project" 
-                    className="w-full h-48 object-cover rounded-xl"
-                  />
-                </div>
-                <h3 className="text-2xl font-bold text-white mb-3">Latest Project</h3>
-                <p className="text-slate-200 mb-4">
-                  Modern kitchen transformation with custom cabinets and premium finishes in Karen, Nairobi.
-                </p>
-                <div className="flex items-center justify-between">
-                  <span className="text-yellow-400 font-semibold">View Portfolio →</span>
-                  <div className="flex space-x-2">
-                    {[1, 2, 3, 4, 5].map((star) => (
-                      <div key={star} className="w-4 h-4 bg-yellow-400 rounded-full"></div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>
