@@ -69,7 +69,7 @@ function Hero() {
             <div className={`text-left transform transition-all duration-1000 ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
 
               
-              <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-white mb-6 leading-tight">
+              <h1 className="text-5xl sm:text-6xl md:text-7xl font-display font-bold text-white mb-6 leading-tight">
                 Design That
                 <span className="block bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
                   Transforms
@@ -85,13 +85,13 @@ function Hero() {
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
                 <button
                   onClick={scrollToAbout}
-                  className="group bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 px-8 py-4 rounded-xl text-lg font-bold hover:from-yellow-500 hover:to-orange-600 transition-all transform hover:scale-105 shadow-2xl"
+                  className="btn-primary group"
                 >
                   Start Your Project
                   <span className="ml-2 group-hover:translate-x-1 transition-transform inline-block">→</span>
                 </button>
                 
-                <button className="group flex items-center justify-center bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl text-lg font-medium hover:bg-white/20 transition-all border border-white/20">
+                <button className="btn-secondary group flex items-center justify-center">
                   <Play size={20} className="mr-2" />
                   Watch Our Story
                 </button>

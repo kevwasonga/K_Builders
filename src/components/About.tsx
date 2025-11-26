@@ -32,7 +32,7 @@ function About() {
           <div className="inline-block px-4 py-2 bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 text-sm font-bold rounded-full mb-6">
             About Clause Interior Fits
           </div>
-          <h2 className="text-5xl font-bold bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent mb-6">
+          <h2 className="text-5xl font-display font-bold bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent mb-6">
             Crafting Exceptional Spaces
           </h2>
           <div className="w-32 h-1 bg-gradient-to-r from-yellow-400 to-orange-500 mx-auto mb-8"></div>
@@ -70,7 +70,7 @@ function About() {
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-slate-100">
               {activeTab === 'story' && (
                 <div className="space-y-6">
-                  <h3 className="text-2xl font-bold text-slate-800 mb-4">Our Journey</h3>
+                  <h3 className="text-2xl font-display font-bold text-slate-800 mb-4">Our Journey</h3>
                   <p className="text-slate-600 leading-relaxed">
                     Clause Interior Fits began with a simple belief: every space has the potential to be extraordinary. 
                     Founded in 2017, we've grown from a small team with big dreams to Kenya's trusted partner in 
@@ -90,7 +90,7 @@ function About() {
 
               {activeTab === 'mission' && (
                 <div className="space-y-6">
-                  <h3 className="text-2xl font-bold text-slate-800 mb-4">Our Mission</h3>
+                  <h3 className="text-2xl font-display font-bold text-slate-800 mb-4">Our Mission</h3>
                   <p className="text-slate-600 leading-relaxed">
                     To provide consistent, quality interior and exterior services while maintaining safe practices 
                     and ensuring every client feels satisfied with the final result. We believe in transparency, 
@@ -111,7 +111,7 @@ function About() {
 
               {activeTab === 'vision' && (
                 <div className="space-y-6">
-                  <h3 className="text-2xl font-bold text-slate-800 mb-4">Our Vision</h3>
+                  <h3 className="text-2xl font-display font-bold text-slate-800 mb-4">Our Vision</h3>
                   <p className="text-slate-600 leading-relaxed">
                     To become Kenya's most trusted and dependable provider of interior and exterior solutions, 
                     known for innovative designs, quality work, and reliable service that exceeds expectations.
@@ -177,7 +177,7 @@ function About() {
                   <div className="w-20 h-20 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                     <IconComponent size={32} className="text-slate-900" />
                   </div>
-                  <div className="text-4xl font-bold bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent mb-2">
+                  <div className="text-4xl font-display font-bold bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent mb-2">
                     {achievement.number}
                   </div>
                   <div className="text-slate-600 font-medium">{achievement.label}</div>
