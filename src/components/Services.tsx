@@ -79,7 +79,7 @@ function Services() {
           <div className="inline-block px-4 py-2 bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 text-sm font-bold rounded-full mb-6">
             Our Expertise
           </div>
-          <h2 className="text-5xl font-bold text-slate-800 mb-6">Premium Services</h2>
+          <h2 className="text-5xl font-display font-bold bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent mb-6">Premium Services</h2>
           <div className="w-32 h-1 bg-gradient-to-r from-yellow-400 to-orange-500 mx-auto mb-8"></div>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
             From concept to completion, we deliver exceptional interior and exterior solutions 
@@ -88,7 +88,7 @@ function Services() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => {
             const IconComponent = service.icon;
             const isHovered = hoveredService === index;
@@ -98,62 +98,28 @@ function Services() {
                 key={index}
                 onMouseEnter={() => setHoveredService(index)}
                 onMouseLeave={() => setHoveredService(null)}
-                className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden"
+                className="card-elegant group overflow-hidden"
               >
                 {/* Background Image */}
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-48 mb-6 overflow-hidden rounded-xl">
                   <img 
                     src={service.bgImage} 
                     alt={service.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-90`}></div>
-                  
-                  {/* Icon */}
-                  <div className="absolute top-6 left-6">
-                    <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
-                      <IconComponent size={32} className="text-white" />
-                    </div>
-                  </div>
-
-                  {/* Hover Arrow */}
-                  <div className={`absolute top-6 right-6 w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center transition-all duration-300 ${
-                    isHovered ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-4'
-                  }`}>
-                    <ArrowRight size={20} className="text-white" />
-                  </div>
-
-                  {/* Title Overlay */}
-                  <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <h3 className="text-xl font-bold text-white leading-tight">{service.title}</h3>
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
+                  <div className="absolute top-4 left-4 w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
+                    <IconComponent size={24} className="text-white" />
                   </div>
                 </div>
 
-                {/* Content */}
-                <div className="p-6">
-                  <p className="text-slate-600 leading-relaxed mb-4 text-sm">
-                    {service.description}
-                  </p>
-
-                  {/* Features */}
-                  <div className="space-y-2 mb-6">
-                    {service.features.map((feature, featureIndex) => (
-                      <div key={featureIndex} className="flex items-center text-sm">
-                        <div className="w-2 h-2 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full mr-3"></div>
-                        <span className="text-slate-600">{feature}</span>
-                      </div>
-                    ))}
-                  </div>
-
-                  {/* CTA Button */}
-                  <button className={`w-full py-3 rounded-xl font-semibold transition-all duration-300 ${
-                    isHovered 
-                      ? `bg-gradient-to-r ${service.color} text-white shadow-lg` 
-                      : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-                  }`}>
-                    Learn More
-                  </button>
-                </div>
+                <h3 className="text-xl font-display font-bold text-slate-800 mb-4">{service.title}</h3>
+                <p className="text-slate-600 leading-relaxed mb-6">
+                  {service.description}
+                </p>
+                <button className="w-full btn-primary text-sm py-3">
+                  Learn More
+                </button>
 
                 {/* Hover Effect Border */}
                 <div className={`absolute inset-0 rounded-2xl border-2 transition-all duration-300 ${
