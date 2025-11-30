@@ -1,6 +1,15 @@
 import { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, Filter, Grid, List, MapPin, Calendar } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Grid, List, MapPin } from 'lucide-react';
 import TestimonialsSlider from './TestimonialsSlider';
+import kitchenCabinets from '../images/kitchen_cabinets_project.jpg';
+import stainlessSteel from '../images/stainless_steel_bg.jpg';
+import marbleWork from '../images/marble_work_project.jpg';
+import acousticCeiling from '../images/acoustic_ceiling_bg.jpg';
+import aluminiumWorks from '../images/aluminium_works_bg.jpg';
+import rendersConsultancy from '../images/renders_consultancy_bg.jpg';
+import houseMakeover from '../images/house_makeover_bg.jpg';
+import officeFurniture from '../images/office_furniture_project.jpg';
+import tvMounting from '../images/tv_mounting_bg.jpg';
 
 function Projects() {
   const projects = [
@@ -9,63 +18,63 @@ function Projects() {
       category: 'Custom Furniture',
       location: 'Karen, Nairobi',
       description: 'Custom-designed wardrobes and kitchen cabinets tailored to your space and storage needs with premium materials.',
-      image: 'assets/kitchen_cabinets_project.jpg'
+      image: kitchenCabinets
     },
     {
       title: 'Stainless Steel & Glazing Works',
       category: 'Modern Finishes',
       location: 'Westlands, Nairobi',
       description: 'Professional stainless steel fabrication and glazing installations for modern, durable finishes.',
-      image: 'assets/stainless_steel_bg.jpg'
+      image: stainlessSteel
     },
     {
       title: 'Marble Work Excellence',
       category: 'Stone Work',
       location: 'Nakuru, Kenya',
       description: 'Premium marble installations and custom stonework for countertops, flooring, and decorative elements.',
-      image: 'assets/marble_work_project.jpg'
+      image: marbleWork
     },
     {
       title: 'Gypsum Ceilings & Acoustic Solutions',
       category: 'Ceiling Work',
       location: 'CBD, Nairobi',
       description: 'Professional ceiling installations including gypsum and acoustic solutions for optimal sound control.',
-      image: 'assets/acoustic_ceiling_bg.jpg'
+      image: acousticCeiling
     },
     {
       title: 'Aluminium Works & Office Partitions',
       category: 'Commercial Interiors',
       location: 'Mombasa, Kenya',
       description: 'Modern aluminium installations and office partition systems for commercial and residential spaces.',
-      image: 'assets/aluminium_works_bg.jpg'
+      image: aluminiumWorks
     },
     {
       title: '3D Renders & Consultancy',
       category: 'Design Services',
       location: 'Nairobi, Kenya',
       description: 'Professional 3D visualization and design consultancy services to bring your vision to life.',
-      image: 'assets/renders_consultancy_bg.jpg'
+      image: rendersConsultancy
     },
     {
       title: 'House Makeover & Renovation',
       category: 'Renovation',
       location: 'Kiambu, Kenya',
       description: 'Complete home transformation services from concept to completion with attention to detail.',
-      image: 'assets/house_makeover_bg.jpg'
+      image: houseMakeover
     },
     {
       title: 'Office Desk & Counter Layout',
       category: 'Commercial Furniture',
       location: 'Kisumu, Kenya',
       description: 'Custom office furniture, counter designs, and premium marble installations for professional spaces.',
-      image: 'assets/office_furniture_project.jpg'
+      image: officeFurniture
     },
     {
       title: 'Television Mounting Services',
       category: 'Installation Services',
       location: 'Nairobi, Kenya',
       description: 'Professional TV mounting services with cable management and optimal viewing angle positioning.',
-      image: 'assets/tv_mounting_bg.jpg'
+      image: tvMounting
     }
   ];
 
