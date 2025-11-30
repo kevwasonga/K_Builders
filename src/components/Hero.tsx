@@ -1,28 +1,28 @@
-import { ChevronDown, Play, Award, Users, Clock } from 'lucide-react';
+import { ChevronDown, Play, Award } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import heroBg from '../images/hero_bg.jpg';
+import interiorProject from '../images/interior_design_project.jpg';
+import kitchenProject from '../images/kitchen_cabinets_project.jpg';
+import officeProject from '../images/office_furniture_project.jpg';
 
 function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
 
   const heroImages = [
-    'assets/hero_bg.jpg',
-    'assets/interior_design_project.jpg',
-    'assets/kitchen_cabinets_project.jpg',
-    'assets/office_furniture_project.jpg'
+    heroBg,
+    interiorProject,
+    kitchenProject,
+    officeProject
   ];
 
-  const stats = [
-    { number: '7+', label: 'Years Experience', icon: Award },
-    { number: '500+', label: 'Projects Completed', icon: Users },
-    { number: '24/7', label: 'Support Available', icon: Clock }
-  ];
+
 
   useEffect(() => {
     setIsVisible(true);
     const interval = setInterval(() => {
       setCurrentImageIndex((prev) => (prev + 1) % heroImages.length);
-    }, 5000);
+    }, 4000);
     return () => clearInterval(interval);
   }, []);
 
@@ -90,27 +90,38 @@ function Hero() {
                   <span className="ml-3 group-hover:translate-x-2 transition-transform inline-block text-2xl">→</span>
                 </button>
                 
-                <button className="bg-white/10 backdrop-blur-lg text-white px-12 py-5 rounded-2xl text-xl font-medium hover:bg-white/20 transition-all border border-white/30 group flex items-center justify-center">
+                <button 
+                  onClick={() => {
+                    const element = document.getElementById('projects');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
+                  className="bg-white/10 backdrop-blur-lg text-white px-12 py-5 rounded-2xl text-xl font-medium hover:bg-white/20 transition-all border border-white/30 group flex items-center justify-center"
+                >
                   <Play size={24} className="mr-3" />
                   Watch Our Story
                 </button>
               </div>
 
-              {/* Stats */}
-              <div className="flex justify-center">
-                <div className="grid grid-cols-3 gap-12 max-w-2xl">
-                  {stats.map((stat, index) => {
-                    const IconComponent = stat.icon;
-                    return (
-                      <div key={index} className="text-center">
-                        <div className="w-16 h-16 bg-gradient-to-r from-yellow-400/20 to-orange-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                          <IconComponent size={32} className="text-yellow-400" />
-                        </div>
-                        <div className="text-3xl font-display font-bold text-white mb-2">{stat.number}</div>
-                        <div className="text-slate-300">{stat.label}</div>
-                      </div>
-                    );
-                  })}
+              {/* Stats and Scroll Indicator */}
+              <div className="flex flex-col items-center">
+                <button
+                  onClick={scrollToAbout}
+                  className="text-white animate-bounce group mb-8"
+                >
+                  <div className="flex flex-col items-center">
+                    <span className="text-sm mb-2 opacity-75 group-hover:opacity-100 transition-opacity">Scroll to explore</span>
+                    <ChevronDown size={32} className="group-hover:text-yellow-400 transition-colors" />
+                  </div>
+                </button>
+                
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-gradient-to-r from-yellow-400/20 to-orange-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                    <Award size={32} className="text-yellow-400" />
+                  </div>
+                  <div className="text-3xl font-display font-bold text-white mb-2">7+</div>
+                  <div className="text-slate-300">Years Experience</div>
                 </div>
               </div>
             </div>
@@ -119,17 +130,6 @@ function Hero() {
           </div>
         </div>
       </div>
-
-      {/* Scroll Indicator */}
-      <button
-        onClick={scrollToAbout}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce group"
-      >
-        <div className="flex flex-col items-center">
-          <span className="text-sm mb-2 opacity-75 group-hover:opacity-100 transition-opacity">Scroll to explore</span>
-          <ChevronDown size={32} className="group-hover:text-yellow-400 transition-colors" />
-        </div>
-      </button>
 
       {/* Image Navigation Dots */}
       <div className="absolute bottom-20 right-8 flex flex-col space-y-3">
