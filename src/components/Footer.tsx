@@ -2,123 +2,62 @@ import { Phone, Mail, MapPin, MessageCircle, Calendar, Video } from 'lucide-reac
 
 function Footer() {
   return (
-    <div className="bg-slate-800">
-      {/* CTA Section */}
-      <div className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h3 className="text-5xl font-display font-bold text-white mb-6">Let's Create Something Amazing</h3>
-          <p className="text-xl text-slate-300 mb-12 max-w-3xl mx-auto">
-            Choose your preferred way to connect with us. We're here to transform your vision into reality.
-          </p>
-          
-          {/* Contact Methods */}
-          <div className="grid md:grid-cols-5 gap-6 mb-16">
-            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/20 transition-all cursor-pointer group">
-              <div className="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                <Phone size={28} className="text-white" />
-              </div>
-              <h4 className="font-bold text-white mb-2">Call Now</h4>
-              <p className="text-slate-300 text-sm">Instant Response</p>
-            </div>
-            
-            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/20 transition-all cursor-pointer group">
-              <div className="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                <Mail size={28} className="text-white" />
-              </div>
-              <h4 className="font-bold text-white mb-2">Email Us</h4>
-              <p className="text-slate-300 text-sm">24hr Response</p>
-            </div>
-            
-            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/20 transition-all cursor-pointer group">
-              <div className="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                <MessageCircle size={28} className="text-white" />
-              </div>
-              <h4 className="font-bold text-white mb-2">Live Chat</h4>
-              <p className="text-slate-300 text-sm">Online Now</p>
-            </div>
-            
-            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/20 transition-all cursor-pointer group">
-              <div className="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                <Calendar size={28} className="text-white" />
-              </div>
-              <h4 className="font-bold text-white mb-2">Book Meeting</h4>
-              <p className="text-slate-300 text-sm">Schedule Call</p>
-            </div>
-            
-            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/20 transition-all cursor-pointer group">
-              <div className="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                <Video size={28} className="text-white" />
-              </div>
-              <h4 className="font-bold text-white mb-2">Virtual Tour</h4>
-              <p className="text-slate-300 text-sm">See Our Work</p>
-            </div>
-          </div>
-          
-          {/* Main CTAs */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-20">
-            <button className="bg-orange-500 text-white px-10 py-4 rounded-2xl text-lg font-bold hover:bg-orange-600 transition-all transform hover:scale-105">
-              Start Virtual Tour
-            </button>
-            <button className="bg-white/10 backdrop-blur-sm text-white px-10 py-4 rounded-2xl text-lg font-medium hover:bg-white/20 transition-all border border-white/20">
-              Get Directions →
-            </button>
-          </div>
-        </div>
-      </div>
-      
+    <div className="bg-gradient-to-b from-slate-100 via-slate-200 to-slate-300">
       {/* Send Us a Message Section */}
-      <div className="py-16 border-t border-slate-700 bg-slate-700">
+      <div className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-display font-bold text-white mb-4">Send Us a Message</h3>
-            <p className="text-slate-300">Tell us about your project and we'll get back to you within 24 hours</p>
+            <h3 className="text-5xl font-display font-bold text-slate-800 mb-6">Send Us a Message</h3>
+            <p className="text-xl text-slate-600 mb-12 max-w-3xl mx-auto">
+              Tell us about your project and we'll get back to you within 24 hours
+            </p>
           </div>
           
           <form className="grid md:grid-cols-2 gap-6">
             <div>
-              <label className="block text-white mb-2 font-medium">Name</label>
+              <label className="block text-slate-800 mb-2 font-medium">Name</label>
               <input
                 type="text"
-                className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-yellow-400 focus:bg-white/20 transition-all"
+                className="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl text-slate-800 placeholder-slate-500 focus:outline-none focus:border-orange-500 focus:bg-white transition-all"
                 placeholder="Your name"
               />
             </div>
             <div>
-              <label className="block text-white mb-2 font-medium">Phone</label>
+              <label className="block text-slate-800 mb-2 font-medium">Phone</label>
               <input
                 type="tel"
-                className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-yellow-400 focus:bg-white/20 transition-all"
+                className="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl text-slate-800 placeholder-slate-500 focus:outline-none focus:border-orange-500 focus:bg-white transition-all"
                 placeholder="Your phone"
               />
             </div>
             <div>
-              <label className="block text-white mb-2 font-medium">Email</label>
+              <label className="block text-slate-800 mb-2 font-medium">Email</label>
               <input
                 type="email"
-                className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-yellow-400 focus:bg-white/20 transition-all"
+                className="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl text-slate-800 placeholder-slate-500 focus:outline-none focus:border-orange-500 focus:bg-white transition-all"
                 placeholder="your@email.com"
               />
             </div>
             <div>
-              <label className="block text-white mb-2 font-medium">Subject</label>
+              <label className="block text-slate-800 mb-2 font-medium">Subject</label>
               <input
                 type="text"
-                className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-yellow-400 focus:bg-white/20 transition-all"
+                className="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl text-slate-800 placeholder-slate-500 focus:outline-none focus:border-orange-500 focus:bg-white transition-all"
                 placeholder="Project inquiry"
               />
             </div>
             <div className="md:col-span-2">
-              <label className="block text-white mb-2 font-medium">Message</label>
+              <label className="block text-slate-800 mb-2 font-medium">Message</label>
               <textarea
                 rows={4}
-                className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-yellow-400 focus:bg-white/20 transition-all resize-none"
+                className="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl text-slate-800 placeholder-slate-500 focus:outline-none focus:border-orange-500 focus:bg-white transition-all resize-none"
                 placeholder="Tell us about your project..."
               ></textarea>
             </div>
             <div className="md:col-span-2 text-center">
               <button
                 type="submit"
-                className="bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 px-12 py-4 rounded-2xl text-lg font-bold hover:from-yellow-500 hover:to-orange-600 transition-all transform hover:scale-105"
+                className="bg-orange-500 text-white px-12 py-4 rounded-2xl text-lg font-bold hover:bg-orange-600 transition-all transform hover:scale-105"
               >
                 Send Message
               </button>
@@ -126,6 +65,8 @@ function Footer() {
           </form>
         </div>
       </div>
+      
+
 
       {/* Footer */}
       <div className="border-t border-slate-200/50 bg-slate-900">

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Filter, Grid, List, MapPin, Calendar } from 'lucide-react';
+import TestimonialsSlider from './TestimonialsSlider';
 
 function Projects() {
   const projects = [
@@ -278,18 +279,8 @@ function Projects() {
           </div>
         )}
 
-        {/* CTA Section */}
-        <div className="text-center mt-20">
-          <div className="bg-gradient-to-r from-slate-800/90 to-slate-700/90 backdrop-blur-lg rounded-2xl p-12 border border-slate-500 shadow-2xl">
-            <h3 className="text-3xl font-bold text-white mb-4">Ready for Your Dream Project?</h3>
-            <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
-              Let's create something extraordinary together. Every great space starts with a conversation.
-            </p>
-            <button className="bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 px-8 py-4 rounded-xl text-lg font-bold hover:from-yellow-500 hover:to-orange-600 transition-all transform hover:scale-105 shadow-lg">
-              Start Your Project
-            </button>
-          </div>
-        </div>
+        {/* Testimonials Section */}
+        <TestimonialsSlider />
       </div>
     </section>
   );
