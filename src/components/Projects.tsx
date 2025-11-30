@@ -4,46 +4,67 @@ import { ChevronLeft, ChevronRight, Filter, Grid, List, MapPin, Calendar } from 
 function Projects() {
   const projects = [
     {
-      title: 'Luxury Kitchen Transformation',
-      category: 'Kitchen Design',
+      title: 'Wardrobes & Kitchen Cabinets',
+      category: 'Custom Furniture',
       location: 'Karen, Nairobi',
-      description: 'Modern kitchen with custom-built cabinets, granite countertops, and stainless steel appliances featuring premium finishes.',
+      description: 'Custom-designed wardrobes and kitchen cabinets tailored to your space and storage needs with premium materials.',
       image: 'assets/kitchen_cabinets_project.jpg'
     },
     {
-      title: 'Executive Gypsum Ceiling',
-      category: 'Ceiling Work',
+      title: 'Stainless Steel & Glazing Works',
+      category: 'Modern Finishes',
       location: 'Westlands, Nairobi',
-      description: 'Professional gypsum ceiling installation with modern lighting integration and smooth finishes for corporate office.',
-      image: 'assets/gypsum_ceiling_project.jpg'
+      description: 'Professional stainless steel fabrication and glazing installations for modern, durable finishes.',
+      image: 'assets/stainless_steel_bg.jpg'
     },
     {
-      title: 'Modern Office Partitions',
-      category: 'Commercial Interiors',
-      location: 'CBD, Nairobi',
-      description: 'Aluminium and glass office partitions creating functional workspace divisions with contemporary design.',
-      image: 'assets/office_partition_project.jpg'
-    },
-    {
-      title: 'Premium Wardrobe Solutions',
-      category: 'Custom Furniture',
-      location: 'Kiambu, Kenya',
-      description: 'Built-in wardrobes with optimized storage solutions and modern sliding door systems for master bedroom.',
-      image: 'assets/wardrobe_project.jpg'
-    },
-    {
-      title: 'Marble Countertop Excellence',
+      title: 'Marble Work Excellence',
       category: 'Stone Work',
       location: 'Nakuru, Kenya',
-      description: 'Premium marble countertops with precision cutting and professional installation for luxury kitchen.',
+      description: 'Premium marble installations and custom stonework for countertops, flooring, and decorative elements.',
       image: 'assets/marble_work_project.jpg'
     },
     {
-      title: 'Complete Office Makeover',
+      title: 'Gypsum Ceilings & Acoustic Solutions',
+      category: 'Ceiling Work',
+      location: 'CBD, Nairobi',
+      description: 'Professional ceiling installations including gypsum and acoustic solutions for optimal sound control.',
+      image: 'assets/acoustic_ceiling_bg.jpg'
+    },
+    {
+      title: 'Aluminium Works & Office Partitions',
+      category: 'Commercial Interiors',
+      location: 'Mombasa, Kenya',
+      description: 'Modern aluminium installations and office partition systems for commercial and residential spaces.',
+      image: 'assets/aluminium_works_bg.jpg'
+    },
+    {
+      title: '3D Renders & Consultancy',
+      category: 'Design Services',
+      location: 'Nairobi, Kenya',
+      description: 'Professional 3D visualization and design consultancy services to bring your vision to life.',
+      image: 'assets/renders_consultancy_bg.jpg'
+    },
+    {
+      title: 'House Makeover & Renovation',
       category: 'Renovation',
+      location: 'Kiambu, Kenya',
+      description: 'Complete home transformation services from concept to completion with attention to detail.',
+      image: 'assets/house_makeover_bg.jpg'
+    },
+    {
+      title: 'Office Desk & Counter Layout',
+      category: 'Commercial Furniture',
       location: 'Kisumu, Kenya',
-      description: 'Full office renovation including partitions, furniture, lighting, and modern finishes for tech startup.',
+      description: 'Custom office furniture, counter designs, and premium marble installations for professional spaces.',
       image: 'assets/office_furniture_project.jpg'
+    },
+    {
+      title: 'Television Mounting Services',
+      category: 'Installation Services',
+      location: 'Nairobi, Kenya',
+      description: 'Professional TV mounting services with cable management and optimal viewing angle positioning.',
+      image: 'assets/tv_mounting_bg.jpg'
     }
   ];
 
@@ -52,7 +73,7 @@ function Projects() {
   const [activeFilter, setActiveFilter] = useState('All');
   const [viewMode, setViewMode] = useState('grid');
 
-  const categories = ['All', 'Kitchen Design', 'Ceiling Work', 'Commercial Interiors', 'Custom Furniture', 'Stone Work', 'Renovation'];
+  const categories = ['All', 'Custom Furniture', 'Modern Finishes', 'Stone Work', 'Ceiling Work', 'Commercial Interiors', 'Design Services', 'Renovation', 'Commercial Furniture', 'Installation Services'];
 
   const filteredProjects = activeFilter === 'All' 
     ? projects 
@@ -109,8 +130,8 @@ function Projects() {
           </h2>
           <div className="w-32 h-1 bg-gradient-to-r from-yellow-400 to-orange-500 mx-auto mb-8"></div>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            Explore our portfolio of transformative projects across Kenya, showcasing innovation, 
-            craftsmanship, and attention to detail.
+            From concept to completion, we deliver exceptional interior and exterior solutions 
+            that transform spaces and exceed expectations.
           </p>
         </div>
 

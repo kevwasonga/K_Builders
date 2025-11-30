@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
-import Services from './components/Services';
 import Footer from './components/Footer';
 
 
@@ -38,7 +37,7 @@ function App() {
   const navItems = [
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
-    { id: 'services', label: 'Services' },
+
     { id: 'projects', label: 'Projects' },
     { id: 'contact', label: 'Contact' }
   ];
@@ -156,7 +155,6 @@ function App() {
       <main>
         <Hero />
         <About />
-        <Services />
         <Projects />
       </main>
       

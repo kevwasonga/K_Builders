@@ -2,7 +2,7 @@ import { Phone, Mail, MapPin, MessageCircle, Calendar, Video } from 'lucide-reac
 
 function Footer() {
   return (
-    <div className="bg-gradient-to-br from-slate-800 to-slate-900">
+    <div className="bg-slate-800">
       {/* CTA Section */}
       <div className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -14,7 +14,7 @@ function Footer() {
           {/* Contact Methods */}
           <div className="grid md:grid-cols-5 gap-6 mb-16">
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/20 transition-all cursor-pointer group">
-              <div className="w-16 h-16 bg-green-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+              <div className="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                 <Phone size={28} className="text-white" />
               </div>
               <h4 className="font-bold text-white mb-2">Call Now</h4>
@@ -22,7 +22,7 @@ function Footer() {
             </div>
             
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/20 transition-all cursor-pointer group">
-              <div className="w-16 h-16 bg-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+              <div className="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                 <Mail size={28} className="text-white" />
               </div>
               <h4 className="font-bold text-white mb-2">Email Us</h4>
@@ -30,7 +30,7 @@ function Footer() {
             </div>
             
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/20 transition-all cursor-pointer group">
-              <div className="w-16 h-16 bg-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+              <div className="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                 <MessageCircle size={28} className="text-white" />
               </div>
               <h4 className="font-bold text-white mb-2">Live Chat</h4>
@@ -46,7 +46,7 @@ function Footer() {
             </div>
             
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/20 transition-all cursor-pointer group">
-              <div className="w-16 h-16 bg-red-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+              <div className="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                 <Video size={28} className="text-white" />
               </div>
               <h4 className="font-bold text-white mb-2">Virtual Tour</h4>
@@ -56,7 +56,7 @@ function Footer() {
           
           {/* Main CTAs */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-20">
-            <button className="bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 px-10 py-4 rounded-2xl text-lg font-bold hover:from-yellow-500 hover:to-orange-600 transition-all transform hover:scale-105">
+            <button className="bg-orange-500 text-white px-10 py-4 rounded-2xl text-lg font-bold hover:bg-orange-600 transition-all transform hover:scale-105">
               Start Virtual Tour
             </button>
             <button className="bg-white/10 backdrop-blur-sm text-white px-10 py-4 rounded-2xl text-lg font-medium hover:bg-white/20 transition-all border border-white/20">
@@ -67,7 +67,7 @@ function Footer() {
       </div>
       
       {/* Send Us a Message Section */}
-      <div className="py-16 border-t border-slate-700">
+      <div className="py-16 border-t border-slate-700 bg-slate-700">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-display font-bold text-white mb-4">Send Us a Message</h3>
@@ -128,7 +128,7 @@ function Footer() {
       </div>
 
       {/* Footer */}
-      <div className="border-t border-slate-700">
+      <div className="border-t border-slate-200/50 bg-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="grid md:grid-cols-4 gap-12">
             <div>
@@ -171,7 +171,7 @@ function Footer() {
                 </div>
                 <div className="flex items-center">
                   <Mail size={18} className="mr-3 text-yellow-400" />
-                  <span>info@buildkenya.co.ke</span>
+                  <span>info@clauseinteriorfits.co.ke</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin size={18} className="mr-3 text-yellow-400" />

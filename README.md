@@ -224,7 +224,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Support
 
 For support and questions:
-- Email: info@buildkenya.co.ke
+- Email: info@clauseinteriorfits.co.ke
 - Phone: +254 700 123 456
 
 ## Version History
