@@ -1,4 +1,4 @@
-import { Menu, X, Sparkles } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -109,7 +109,12 @@ function App() {
               
               {/* CTA Button */}
               <button 
-                onClick={() => scrollToSection('contact')}
+                onClick={() => {
+                  const element = document.getElementById('contact');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
                 className="ml-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 px-6 py-3 rounded-xl font-bold hover:from-yellow-500 hover:to-orange-600 transition-all duration-500 ease-out transform hover:scale-105 shadow-lg"
               >
                 Get Quote
@@ -142,7 +147,12 @@ function App() {
                 </button>
               ))}
               <button 
-                onClick={() => scrollToSection('contact')}
+                onClick={() => {
+                  const element = document.getElementById('contact');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
                 className="w-full mt-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 px-6 py-3 rounded-xl font-bold hover:from-yellow-500 hover:to-orange-600 transition-all duration-300"
               >
                 Get Quote

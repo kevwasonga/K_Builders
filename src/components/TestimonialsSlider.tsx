@@ -99,7 +99,7 @@ function TestimonialsSlider() {
         </p>
         
         <div className="max-w-3xl mx-auto">
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 md:p-8 mb-6">
+          <div className="bg-gradient-to-br from-slate-100/20 to-slate-300/20 backdrop-blur-sm rounded-xl p-6 md:p-8 mb-6">
             <div className="flex items-center justify-center mb-6">
               {[1, 2, 3, 4, 5].map((star) => (
                 <Star key={star} size={24} className="text-orange-500 fill-current mx-1" />
