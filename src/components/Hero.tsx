@@ -34,7 +34,7 @@ function Hero() {
   };
 
   return (
-    <section id="home" className="relative h-screen overflow-hidden">
+    <section id="home" className="relative h-screen overflow-hidden bg-gradient-to-br from-slate-50 to-white">
       {/* Background Images with Parallax Effect */}
       <div className="absolute inset-0">
         {heroImages.map((image, index) => (
@@ -106,23 +106,23 @@ function Hero() {
 
               {/* Stats and Scroll Indicator */}
               <div className="flex flex-col items-center">
-                <button
-                  onClick={scrollToAbout}
-                  className="text-white animate-bounce group mb-8"
-                >
-                  <div className="flex flex-col items-center">
-                    <span className="text-sm mb-2 opacity-75 group-hover:opacity-100 transition-opacity">Scroll to explore</span>
-                    <ChevronDown size={32} className="group-hover:text-yellow-400 transition-colors" />
-                  </div>
-                </button>
-                
-                <div className="text-center">
+                <div className="text-center mb-8">
                   <div className="w-16 h-16 bg-gradient-to-r from-yellow-400/20 to-orange-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
                     <Award size={32} className="text-yellow-400" />
                   </div>
                   <div className="text-3xl font-display font-bold text-white mb-2">7+</div>
                   <div className="text-slate-300">Years Experience</div>
                 </div>
+                
+                <button
+                  onClick={scrollToAbout}
+                  className="text-white animate-bounce group"
+                >
+                  <div className="flex flex-col items-center">
+                    <span className="text-sm mb-2 opacity-75 group-hover:opacity-100 transition-opacity">Scroll to explore</span>
+                    <ChevronDown size={32} className="group-hover:text-yellow-400 transition-colors" />
+                  </div>
+                </button>
               </div>
             </div>
 

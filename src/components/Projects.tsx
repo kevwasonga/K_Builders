@@ -119,7 +119,7 @@ function Projects() {
   };
 
   return (
-    <section id="projects" className="py-20 bg-slate-100 relative overflow-hidden">
+    <section id="projects" className="py-20 bg-gradient-to-br from-slate-50 to-white relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 right-10 w-64 h-64 border border-yellow-400 rotate-12 animate-float"></div>
