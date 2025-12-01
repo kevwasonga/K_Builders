@@ -29,6 +29,9 @@ import aluminium3 from '../images/aluminium_glass/aluminiumworks3.jpeg';
 import ceiling1 from '../images/ceiling_systems/acousticceiling1.jpeg';
 import ceiling2 from '../images/ceiling_systems/acousticceiling2.jpeg';
 import ceiling3 from '../images/ceiling_systems/gypsum_ceiling_project.jpg';
+import ceiling4 from '../images/ceiling_systems/gypsumceiling3.jpeg';
+import ceiling5 from '../images/ceiling_systems/gypsumceilings.jpeg';
+import ceiling6 from '../images/ceiling_systems/gypsumceilinng2.jpeg';
 import marble1 from '../images/marble_work/marble1.jpeg';
 import marble2 from '../images/marble_work/marble2.jpeg';
 import marble3 from '../images/marble_work/marblework.jpeg';
@@ -37,137 +40,18 @@ import marble4 from '../images/marble_work/kitchen_marble_work.jpg';
 function Projects() {
   const projects = [
     {
+      title: 'Marble Work & Stone Installations',
+      category: 'Marble Work & Stone',
+      location: 'Karen, Nairobi',
+      description: 'Premium marble countertops • Natural stone flooring • Marble wall cladding • Custom stone work',
+      image: marble1
+    },
+    {
       title: 'Modern TV Niche & Wall Features',
       category: 'Modern TV Niche & Wall Features',
       location: 'Karen, Nairobi',
       description: 'Custom TV Niches & Backdrop Panels • Modern Floating TV Units • Media Walls with LED & Hidden Wiring • Textured & Slatted TV Accent Walls',
       image: tvNiche1
-    },
-    {
-      title: 'TV Wall Mount & Media Center',
-      category: 'Modern TV Niche & Wall Features',
-      location: 'Westlands, Nairobi',
-      description: 'Professional TV mounting with cable management and custom media wall designs',
-      image: tvNiche2
-    },
-    {
-      title: 'Entertainment Wall Design',
-      category: 'Modern TV Niche & Wall Features',
-      location: 'Nakuru, Kenya',
-      description: 'Complete entertainment wall solutions with integrated lighting and storage',
-      image: tvNiche3
-    },
-    {
-      title: 'Premium Kitchen Cabinets',
-      category: 'Premium Kitchen Cabinets',
-      location: 'Westlands, Nairobi',
-      description: 'Luxury Kitchen Cabinetry • Soft-Close Modular Cabinets • Water & Heat-Resistant Kitchen Boards • Custom Kitchen Island Designs • Smart Kitchen Storage Integration',
-      image: kitchen1
-    },
-    {
-      title: 'Modern Kitchen Design',
-      category: 'Premium Kitchen Cabinets',
-      location: 'Karen, Nairobi',
-      description: 'Contemporary kitchen layouts with premium finishes and smart storage solutions',
-      image: kitchen2
-    },
-    {
-      title: 'Kitchen Island & Countertops',
-      category: 'Premium Kitchen Cabinets',
-      location: 'Kiambu, Kenya',
-      description: 'Custom kitchen islands with marble countertops and integrated appliances',
-      image: kitchen3
-    },
-    {
-      title: 'Luxury Kitchen Renovation',
-      category: 'Premium Kitchen Cabinets',
-      location: 'Thika, Kenya',
-      description: 'Complete kitchen makeover with high-end cabinetry and modern appliances',
-      image: kitchen4
-    },
-    {
-      title: 'Kitchen Storage Solutions',
-      category: 'Premium Kitchen Cabinets',
-      location: 'Eldoret, Kenya',
-      description: 'Maximized storage with pull-out drawers and corner cabinet solutions',
-      image: kitchen5
-    },
-    {
-      title: 'Contemporary Kitchen Setup',
-      category: 'Premium Kitchen Cabinets',
-      location: 'Mombasa, Kenya',
-      description: 'Sleek modern kitchen with handleless cabinets and integrated lighting',
-      image: kitchen6
-    },
-    {
-      title: 'Wardrobes & Closet Systems',
-      category: 'Wardrobes & Closet Systems',
-      location: 'Nakuru, Kenya',
-      description: 'Built-in Wardrobes • Walk-in Closet Designs • Sliding & Hinge Wardrobe Systems • Mirror-Finish Wardrobe Panels • Wardrobes with Integrated Lighting',
-      image: wardrobe1
-    },
-    {
-      title: 'Walk-in Closet Design',
-      category: 'Wardrobes & Closet Systems',
-      location: 'Karen, Nairobi',
-      description: 'Spacious walk-in closets with custom shelving and mirror installations',
-      image: wardrobe2
-    },
-    {
-      title: 'Sliding Door Wardrobes',
-      category: 'Wardrobes & Closet Systems',
-      location: 'Westlands, Nairobi',
-      description: 'Space-saving sliding door wardrobes with mirror panels and LED lighting',
-      image: wardrobe3
-    },
-    {
-      title: 'Built-in Bedroom Storage',
-      category: 'Wardrobes & Closet Systems',
-      location: 'CBD, Nairobi',
-      description: 'Custom built-in wardrobes maximizing bedroom space with elegant finishes',
-      image: wardrobe4
-    },
-    {
-      title: 'Storage & Smart Interior Cabinetry',
-      category: 'Storage & Smart Interior Cabinetry',
-      location: 'CBD, Nairobi',
-      description: 'Overhead & Concealed Storage Units • Hallway & Lobby Storage Cabinets • Multi-Purpose Wall Storage • Bathroom Vanity & Organizer Storage • Custom Shelving & Display Storage',
-      image: kitchen2
-    },
-    {
-      title: 'Stainless Steel & Metal Works',
-      category: 'Stainless Steel & Metal Works',
-      location: 'Mombasa, Kenya',
-      description: 'Stainless Steel Railings & Handles • Metal Brackets, Frames & Holders • Decorative Metal Screens • Stainless Steel Counter Enhancements',
-      image: steel1
-    },
-    {
-      title: 'Metal Railings & Balustrades',
-      category: 'Stainless Steel & Metal Works',
-      location: 'Nairobi, Kenya',
-      description: 'Custom stainless steel railings for staircases and balconies with modern designs',
-      image: steel2
-    },
-    {
-      title: 'Decorative Metal Screens',
-      category: 'Stainless Steel & Metal Works',
-      location: 'Kisumu, Kenya',
-      description: 'Artistic metal screens and partitions for interior and exterior applications',
-      image: steel3
-    },
-    {
-      title: 'Steel Fabrication Works',
-      category: 'Stainless Steel & Metal Works',
-      location: 'Nakuru, Kenya',
-      description: 'Custom steel fabrication for gates, frames, and structural elements',
-      image: steel4
-    },
-    {
-      title: 'Metal Finishing & Polish',
-      category: 'Stainless Steel & Metal Works',
-      location: 'Eldoret, Kenya',
-      description: 'Professional metal finishing services with mirror and brushed finishes',
-      image: steel5
     },
     {
       title: 'Office Partitions & Workstations',
@@ -177,46 +61,11 @@ function Projects() {
       image: office1
     },
     {
-      title: 'Modern Office Layout',
-      category: 'Office Partitions & Workstations',
-      location: 'Nairobi, Kenya',
-      description: 'Open office designs with flexible workstation configurations and meeting areas',
-      image: office2
-    },
-    {
-      title: 'Executive Office Design',
-      category: 'Office Partitions & Workstations',
-      location: 'Mombasa, Kenya',
-      description: 'Premium executive office setups with custom furniture and glass partitions',
-      image: office3
-    },
-    {
-      title: 'Conference Room Setup',
-      category: 'Office Partitions & Workstations',
-      location: 'Nakuru, Kenya',
-      description: 'Professional conference rooms with acoustic panels and modern furniture',
-      image: office4
-    },
-    {
-      title: 'Aluminium & Glass Works',
-      category: 'Aluminium & Glass Works',
-      location: 'Eldoret, Kenya',
-      description: 'Aluminium Doors & Windows • Frameless Shower Cubicles • Folding & Sliding Door Installation',
-      image: aluminium1
-    },
-    {
-      title: 'Aluminium Window Systems',
-      category: 'Aluminium & Glass Works',
-      location: 'Nairobi, Kenya',
-      description: 'Energy-efficient aluminium windows with double glazing and modern hardware',
-      image: aluminium2
-    },
-    {
-      title: 'Glass Door Installation',
-      category: 'Aluminium & Glass Works',
-      location: 'Karen, Kenya',
-      description: 'Frameless glass doors and sliding systems for modern architectural designs',
-      image: aluminium3
+      title: 'Premium Kitchen Cabinets',
+      category: 'Premium Kitchen Cabinets',
+      location: 'Westlands, Nairobi',
+      description: 'Luxury Kitchen Cabinetry • Soft-Close Modular Cabinets • Water & Heat-Resistant Kitchen Boards • Custom Kitchen Island Designs • Smart Kitchen Storage Integration',
+      image: kitchen1
     },
     {
       title: 'Ceiling Systems',
@@ -226,25 +75,18 @@ function Projects() {
       image: ceiling1
     },
     {
-      title: 'Acoustic Ceiling Solutions',
-      category: 'Ceiling Systems',
-      location: 'CBD, Nairobi',
-      description: 'Professional acoustic ceiling installations for offices and commercial spaces',
-      image: ceiling2
+      title: 'Wardrobes & Closet Systems',
+      category: 'Wardrobes & Closet Systems',
+      location: 'Nakuru, Kenya',
+      description: 'Built-in Wardrobes • Walk-in Closet Designs • Sliding & Hinge Wardrobe Systems • Mirror-Finish Wardrobe Panels • Wardrobes with Integrated Lighting',
+      image: wardrobe1
     },
     {
-      title: 'Gypsum Ceiling Design',
-      category: 'Ceiling Systems',
-      location: 'Westlands, Nairobi',
-      description: 'Custom gypsum ceiling designs with integrated lighting and modern patterns',
-      image: ceiling3
-    },
-    {
-      title: 'Marble Work & Stone Installations',
-      category: 'Marble Work & Stone',
-      location: 'Karen, Nairobi',
-      description: 'Premium marble countertops • Natural stone flooring • Marble wall cladding • Custom stone work',
-      image: marble1
+      title: 'Stainless Steel & Metal Works',
+      category: 'Stainless Steel & Metal Works',
+      location: 'Mombasa, Kenya',
+      description: 'Stainless Steel Railings & Handles • Metal Brackets, Frames & Holders • Decorative Metal Screens • Stainless Steel Counter Enhancements',
+      image: steel1
     },
     {
       title: 'Marble Countertops & Surfaces',
@@ -254,6 +96,69 @@ function Projects() {
       image: marble2
     },
     {
+      title: 'Aluminium & Glass Works',
+      category: 'Aluminium & Glass Works',
+      location: 'Eldoret, Kenya',
+      description: 'Aluminium Doors & Windows • Frameless Shower Cubicles • Folding & Sliding Door Installation',
+      image: aluminium1
+    },
+    {
+      title: 'Modern Kitchen Design',
+      category: 'Premium Kitchen Cabinets',
+      location: 'Karen, Nairobi',
+      description: 'Contemporary kitchen layouts with premium finishes and smart storage solutions',
+      image: kitchen2
+    },
+    {
+      title: 'TV Wall Mount & Media Center',
+      category: 'Modern TV Niche & Wall Features',
+      location: 'Westlands, Nairobi',
+      description: 'Professional TV mounting with cable management and custom media wall designs',
+      image: tvNiche2
+    },
+    {
+      title: 'Walk-in Closet Design',
+      category: 'Wardrobes & Closet Systems',
+      location: 'Karen, Nairobi',
+      description: 'Spacious walk-in closets with custom shelving and mirror installations',
+      image: wardrobe2
+    },
+    {
+      title: 'Metal Railings & Balustrades',
+      category: 'Stainless Steel & Metal Works',
+      location: 'Nairobi, Kenya',
+      description: 'Custom stainless steel railings for staircases and balconies with modern designs',
+      image: steel2
+    },
+    {
+      title: 'Storage & Smart Interior Cabinetry',
+      category: 'Storage & Smart Interior Cabinetry',
+      location: 'CBD, Nairobi',
+      description: 'Overhead & Concealed Storage Units • Hallway & Lobby Storage Cabinets • Multi-Purpose Wall Storage • Bathroom Vanity & Organizer Storage • Custom Shelving & Display Storage',
+      image: kitchen2
+    },
+    {
+      title: 'Acoustic Ceiling Solutions',
+      category: 'Ceiling Systems',
+      location: 'CBD, Nairobi',
+      description: 'Professional acoustic ceiling installations for offices and commercial spaces',
+      image: ceiling2
+    },
+    {
+      title: 'Kitchen Island & Countertops',
+      category: 'Premium Kitchen Cabinets',
+      location: 'Kiambu, Kenya',
+      description: 'Custom kitchen islands with marble countertops and integrated appliances',
+      image: kitchen3
+    },
+    {
+      title: 'Modern Office Layout',
+      category: 'Office Partitions & Workstations',
+      location: 'Nairobi, Kenya',
+      description: 'Open office designs with flexible workstation configurations and meeting areas',
+      image: office2
+    },
+    {
       title: 'Stone Cladding & Features',
       category: 'Marble Work & Stone',
       location: 'Nakuru, Kenya',
@@ -261,11 +166,130 @@ function Projects() {
       image: marble3
     },
     {
+      title: 'Entertainment Wall Design',
+      category: 'Modern TV Niche & Wall Features',
+      location: 'Nakuru, Kenya',
+      description: 'Complete entertainment wall solutions with integrated lighting and storage',
+      image: tvNiche3
+    },
+    {
+      title: 'Aluminium Window Systems',
+      category: 'Aluminium & Glass Works',
+      location: 'Nairobi, Kenya',
+      description: 'Energy-efficient aluminium windows with double glazing and modern hardware',
+      image: aluminium2
+    },
+    {
+      title: 'Sliding Door Wardrobes',
+      category: 'Wardrobes & Closet Systems',
+      location: 'Westlands, Nairobi',
+      description: 'Space-saving sliding door wardrobes with mirror panels and LED lighting',
+      image: wardrobe3
+    },
+    {
+      title: 'Luxury Kitchen Renovation',
+      category: 'Premium Kitchen Cabinets',
+      location: 'Thika, Kenya',
+      description: 'Complete kitchen makeover with high-end cabinetry and modern appliances',
+      image: kitchen4
+    },
+    {
+      title: 'Decorative Metal Screens',
+      category: 'Stainless Steel & Metal Works',
+      location: 'Kisumu, Kenya',
+      description: 'Artistic metal screens and partitions for interior and exterior applications',
+      image: steel3
+    },
+    {
+      title: 'Executive Office Design',
+      category: 'Office Partitions & Workstations',
+      location: 'Mombasa, Kenya',
+      description: 'Premium executive office setups with custom furniture and glass partitions',
+      image: office3
+    },
+    {
+      title: 'Gypsum Ceiling Design',
+      category: 'Ceiling Systems',
+      location: 'Westlands, Nairobi',
+      description: 'Custom gypsum ceiling designs with integrated lighting and modern patterns',
+      image: ceiling3
+    },
+    {
+      title: 'Kitchen Storage Solutions',
+      category: 'Premium Kitchen Cabinets',
+      location: 'Eldoret, Kenya',
+      description: 'Maximized storage with pull-out drawers and corner cabinet solutions',
+      image: kitchen5
+    },
+    {
+      title: 'Built-in Bedroom Storage',
+      category: 'Wardrobes & Closet Systems',
+      location: 'CBD, Nairobi',
+      description: 'Custom built-in wardrobes maximizing bedroom space with elegant finishes',
+      image: wardrobe4
+    },
+    {
+      title: 'Steel Fabrication Works',
+      category: 'Stainless Steel & Metal Works',
+      location: 'Nakuru, Kenya',
+      description: 'Custom steel fabrication for gates, frames, and structural elements',
+      image: steel4
+    },
+    {
+      title: 'Glass Door Installation',
+      category: 'Aluminium & Glass Works',
+      location: 'Karen, Kenya',
+      description: 'Frameless glass doors and sliding systems for modern architectural designs',
+      image: aluminium3
+    },
+    {
+      title: 'Conference Room Setup',
+      category: 'Office Partitions & Workstations',
+      location: 'Nakuru, Kenya',
+      description: 'Professional conference rooms with acoustic panels and modern furniture',
+      image: office4
+    },
+    {
+      title: 'Contemporary Kitchen Setup',
+      category: 'Premium Kitchen Cabinets',
+      location: 'Mombasa, Kenya',
+      description: 'Sleek modern kitchen with handleless cabinets and integrated lighting',
+      image: kitchen6
+    },
+    {
+      title: 'Metal Finishing & Polish',
+      category: 'Stainless Steel & Metal Works',
+      location: 'Eldoret, Kenya',
+      description: 'Professional metal finishing services with mirror and brushed finishes',
+      image: steel5
+    },
+    {
       title: 'Kitchen Marble Installation',
       category: 'Marble Work & Stone',
       location: 'Kiambu, Kenya',
       description: 'Professional kitchen marble work with seamless joints and polished finishes',
       image: marble4
+    },
+    {
+      title: 'Modern Gypsum Ceiling Design',
+      category: 'Ceiling Systems',
+      location: 'Karen, Nairobi',
+      description: 'Contemporary gypsum ceiling installations with LED strip lighting integration',
+      image: ceiling4
+    },
+    {
+      title: 'Decorative Ceiling Features',
+      category: 'Ceiling Systems',
+      location: 'Mombasa, Kenya',
+      description: 'Artistic gypsum ceiling designs with geometric patterns and ambient lighting',
+      image: ceiling5
+    },
+    {
+      title: 'Commercial Ceiling Solutions',
+      category: 'Ceiling Systems',
+      location: 'Eldoret, Kenya',
+      description: 'Professional gypsum ceiling systems for offices and commercial spaces',
+      image: ceiling6
     }
   ];
 
@@ -274,10 +298,19 @@ function Projects() {
   const [activeFilter, setActiveFilter] = useState('All');
   const [viewMode, setViewMode] = useState('grid');
 
-  const categories = ['All', 'Modern TV Niche & Wall Features', 'Premium Kitchen Cabinets', 'Wardrobes & Closet Systems', 'Storage & Smart Interior Cabinetry', 'Stainless Steel & Metal Works', 'Office Partitions & Workstations', 'Aluminium & Glass Works', 'Ceiling Systems', 'Marble Work & Stone'];
+  const categories = ['All', 'Marble Work & Stone', 'Modern TV Niche & Wall Features', 'Premium Kitchen Cabinets', 'Wardrobes & Closet Systems', 'Storage & Smart Interior Cabinetry', 'Stainless Steel & Metal Works', 'Office Partitions & Workstations', 'Aluminium & Glass Works', 'Ceiling Systems'];
+
+  const shuffleArray = (array) => {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+  };
 
   const filteredProjects = activeFilter === 'All' 
-    ? projects 
+    ? shuffleArray(projects).slice(0, 9)
     : projects.filter(project => project.category === activeFilter);
 
   useEffect(() => {

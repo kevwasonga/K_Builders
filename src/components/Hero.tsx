@@ -1,9 +1,9 @@
 import { ChevronDown, Play, Award } from 'lucide-react';
 import { useState, useEffect } from 'react';
-import heroBg from '../images/hero_bg.jpg';
-import interiorProject from '../images/interior_design_project.jpg';
-import kitchenProject from '../images/kitchen_cabinets_project.jpg';
-import officeProject from '../images/office_furniture_project.jpg';
+import heroBg from '../images/hero_images/hero_bg.jpg';
+import interiorProject from '../images/hero_images/interior_design_project_kitchen.jpg';
+import kitchenProject from '../images/hero_images/kitchen1.jpeg';
+import officeProject from '../images/hero_images/office1.jpeg';
 
 function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
