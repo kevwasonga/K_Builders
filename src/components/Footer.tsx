@@ -140,15 +140,15 @@ function Footer() {
               <div className="space-y-4 text-slate-300">
                 <div className="flex items-center">
                   <Phone size={18} className="mr-3 text-orange-500" />
-                  <span>+254 700 123 456</span>
+                  <span>+254 701 403851</span>
                 </div>
                 <div className="flex items-center">
                   <Mail size={18} className="mr-3 text-orange-500" />
-                  <span>info@clauseinteriorfits.co.ke</span>
+                  <span>Clauseinteriorfits@gmail.com</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin size={18} className="mr-3 text-orange-500" />
-                  <span>Kimathi Street, Nairobi</span>
+                  <span>Oginga Odinga Street, Kisumu</span>
                 </div>
               </div>
             </div>
