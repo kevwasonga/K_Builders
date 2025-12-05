@@ -32,10 +32,21 @@ import ceiling3 from '../images/ceiling_systems/gypsum_ceiling_project.jpg';
 import ceiling4 from '../images/ceiling_systems/gypsumceiling3.jpeg';
 import ceiling5 from '../images/ceiling_systems/gypsumceilings.jpeg';
 import ceiling6 from '../images/ceiling_systems/gypsumceilinng2.jpeg';
+import ceiling7 from '../images/ceiling_systems/gypsum-ceiling-elegant.jpeg';
+import ceiling8 from '../images/ceiling_systems/gypsum-ceiling-systme.jpeg';
 import marble1 from '../images/marble_work/marble1.jpeg';
 import marble2 from '../images/marble_work/marble2.jpeg';
 import marble3 from '../images/marble_work/marblework.jpeg';
 import marble4 from '../images/marble_work/kitchen_marble_work.jpg';
+import glass1 from '../images/glasswork/all-glass-cubicleshower.jpeg';
+import glass2 from '../images/glasswork/frameless-glass-door1(clear-glass).jpeg';
+import glass3 from '../images/glasswork/glasswork_curtain-walling1.jpeg';
+import glass4 from '../images/glasswork/pagola-glass-roof-full-view.jpeg';
+import wardrobe5 from '../images/wardrobes/mirror-attached-sliding-wardrobe.jpeg';
+import wardrobe6 from '../images/wardrobes/modern-spaciou-sliding-wardrobe.jpeg';
+import wardrobe7 from '../images/wardrobes/walk-in-closet.jpeg';
+import office5 from '../images/office_partitions/elegant-glassandaluminium-office-partitioning.jpeg';
+import aluminium4 from '../images/aluminium_glass/aluminiumandglass-sliding-window-view-from-inhouse.jpeg';
 
 function Projects() {
   const projects = [
@@ -290,6 +301,83 @@ function Projects() {
       location: 'Eldoret, Kenya',
       description: 'Professional gypsum ceiling systems for offices and commercial spaces',
       image: ceiling6
+    },
+    {
+      title: 'Elegant Gypsum Ceiling',
+      category: 'Ceiling Systems',
+      location: 'Kisumu, Kenya',
+      description: 'Sophisticated gypsum ceiling designs with premium finishing and lighting',
+      image: ceiling7
+    },
+    {
+      title: 'Advanced Ceiling Systems',
+      category: 'Ceiling Systems',
+      location: 'Machakos, Kenya',
+      description: 'State-of-the-art gypsum ceiling installations for modern interiors',
+      image: ceiling8
+    },
+    {
+      title: 'Frameless Glass Shower Cubicles',
+      category: 'Glasswork',
+      location: 'Karen, Nairobi',
+      description: 'Premium frameless glass shower installations • Tempered safety glass • Modern bathroom solutions',
+      image: glass1
+    },
+    {
+      title: 'Frameless Glass Doors',
+      category: 'Glasswork',
+      location: 'Westlands, Nairobi',
+      description: 'Clear frameless glass door systems for modern architectural designs',
+      image: glass2
+    },
+    {
+      title: 'Glass Curtain Walling',
+      category: 'Glasswork',
+      location: 'CBD, Nairobi',
+      description: 'Commercial glass curtain wall systems for office buildings and facades',
+      image: glass3
+    },
+    {
+      title: 'Glass Roof Installations',
+      category: 'Glasswork',
+      location: 'Nakuru, Kenya',
+      description: 'Pagola glass roof systems for outdoor spaces and natural lighting',
+      image: glass4
+    },
+    {
+      title: 'Mirror Sliding Wardrobes',
+      category: 'Wardrobes & Closet Systems',
+      location: 'Mombasa, Kenya',
+      description: 'Elegant sliding wardrobes with full-length mirror panels',
+      image: wardrobe5
+    },
+    {
+      title: 'Spacious Modern Wardrobes',
+      category: 'Wardrobes & Closet Systems',
+      location: 'Eldoret, Kenya',
+      description: 'Large capacity wardrobes with modern sliding door systems',
+      image: wardrobe6
+    },
+    {
+      title: 'Luxury Walk-in Closets',
+      category: 'Wardrobes & Closet Systems',
+      location: 'Kiambu, Kenya',
+      description: 'Premium walk-in closet designs with custom organization systems',
+      image: wardrobe7
+    },
+    {
+      title: 'Glass Office Partitioning',
+      category: 'Office Partitions & Workstations',
+      location: 'Nairobi, Kenya',
+      description: 'Elegant glass and aluminium office partition systems for modern workspaces',
+      image: office5
+    },
+    {
+      title: 'Sliding Window Systems',
+      category: 'Aluminium & Glass Works',
+      location: 'Karen, Kenya',
+      description: 'Premium aluminium and glass sliding window installations with interior views',
+      image: aluminium4
     }
   ];
 
@@ -298,7 +386,7 @@ function Projects() {
   const [activeFilter, setActiveFilter] = useState('All');
   const [viewMode, setViewMode] = useState('grid');
 
-  const categories = ['All', 'Marble Work & Stone', 'Modern TV Niche & Wall Features', 'Premium Kitchen Cabinets', 'Wardrobes & Closet Systems', 'Storage & Smart Interior Cabinetry', 'Stainless Steel & Metal Works', 'Office Partitions & Workstations', 'Aluminium & Glass Works', 'Ceiling Systems'];
+  const categories = ['All', 'Marble Work & Stone', 'Modern TV Niche & Wall Features', 'Premium Kitchen Cabinets', 'Wardrobes & Closet Systems', 'Storage & Smart Interior Cabinetry', 'Stainless Steel & Metal Works', 'Office Partitions & Workstations', 'Aluminium & Glass Works', 'Ceiling Systems', 'Glasswork'];
 
   const shuffleArray = (array) => {
     const shuffled = [...array];
