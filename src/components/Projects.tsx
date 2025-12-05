@@ -48,8 +48,22 @@ import glass4 from '../images/glasswork/pagola-glass-roof-full-view.jpeg';
 import wardrobe5 from '../images/wardrobes/mirror-attached-sliding-wardrobe.jpeg';
 import wardrobe6 from '../images/wardrobes/modern-spaciou-sliding-wardrobe.jpeg';
 import wardrobe7 from '../images/wardrobes/walk-in-closet.jpeg';
+import wardrobe8 from '../images/wardrobes/sliding-wardrobe-with-mirror.jpeg';
+import wardrobe9 from '../images/wardrobes/multi-sectioned-sliding-wardrobe.jpeg';
+import wardrobe10 from '../images/wardrobes/wall-embedded-wardrobe.jpeg';
+import wardrobe11 from '../images/wardrobes/walkin-closet-wardrobe.jpeg';
+import wardrobe12 from '../images/wardrobes/modern-spaciours-closet-wardrobe.jpeg';
 import office5 from '../images/office_partitions/elegant-glassandaluminium-office-partitioning.jpeg';
 import aluminium4 from '../images/aluminium_glass/aluminiumandglass-sliding-window-view-from-inhouse.jpeg';
+import aluminium5 from '../images/aluminium_glass/aluminiumandglassdoorfor-cubicle-shower.jpeg';
+import glass5 from '../images/glasswork/all-glass-cubicleshower2.jpeg';
+import glass6 from '../images/glasswork/frameless-glassdoor2.jpeg';
+import glass7 from '../images/glasswork/glasswork_curtainwalling2.jpeg';
+import glass8 from '../images/glasswork/glasswork_modern_windowpane.jpeg';
+import glass9 from '../images/glasswork/glass-partitioned-bathroom-space.jpeg';
+import makeover1 from '../images/house_makeover/house_makeover.jpeg';
+import makeover2 from '../images/house_makeover/house_makeover2.jpeg';
+import makeover3 from '../images/house_makeover/house_makover1.jpeg';
 
 function Projects() {
   const projects = [
@@ -131,10 +145,10 @@ function Projects() {
       image: tvNiche2
     },
     {
-      title: 'Walk-in Closet Design',
+      title: 'Sliding Wardrobe Design',
       category: 'Wardrobes & Closet Systems',
       location: 'Karen, Nairobi',
-      description: 'Spacious walk-in closets with custom shelving and mirror installations',
+      description: 'Modern sliding wardrobes with premium finishes and space-saving design',
       image: wardrobe2
     },
     {
@@ -144,13 +158,7 @@ function Projects() {
       description: 'Custom stainless steel railings for staircases and balconies with modern designs',
       image: steel2
     },
-    {
-      title: 'Storage & Smart Interior Cabinetry',
-      category: 'Storage & Smart Interior Cabinetry',
-      location: 'CBD, Nairobi',
-      description: 'Overhead & Concealed Storage Units • Hallway & Lobby Storage Cabinets • Multi-Purpose Wall Storage • Bathroom Vanity & Organizer Storage • Custom Shelving & Display Storage',
-      image: kitchen2
-    },
+
     {
       title: 'Acoustic Ceiling Solutions',
       category: 'Ceiling & Roofing Systems',
@@ -402,6 +410,104 @@ function Projects() {
       location: 'Nakuru, Kenya',
       description: 'Professional glass roof installation process with structural support systems',
       image: roof3
+    },
+    {
+      title: 'Mirror Sliding Wardrobes Premium',
+      category: 'Wardrobes & Closet Systems',
+      location: 'Kisumu, Kenya',
+      description: 'Premium sliding wardrobes with full mirror panels and soft-close mechanisms',
+      image: wardrobe8
+    },
+    {
+      title: 'Multi-Section Wardrobes',
+      category: 'Wardrobes & Closet Systems',
+      location: 'Machakos, Kenya',
+      description: 'Large multi-sectioned sliding wardrobes for maximum storage capacity',
+      image: wardrobe9
+    },
+    {
+      title: 'Wall Embedded Wardrobes',
+      category: 'Wardrobes & Closet Systems',
+      location: 'Thika, Kenya',
+      description: 'Space-efficient wall-embedded wardrobe systems with seamless integration',
+      image: wardrobe10
+    },
+    {
+      title: 'Walk-in Closet Premium',
+      category: 'Wardrobes & Closet Systems',
+      location: 'Karen, Nairobi',
+      description: 'Luxury walk-in closet with custom organization and premium lighting',
+      image: wardrobe11
+    },
+    {
+      title: 'Spacious Closet Systems',
+      category: 'Wardrobes & Closet Systems',
+      location: 'Nakuru, Kenya',
+      description: 'Large capacity closet systems with modern design and functionality',
+      image: wardrobe12
+    },
+    {
+      title: 'Aluminium Shower Doors',
+      category: 'Aluminium & Glass Works',
+      location: 'Mombasa, Kenya',
+      description: 'Premium aluminium and glass shower door installations for modern bathrooms',
+      image: aluminium5
+    },
+    {
+      title: 'Tinted Glass Shower Cubicles',
+      category: 'Glasswork',
+      location: 'Eldoret, Kenya',
+      description: 'Stylish tinted glass shower cubicles for privacy and modern aesthetics',
+      image: glass5
+    },
+    {
+      title: 'Frameless Glass Door Systems',
+      category: 'Glasswork',
+      location: 'Kiambu, Kenya',
+      description: 'Advanced frameless glass door systems for seamless architectural integration',
+      image: glass6
+    },
+    {
+      title: 'Glass Curtain Wall Systems',
+      category: 'Glasswork',
+      location: 'Nairobi, Kenya',
+      description: 'Commercial grade glass curtain wall installations for office buildings',
+      image: glass7
+    },
+    {
+      title: 'Modern Glass Window Panes',
+      category: 'Glasswork',
+      location: 'Westlands, Nairobi',
+      description: 'Contemporary glass window pane installations with energy efficiency',
+      image: glass8
+    },
+    {
+      title: 'Glass Partitioned Bathrooms',
+      category: 'Glasswork',
+      location: 'CBD, Nairobi',
+      description: 'Elegant glass partition systems for modern bathroom designs',
+      image: glass9
+    },
+    {
+      title: 'Complete House Makeover',
+      category: 'House Makeover',
+      location: 'Karen, Nairobi',
+      description: 'Full home renovation and makeover with modern interior design solutions',
+      image: makeover1
+    },
+    {
+      title: 'Home Renovation Project',
+      category: 'House Makeover',
+      location: 'Kiambu, Kenya',
+      description: 'Comprehensive home renovation with updated fixtures and modern styling',
+      image: makeover2
+    },
+    {
+      title: 'Interior Transformation',
+      category: 'House Makeover',
+      location: 'Nakuru, Kenya',
+      description: 'Complete interior transformation with contemporary design elements',
+      image: makeover3
     }
   ];
 
@@ -410,7 +516,7 @@ function Projects() {
   const [activeFilter, setActiveFilter] = useState('All');
   const [viewMode, setViewMode] = useState('grid');
 
-  const categories = ['All', 'Marble Work & Stone', 'Modern TV Niche & Wall Features', 'Premium Kitchen Cabinets', 'Wardrobes & Closet Systems', 'Storage & Smart Interior Cabinetry', 'Stainless Steel & Metal Works', 'Office Partitions & Workstations', 'Aluminium & Glass Works', 'Ceiling & Roofing Systems', 'Glasswork'];
+  const categories = ['All', 'Marble Work & Stone', 'Modern TV Niche & Wall Features', 'Premium Kitchen Cabinets', 'Wardrobes & Closet Systems', 'Stainless Steel & Metal Works', 'Office Partitions & Workstations', 'Aluminium & Glass Works', 'Ceiling & Roofing Systems', 'Glasswork', 'House Makeover'];
 
   const shuffleArray = (array) => {
     const shuffled = [...array];
