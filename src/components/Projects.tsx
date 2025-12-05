@@ -34,6 +34,9 @@ import ceiling5 from '../images/ceiling_systems/gypsumceilings.jpeg';
 import ceiling6 from '../images/ceiling_systems/gypsumceilinng2.jpeg';
 import ceiling7 from '../images/ceiling_systems/gypsum-ceiling-elegant.jpeg';
 import ceiling8 from '../images/ceiling_systems/gypsum-ceiling-systme.jpeg';
+import roof1 from '../images/ceiling_systems/pagola-glass-roof-full-view.jpeg';
+import roof2 from '../images/ceiling_systems/pagola-glass-roof(bluishglass).jpeg';
+import roof3 from '../images/ceiling_systems/pagola-glass-roof-installation-procedue.jpeg';
 import marble1 from '../images/marble_work/marble1.jpeg';
 import marble2 from '../images/marble_work/marble2.jpeg';
 import marble3 from '../images/marble_work/marblework.jpeg';
@@ -80,7 +83,7 @@ function Projects() {
     },
     {
       title: 'Ceiling Systems',
-      category: 'Ceiling Systems',
+      category: 'Ceiling & Roofing Systems',
       location: 'Thika, Kenya',
       description: 'Gypsum Ceiling Designs • Acoustic Ceiling Panels • Decorative Drop Ceiling Installations',
       image: ceiling1
@@ -150,7 +153,7 @@ function Projects() {
     },
     {
       title: 'Acoustic Ceiling Solutions',
-      category: 'Ceiling Systems',
+      category: 'Ceiling & Roofing Systems',
       location: 'CBD, Nairobi',
       description: 'Professional acoustic ceiling installations for offices and commercial spaces',
       image: ceiling2
@@ -220,7 +223,7 @@ function Projects() {
     },
     {
       title: 'Gypsum Ceiling Design',
-      category: 'Ceiling Systems',
+      category: 'Ceiling & Roofing Systems',
       location: 'Westlands, Nairobi',
       description: 'Custom gypsum ceiling designs with integrated lighting and modern patterns',
       image: ceiling3
@@ -283,35 +286,35 @@ function Projects() {
     },
     {
       title: 'Modern Gypsum Ceiling Design',
-      category: 'Ceiling Systems',
+      category: 'Ceiling & Roofing Systems',
       location: 'Karen, Nairobi',
       description: 'Contemporary gypsum ceiling installations with LED strip lighting integration',
       image: ceiling4
     },
     {
       title: 'Decorative Ceiling Features',
-      category: 'Ceiling Systems',
+      category: 'Ceiling & Roofing Systems',
       location: 'Mombasa, Kenya',
       description: 'Artistic gypsum ceiling designs with geometric patterns and ambient lighting',
       image: ceiling5
     },
     {
       title: 'Commercial Ceiling Solutions',
-      category: 'Ceiling Systems',
+      category: 'Ceiling & Roofing Systems',
       location: 'Eldoret, Kenya',
       description: 'Professional gypsum ceiling systems for offices and commercial spaces',
       image: ceiling6
     },
     {
       title: 'Elegant Gypsum Ceiling',
-      category: 'Ceiling Systems',
+      category: 'Ceiling & Roofing Systems',
       location: 'Kisumu, Kenya',
       description: 'Sophisticated gypsum ceiling designs with premium finishing and lighting',
       image: ceiling7
     },
     {
       title: 'Advanced Ceiling Systems',
-      category: 'Ceiling Systems',
+      category: 'Ceiling & Roofing Systems',
       location: 'Machakos, Kenya',
       description: 'State-of-the-art gypsum ceiling installations for modern interiors',
       image: ceiling8
@@ -378,6 +381,27 @@ function Projects() {
       location: 'Karen, Kenya',
       description: 'Premium aluminium and glass sliding window installations with interior views',
       image: aluminium4
+    },
+    {
+      title: 'Glass Roof Systems',
+      category: 'Ceiling & Roofing Systems',
+      location: 'Karen, Nairobi',
+      description: 'Premium glass roofing systems for patios, pergolas, and outdoor spaces with natural lighting',
+      image: roof1
+    },
+    {
+      title: 'Tinted Glass Roofing',
+      category: 'Ceiling & Roofing Systems',
+      location: 'Westlands, Nairobi',
+      description: 'Stylish tinted glass roof installations for UV protection and aesthetic appeal',
+      image: roof2
+    },
+    {
+      title: 'Glass Roof Installation',
+      category: 'Ceiling & Roofing Systems',
+      location: 'Nakuru, Kenya',
+      description: 'Professional glass roof installation process with structural support systems',
+      image: roof3
     }
   ];
 
@@ -386,7 +410,7 @@ function Projects() {
   const [activeFilter, setActiveFilter] = useState('All');
   const [viewMode, setViewMode] = useState('grid');
 
-  const categories = ['All', 'Marble Work & Stone', 'Modern TV Niche & Wall Features', 'Premium Kitchen Cabinets', 'Wardrobes & Closet Systems', 'Storage & Smart Interior Cabinetry', 'Stainless Steel & Metal Works', 'Office Partitions & Workstations', 'Aluminium & Glass Works', 'Ceiling Systems', 'Glasswork'];
+  const categories = ['All', 'Marble Work & Stone', 'Modern TV Niche & Wall Features', 'Premium Kitchen Cabinets', 'Wardrobes & Closet Systems', 'Storage & Smart Interior Cabinetry', 'Stainless Steel & Metal Works', 'Office Partitions & Workstations', 'Aluminium & Glass Works', 'Ceiling & Roofing Systems', 'Glasswork'];
 
   const shuffleArray = (array) => {
     const shuffled = [...array];
