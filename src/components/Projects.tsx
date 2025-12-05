@@ -63,7 +63,16 @@ import glass8 from '../images/glasswork/glasswork_modern_windowpane.jpeg';
 import glass9 from '../images/glasswork/glass-partitioned-bathroom-space.jpeg';
 import glass10 from '../images/glasswork/all-glass(tainted-glass)-cubicleshower.jpeg.jpeg';
 import glass11 from '../images/glasswork/glasswork_sliding_window1.jpeg';
+import glass12 from '../images/glasswork/glasswork_curtainwalling2.jpeg';
+import glass13 from '../images/glasswork/frameless-glassdoor2.jpeg';
+import glass14 from '../images/glasswork/all-glass-cubicleshower2.jpeg';
+import glass15 from '../images/glasswork/aluminiumandglass-sliding-window-view-from-inhouse.jpeg';
+import glass16 from '../images/glasswork/aluminiumandglassdoorfor-cubicle-shower.jpeg';
+import glass17 from '../images/glasswork/pagola-glass-roof-installation-procedue.jpeg';
+import glass18 from '../images/glasswork/pagola-glass-roof(bluishglass).jpeg';
 import aluminium6 from '../images/glasswork/elegant-glassandaluminium-office-partitioning.jpeg';
+import kitchen7 from '../images/kitchen_cabinets/interior_design_project_kitchen.jpg';
+import kitchen8 from '../images/kitchen_cabinets/kitchen_cabinet.jpg';
 import makeover1 from '../images/house_makeover/house_makeover.jpeg';
 import makeover2 from '../images/house_makeover/house_makeover2.jpeg';
 import makeover3 from '../images/house_makeover/house_makover1.jpeg';
@@ -532,6 +541,69 @@ function Projects() {
       location: 'CBD, Nairobi',
       description: 'Professional aluminium and glass office partition systems for corporate environments',
       image: aluminium6
+    },
+    {
+      title: 'Glass Curtain Wall Advanced',
+      category: 'Glasswork',
+      location: 'Westlands, Nairobi',
+      description: 'Advanced glass curtain wall systems for high-rise buildings and commercial facades',
+      image: glass12
+    },
+    {
+      title: 'Frameless Glass Door Premium',
+      category: 'Glasswork',
+      location: 'Karen, Nairobi',
+      description: 'Premium frameless glass door installations with seamless integration',
+      image: glass13
+    },
+    {
+      title: 'All-Glass Shower Cubicle Deluxe',
+      category: 'Glasswork',
+      location: 'Nakuru, Kenya',
+      description: 'Deluxe all-glass shower cubicle systems with premium hardware',
+      image: glass14
+    },
+    {
+      title: 'Sliding Window Glass Systems',
+      category: 'Glasswork',
+      location: 'Eldoret, Kenya',
+      description: 'Premium sliding window glass installations with interior view optimization',
+      image: glass15
+    },
+    {
+      title: 'Glass Cubicle Shower Doors',
+      category: 'Glasswork',
+      location: 'Kisumu, Kenya',
+      description: 'Professional glass cubicle shower door installations for modern bathrooms',
+      image: glass16
+    },
+    {
+      title: 'Glass Roof Installation Process',
+      category: 'Glasswork',
+      location: 'Machakos, Kenya',
+      description: 'Complete glass roof installation process with structural engineering',
+      image: glass17
+    },
+    {
+      title: 'Tinted Glass Roof Systems',
+      category: 'Glasswork',
+      location: 'Thika, Kenya',
+      description: 'Stylish tinted glass roof systems for outdoor spaces and patios',
+      image: glass18
+    },
+    {
+      title: 'Designer Kitchen Interiors',
+      category: 'Premium Kitchen Cabinets',
+      location: 'Karen, Nairobi',
+      description: 'Designer kitchen interior projects with premium finishes and modern appliances',
+      image: kitchen7
+    },
+    {
+      title: 'Custom Kitchen Cabinet Solutions',
+      category: 'Premium Kitchen Cabinets',
+      location: 'CBD, Nairobi',
+      description: 'Custom kitchen cabinet solutions with optimized storage and elegant design',
+      image: kitchen8
     }
   ];
 
