@@ -61,6 +61,9 @@ import glass6 from '../images/glasswork/frameless-glassdoor2.jpeg';
 import glass7 from '../images/glasswork/glasswork_curtainwalling2.jpeg';
 import glass8 from '../images/glasswork/glasswork_modern_windowpane.jpeg';
 import glass9 from '../images/glasswork/glass-partitioned-bathroom-space.jpeg';
+import glass10 from '../images/glasswork/all-glass(tainted-glass)-cubicleshower.jpeg.jpeg';
+import glass11 from '../images/glasswork/glasswork_sliding_window1.jpeg';
+import aluminium6 from '../images/glasswork/elegant-glassandaluminium-office-partitioning.jpeg';
 import makeover1 from '../images/house_makeover/house_makeover.jpeg';
 import makeover2 from '../images/house_makeover/house_makeover2.jpeg';
 import makeover3 from '../images/house_makeover/house_makover1.jpeg';
@@ -508,6 +511,27 @@ function Projects() {
       location: 'Nakuru, Kenya',
       description: 'Complete interior transformation with contemporary design elements',
       image: makeover3
+    },
+    {
+      title: 'Tainted Glass Shower Systems',
+      category: 'Glasswork',
+      location: 'Mombasa, Kenya',
+      description: 'Premium tainted glass shower cubicles for enhanced privacy and style',
+      image: glass10
+    },
+    {
+      title: 'Glass Sliding Window Systems',
+      category: 'Glasswork',
+      location: 'Thika, Kenya',
+      description: 'Modern glass sliding window installations for residential and commercial use',
+      image: glass11
+    },
+    {
+      title: 'Aluminium Office Partitions',
+      category: 'Aluminium & Glass Works',
+      location: 'CBD, Nairobi',
+      description: 'Professional aluminium and glass office partition systems for corporate environments',
+      image: aluminium6
     }
   ];
 
