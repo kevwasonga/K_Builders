@@ -1,19 +1,23 @@
 import { ChevronDown, Play, Award } from 'lucide-react';
 import { useState, useEffect } from 'react';
-import heroBg from '../images/hero_images/hero_bg.jpg';
-import interiorProject from '../images/hero_images/interior_design_project_kitchen.jpg';
-import kitchenProject from '../images/hero_images/kitchen1.jpeg';
-import officeProject from '../images/hero_images/office1.jpeg';
+import hero1 from '../images/hero_images/hero1.png';
+import hero2 from '../images/hero_images/hero2.png';
+import hero3 from '../images/hero_images/hero3.png';
+import hero4 from '../images/hero_images/hero4.png';
+import hero5 from '../images/hero_images/hero5.png';
+import hero6 from '../images/hero_images/hero6.png';
 
 function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
 
   const heroImages = [
-    heroBg,
-    interiorProject,
-    kitchenProject,
-    officeProject
+    hero1,
+    hero2,
+    hero3,
+    hero4,
+    hero5,
+    hero6
   ];
 
 
@@ -51,7 +55,7 @@ function Hero() {
             />
           </div>
         ))}
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/60 to-slate-900/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/40 via-slate-900/20 to-slate-900/40"></div>
       </div>
 
       {/* Floating Geometric Elements */}
@@ -137,10 +141,10 @@ function Hero() {
           <button
             key={index}
             onClick={() => setCurrentImageIndex(index)}
-            className={`w-3 h-3 rounded-full transition-all ${
+            className={`w-4 h-4 rounded-full transition-all cursor-pointer ${
               index === currentImageIndex 
-                ? 'bg-yellow-400 scale-125' 
-                : 'bg-white/50 hover:bg-white/75'
+                ? 'bg-yellow-400 scale-125 shadow-lg' 
+                : 'bg-white/60 hover:bg-white/80 hover:scale-110'
             }`}
           />
         ))}
