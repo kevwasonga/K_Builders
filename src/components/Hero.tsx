@@ -22,11 +22,19 @@ function Hero() {
 
 
 
+  const getRandomIndex = (currentIndex) => {
+    let randomIndex;
+    do {
+      randomIndex = Math.floor(Math.random() * heroImages.length);
+    } while (randomIndex === currentIndex && heroImages.length > 1);
+    return randomIndex;
+  };
+
   useEffect(() => {
     setIsVisible(true);
     const interval = setInterval(() => {
-      setCurrentImageIndex((prev) => (prev + 1) % heroImages.length);
-    }, 4000);
+      setCurrentImageIndex((prev) => getRandomIndex(prev));
+    }, 8000);
     return () => clearInterval(interval);
   }, []);
 
@@ -141,11 +149,12 @@ function Hero() {
           <button
             key={index}
             onClick={() => setCurrentImageIndex(index)}
-            className={`w-4 h-4 rounded-full transition-all cursor-pointer ${
+            className={`w-4 h-4 rounded-full transition-all cursor-pointer hover:cursor-pointer ${
               index === currentImageIndex 
                 ? 'bg-yellow-400 scale-125 shadow-lg' 
                 : 'bg-white/60 hover:bg-white/80 hover:scale-110'
             }`}
+            aria-label={`View hero image ${index + 1}`}
           />
         ))}
       </div>
