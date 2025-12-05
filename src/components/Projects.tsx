@@ -277,10 +277,10 @@ function Projects() {
       image: aluminium3
     },
     {
-      title: 'Conference Room Setup',
+      title: 'Open Staff Space Design and Partition',
       category: 'Office Partitions & Workstations',
       location: 'Nakuru, Kenya',
-      description: 'Professional conference rooms with acoustic panels and modern furniture',
+      description: 'Open staff space design with modern partitioning systems and collaborative work areas',
       image: office4
     },
     {
