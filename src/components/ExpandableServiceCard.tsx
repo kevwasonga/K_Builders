@@ -8,20 +8,15 @@ interface ServiceCardProps {
   description: string;
   image: string;
   fullDescription?: string;
-  allProjects?: Array<{title: string; category: string; image: string}>;
-  onCategoryClick?: (category: string) => void;
 }
 
-const ExpandableServiceCard = ({ title, category, location, description, image, fullDescription, allProjects = [], onCategoryClick }: ServiceCardProps) => {
-  const [isExpanded, setIsExpanded] = useState(false);
+const ExpandableServiceCard = ({ title, category, location, description, image, fullDescription }: ServiceCardProps) => {
   const [showShareMenu, setShowShareMenu] = useState(false);
-  const [showCTAMenu, setShowCTAMenu] = useState(false);
   const shareRef = useRef<HTMLDivElement>(null);
-  const ctaRef = useRef<HTMLDivElement>(null);
-  const cardRef = useRef<HTMLDivElement>(null);
 
   const websiteUrl = 'https://kevwasonga.github.io/K_Builders/';
-  const serviceMessage = `CLAUSE INTERIOR FITS%0A%0A${title}%0A${description}%0A%0AHello! I'm interested in this service. Please share more details and pricing.`;
+  const fullImageUrl = `${websiteUrl}${image.startsWith('/') ? image.slice(1) : image}`;
+  const serviceMessage = `CLAUSE INTERIOR FITS%0A%0A${title}%0A%0A${description}%0A%0AView this project: ${fullImageUrl}`;
   const encodedMessage = serviceMessage;
   const shareUrl = `${websiteUrl}#${encodeURIComponent(title)}`;
 
@@ -155,205 +150,31 @@ const ExpandableServiceCard = ({ title, category, location, description, image, 
     }
   ];
 
-  // Get 2 random category teasers
-  const getCategoryTeasers = () => {
-    if (!allProjects.length) return [];
-    
-    // Get unique categories excluding current one
-    const otherCategories = Array.from(new Set(
-      allProjects
-        .filter(p => p.category !== category)
-        .map(p => p.category)
-    ));
-    
-    // Shuffle and pick 2
-    const shuffled = otherCategories.sort(() => Math.random() - 0.5);
-    const selectedCategories = shuffled.slice(0, 2);
-    
-    // Get one hero image per category
-    return selectedCategories.map(cat => {
-      const project = allProjects.find(p => p.category === cat);
-      return project ? { category: cat, image: project.image } : null;
-    }).filter(Boolean);
-  };
-
-  const [categoryTeasers] = useState(getCategoryTeasers());
-
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (shareRef.current && !shareRef.current.contains(event.target as Node)) {
         setShowShareMenu(false);
       }
-      if (ctaRef.current && !ctaRef.current.contains(event.target as Node)) {
-        setShowCTAMenu(false);
-      }
-      // Close expanded card when clicking outside
-      if (isExpanded && cardRef.current && !cardRef.current.contains(event.target as Node)) {
-        setIsExpanded(false);
-      }
-    };
-
-    const handleScroll = () => {
-      if (isExpanded) {
-        setIsExpanded(false);
-        setShowShareMenu(false);
-        setShowCTAMenu(false);
-      }
     };
 
     document.addEventListener('mousedown', handleClickOutside);
-    window.addEventListener('scroll', handleScroll, true);
     
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
-      window.removeEventListener('scroll', handleScroll, true);
     };
-  }, [isExpanded]);
+  }, []);
 
   return (
-    <div ref={cardRef} className="relative group">
+    <div className="relative group">
       {/* Main Card */}
-      <div className={`bg-slate-800/90 backdrop-blur-sm rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 border border-slate-600 ${isExpanded ? 'ring-2 ring-yellow-400' : 'hover:shadow-3xl hover:-translate-y-2'}`}>
+      <div className="bg-slate-800/90 backdrop-blur-sm rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 border border-slate-600 hover:shadow-3xl hover:-translate-y-2">
         
-        {/* Expanded Panel - Appears Above Image */}
-        <div className={`transition-all duration-500 ease-in-out overflow-hidden ${isExpanded ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'}`}>
-          <div className="bg-gradient-to-br from-slate-900/95 to-slate-800/95 backdrop-blur-lg p-6 border-b border-slate-700/50 relative">
-            
-            {/* Close Button */}
-            <button
-              onClick={() => setIsExpanded(false)}
-              className="absolute top-4 right-4 w-8 h-8 bg-slate-700/50 hover:bg-red-500/80 rounded-full flex items-center justify-center transition-all duration-300 group/close"
-            >
-              <X size={18} className="text-white group-hover/close:rotate-90 transition-transform duration-300" />
-            </button>
-
-            {/* Service Description */}
-            <div className="pr-12 mb-6">
-              <h4 className="text-xl font-bold text-yellow-400 mb-3 flex items-center">
-                <span className="w-1 h-6 bg-gradient-to-b from-yellow-400 to-orange-500 mr-3 rounded-full"></span>
-                Service Details
-              </h4>
-              <p className="text-slate-200 leading-relaxed text-sm">
-                {fullDescription || description}
-              </p>
-            </div>
-
-            {/* Share Section */}
-            <div className="flex items-center justify-between mb-6 pb-6 border-b border-slate-700/50">
-              <span className="text-slate-400 text-sm font-medium">Share this service</span>
-              <div className="relative" ref={shareRef}>
-                <button
-                  onClick={() => setShowShareMenu(!showShareMenu)}
-                  className="w-10 h-10 bg-gradient-to-br from-slate-700 to-slate-600 hover:from-yellow-400 hover:to-orange-500 rounded-xl flex items-center justify-center transition-all duration-300 shadow-lg hover:shadow-yellow-400/20 group/share"
-                >
-                  <Share2 size={18} className="text-white group-hover/share:text-slate-900 transition-colors" />
-                </button>
-
-                {/* Share Popup Menu */}
-                {showShareMenu && (
-                  <div className="absolute right-0 top-12 w-56 bg-slate-800/95 backdrop-blur-xl rounded-xl shadow-2xl border border-slate-700/50 overflow-hidden z-50 animate-slideDown">
-                    {shareOptions.slice(0, -1).map((option, index) => (
-                      <button
-                        key={index}
-                        onClick={() => { option.action(); setShowShareMenu(false); }}
-                        className="w-full px-4 py-3 flex items-center space-x-3 hover:bg-slate-700/50 transition-all duration-200 text-left border-b border-slate-700/30"
-                      >
-                        <span className="text-yellow-400">{option.icon}</span>
-                        <span className="text-slate-200 text-sm font-medium">{option.name}</span>
-                      </button>
-                    ))}
-                    {/* Copy Link at Bottom */}
-                    <button
-                      onClick={() => { shareOptions[shareOptions.length - 1].action(); setShowShareMenu(false); }}
-                      className="w-full px-4 py-3 flex items-center space-x-3 bg-gradient-to-r from-yellow-400/10 to-orange-500/10 hover:from-yellow-400/20 hover:to-orange-500/20 transition-all duration-200 text-left border-t-2 border-yellow-400/30"
-                    >
-                      <span className="text-yellow-400">{shareOptions[shareOptions.length - 1].icon}</span>
-                      <span className="text-yellow-400 text-sm font-bold">{shareOptions[shareOptions.length - 1].name}</span>
-                    </button>
-                  </div>
-                )}
-              </div>
-            </div>
-
-            {/* CTA Button */}
-            <div className="relative" ref={ctaRef}>
-              <button
-                onClick={() => setShowCTAMenu(!showCTAMenu)}
-                className="w-full bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-slate-900 py-4 rounded-xl font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-yellow-400/30 transform hover:scale-[1.02] flex items-center justify-center space-x-2"
-              >
-                <span>Start Your Project</span>
-                <span className="text-xl">→</span>
-              </button>
-
-              {/* CTA Quick Action Menu */}
-              {showCTAMenu && (
-                <div className="absolute bottom-full left-0 right-0 mb-2 bg-slate-800/95 backdrop-blur-xl rounded-xl shadow-2xl border border-slate-700/50 overflow-hidden z-50 animate-slideUp">
-                  {ctaOptions.map((option, index) => (
-                    <button
-                      key={index}
-                      onClick={() => { option.action(); setShowCTAMenu(false); }}
-                      className="w-full px-4 py-3 flex items-center space-x-3 hover:bg-slate-700/50 transition-all duration-200 text-left border-b border-slate-700/30 last:border-b-0"
-                    >
-                      <span className="text-yellow-400">{typeof option.icon === 'string' ? option.icon : option.icon}</span>
-                      <span className="text-slate-200 text-sm font-medium">{option.name}</span>
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            {/* Category Teasers - Recommendation Section */}
-            {categoryTeasers.length > 0 && (
-              <div className="mt-6 pt-6 border-t border-slate-700/50">
-                <h5 className="text-sm font-medium text-slate-400 mb-4 flex items-center">
-                  <span className="w-1 h-4 bg-gradient-to-b from-yellow-400 to-orange-500 mr-2 rounded-full"></span>
-                  Explore More Categories
-                </h5>
-                <div className="grid grid-cols-2 gap-4">
-                  {categoryTeasers.map((teaser: any, idx: number) => (
-                    <button
-                      key={idx}
-                      onClick={() => onCategoryClick && onCategoryClick(teaser.category)}
-                      className="relative h-32 rounded-xl overflow-hidden group cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
-                    >
-                      {/* Category Image */}
-                      <img 
-                        src={teaser.image} 
-                        alt={teaser.category}
-                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                      />
-                      
-                      {/* Dark Overlay */}
-                      <div className="absolute inset-0 bg-slate-900/70 group-hover:bg-slate-900/50 transition-all duration-300"></div>
-                      
-                      {/* Vertical Category Name */}
-                      <div className="absolute inset-0 flex items-center justify-start pl-3">
-                        <div 
-                          className="text-white font-bold text-sm tracking-wider opacity-60 group-hover:opacity-100 transition-opacity duration-300"
-                          style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}
-                        >
-                          {teaser.category}
-                        </div>
-                      </div>
-                      
-                      {/* Hover Arrow */}
-                      <div className="absolute top-2 right-2 w-6 h-6 bg-yellow-400/0 group-hover:bg-yellow-400 rounded-full flex items-center justify-center transition-all duration-300">
-                        <span className="text-slate-900 text-xs opacity-0 group-hover:opacity-100 transition-opacity">→</span>
-                      </div>
-                    </button>
-                  ))}
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
-
         {/* Project Image */}
         <div className="relative h-64 overflow-hidden">
           <img 
             src={image} 
             alt={title} 
-            className={`w-full h-full object-cover transition-transform duration-500 ${isExpanded ? '' : 'group-hover:scale-110'}`}
+            className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent"></div>
         </div>
@@ -373,12 +194,45 @@ const ExpandableServiceCard = ({ title, category, location, description, image, 
           <p className="text-slate-300 text-sm leading-relaxed mb-4 line-clamp-2">
             {description}
           </p>
-          <button 
-            onClick={() => setIsExpanded(!isExpanded)}
-            className="w-full bg-gradient-to-r from-slate-700 to-slate-600 text-white py-2 rounded-xl font-medium hover:from-yellow-400 hover:to-orange-500 hover:text-slate-900 transition-all duration-300"
-          >
-            {isExpanded ? 'Close Details' : 'View Details'}
-          </button>
+          <div className="flex items-center gap-3">
+            <button 
+              className="flex-1 bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-slate-900 py-2 rounded-xl font-bold transition-all duration-300"
+            >
+              Start Your Project
+            </button>
+            <div className="relative" ref={shareRef}>
+              <button
+                onClick={() => setShowShareMenu(!showShareMenu)}
+                className="w-10 h-10 bg-gradient-to-br from-slate-700 to-slate-600 hover:from-yellow-400 hover:to-orange-500 rounded-xl flex items-center justify-center transition-all duration-300 shadow-lg hover:shadow-yellow-400/20 group/share"
+              >
+                <Share2 size={18} className="text-white group-hover/share:text-slate-900 transition-colors" />
+              </button>
+
+              {/* Share Popup Menu */}
+              {showShareMenu && (
+                <div className="absolute right-0 bottom-12 w-56 bg-slate-800/95 backdrop-blur-xl rounded-xl shadow-2xl border border-slate-700/50 overflow-hidden z-50 animate-slideUp">
+                  {shareOptions.slice(0, -1).map((option, index) => (
+                    <button
+                      key={index}
+                      onClick={() => { option.action(); setShowShareMenu(false); }}
+                      className="w-full px-4 py-3 flex items-center space-x-3 hover:bg-slate-700/50 transition-all duration-200 text-left border-b border-slate-700/30"
+                    >
+                      <span className="text-yellow-400">{option.icon}</span>
+                      <span className="text-slate-200 text-sm font-medium">{option.name}</span>
+                    </button>
+                  ))}
+                  {/* Copy Link at Bottom */}
+                  <button
+                    onClick={() => { shareOptions[shareOptions.length - 1].action(); setShowShareMenu(false); }}
+                    className="w-full px-4 py-3 flex items-center space-x-3 bg-gradient-to-r from-yellow-400/10 to-orange-500/10 hover:from-yellow-400/20 hover:to-orange-500/20 transition-all duration-200 text-left border-t-2 border-yellow-400/30"
+                  >
+                    <span className="text-yellow-400">{shareOptions[shareOptions.length - 1].icon}</span>
+                    <span className="text-yellow-400 text-sm font-bold">{shareOptions[shareOptions.length - 1].name}</span>
+                  </button>
+                </div>
+              )}
+            </div>
+          </div>
         </div>
       </div>
     </div>
