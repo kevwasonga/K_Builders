@@ -57,15 +57,15 @@ import wardrobe12 from '../images/wardrobes/modern-spaciours-closet-wardrobe.jpe
 import office5 from '../images/office_partitions/elegant-glassandaluminium-office-partitioning.jpeg';
 import aluminium4 from '../images/aluminium_glass/aluminiumandglass-sliding-window-view-from-inhouse.jpeg';
 import aluminium5 from '../images/aluminium_glass/aluminiumandglassdoorfor-cubicle-shower.png';
-import glass5 from '../images/glasswork/all-glass-cubicleshower2.jpeg';
-import glass6 from '../images/glasswork/frameless-glassdoor2.jpeg';
+
+import glass6 from '../images/glasswork/frameless-glassdoor2.png';
 import glass7 from '../images/glasswork/glasswork_curtainwalling2.jpeg';
 import glass8 from '../images/glasswork/glasswork_modern_windowpane.jpeg';
 import glass9 from '../images/glasswork/glass-partitioned-bathroom-space.jpeg';
 import glass10 from '../images/glasswork/tinted_glass_shower.jpg';
 import glass11 from '../images/glasswork/glasswork_sliding_window1.jpeg';
 import glass12 from '../images/glasswork/glasswork_curtainwalling2.jpeg';
-import glass13 from '../images/glasswork/frameless-glassdoor2.jpeg';
+import glass13 from '../images/glasswork/frameless-glassdoor2.png';
 import glass14 from '../images/glasswork/all-glass-cubicleshower2.jpeg';
 import glass15 from '../images/glasswork/aluminiumandglass-sliding-window-view-from-inhouse.jpeg';
 import glass16 from '../images/glasswork/aluminiumandglassdoorfor-cubicle-shower.png';
@@ -466,13 +466,7 @@ function Projects() {
       description: 'Premium aluminium and glass shower door installations for modern bathrooms',
       image: aluminium5
     },
-    {
-      title: 'Tinted Glass Shower Cubicles',
-      category: 'Glasswork',
-      location: 'Eldoret, Kenya',
-      description: 'Stylish tinted glass shower cubicles for privacy and modern aesthetics',
-      image: glass5
-    },
+
     {
       title: 'Frameless Glass Door Systems',
       category: 'Glasswork',
