@@ -686,21 +686,43 @@ function Projects() {
 
         {/* Controls */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-12 space-y-4 md:space-y-0">
-          {/* Filter Buttons */}
-          <div className="flex flex-wrap gap-2">
-            {categories.map((category) => (
-              <button
-                key={category}
-                onClick={() => setActiveFilter(category)}
-                className={`px-4 py-2 rounded-xl font-medium transition-all duration-300 ${
-                  activeFilter === category
-                    ? 'bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 shadow-lg'
-                    : 'bg-white text-slate-600 hover:bg-slate-50 border border-slate-200 shadow-sm'
-                }`}
-              >
-                {category}
-              </button>
-            ))}
+          {/* Filter Buttons with Navigation */}
+          <div className="flex items-center gap-3">
+            <button
+              onClick={() => {
+                const currentIdx = categories.indexOf(activeFilter);
+                const prevIdx = (currentIdx - 1 + categories.length) % categories.length;
+                setActiveFilter(categories[prevIdx]);
+              }}
+              className="w-10 h-10 bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 rounded-full flex items-center justify-center hover:from-yellow-500 hover:to-orange-600 transition-all duration-300 shadow-lg"
+            >
+              <ChevronLeft size={20} />
+            </button>
+            <div className="flex flex-wrap gap-2">
+              {categories.map((category) => (
+                <button
+                  key={category}
+                  onClick={() => setActiveFilter(category)}
+                  className={`px-4 py-2 rounded-xl font-medium transition-all duration-300 ${
+                    activeFilter === category
+                      ? 'bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 shadow-lg'
+                      : 'bg-white text-slate-600 hover:bg-slate-50 border border-slate-200 shadow-sm'
+                  }`}
+                >
+                  {category}
+                </button>
+              ))}
+            </div>
+            <button
+              onClick={() => {
+                const currentIdx = categories.indexOf(activeFilter);
+                const nextIdx = (currentIdx + 1) % categories.length;
+                setActiveFilter(categories[nextIdx]);
+              }}
+              className="w-10 h-10 bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 rounded-full flex items-center justify-center hover:from-yellow-500 hover:to-orange-600 transition-all duration-300 shadow-lg"
+            >
+              <ChevronRight size={20} />
+            </button>
           </div>
 
           {/* View Mode Toggle */}
