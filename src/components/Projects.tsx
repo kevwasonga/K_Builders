@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, Grid, List, MapPin } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Grid, List } from 'lucide-react';
 import TestimonialsSlider from './TestimonialsSlider';
+import ExpandableServiceCard from './ExpandableServiceCard';
 import tvNiche1 from '../images/tv_niches/tv1.jpeg';
 import tvNiche2 from '../images/tv_niches/tv2.jpeg';
 import tvNiche3 from '../images/tv_niches/tv3.jpeg';
@@ -23,9 +24,9 @@ import office1 from '../images/office_partitions/office1.jpeg';
 import office2 from '../images/office_partitions/office2.jpeg';
 import office3 from '../images/office_partitions/office3.jpeg';
 import office4 from '../images/office_partitions/office4.jpeg';
-import aluminium1 from '../images/aluminium_glass/aluminiumworks.jpeg';
-import aluminium2 from '../images/aluminium_glass/aluminiumworks2.jpeg';
-import aluminium3 from '../images/aluminium_glass/aluminiumworks3.jpeg';
+import aluminium1 from '../images/aluminium_glass/sliding_glass_door.png';
+import aluminium2 from '../images/aluminium_glass/aluminiumworks2.png';
+import aluminium3 from '../images/aluminium_glass/aluminiumworks3.jpg';
 import ceiling1 from '../images/ceiling_systems/acousticceiling1.jpeg';
 import ceiling2 from '../images/ceiling_systems/acousticceiling2.jpeg';
 import ceiling3 from '../images/ceiling_systems/gypsum_ceiling_project.jpg';
@@ -55,7 +56,7 @@ import wardrobe11 from '../images/wardrobes/walkin-closet-wardrobe.jpeg';
 import wardrobe12 from '../images/wardrobes/modern-spaciours-closet-wardrobe.jpeg';
 import office5 from '../images/office_partitions/elegant-glassandaluminium-office-partitioning.jpeg';
 import aluminium4 from '../images/aluminium_glass/aluminiumandglass-sliding-window-view-from-inhouse.jpeg';
-import aluminium5 from '../images/aluminium_glass/aluminiumandglassdoorfor-cubicle-shower.jpeg';
+import aluminium5 from '../images/aluminium_glass/aluminiumandglassdoorfor-cubicle-shower.png';
 import glass5 from '../images/glasswork/all-glass-cubicleshower2.jpeg';
 import glass6 from '../images/glasswork/frameless-glassdoor2.jpeg';
 import glass7 from '../images/glasswork/glasswork_curtainwalling2.jpeg';
@@ -67,7 +68,7 @@ import glass12 from '../images/glasswork/glasswork_curtainwalling2.jpeg';
 import glass13 from '../images/glasswork/frameless-glassdoor2.jpeg';
 import glass14 from '../images/glasswork/all-glass-cubicleshower2.jpeg';
 import glass15 from '../images/glasswork/aluminiumandglass-sliding-window-view-from-inhouse.jpeg';
-import glass16 from '../images/glasswork/aluminiumandglassdoorfor-cubicle-shower.jpeg';
+import glass16 from '../images/glasswork/aluminiumandglassdoorfor-cubicle-shower.png';
 import glass17 from '../images/glasswork/pagola-glass-roof-installation-procedue.jpeg';
 import glass18 from '../images/glasswork/pagola-glass-roof(bluishglass).jpeg';
 import aluminium6 from '../images/glasswork/elegant-glassandaluminium-office-partitioning.jpeg';
@@ -139,7 +140,7 @@ function Projects() {
       title: 'Aluminium & Glass Works',
       category: 'Aluminium & Glass Works',
       location: 'Eldoret, Kenya',
-      description: 'Aluminium Doors & Windows • Frameless Shower Cubicles • Folding & Sliding Door Installation',
+      description: 'Premium aluminium doors and windows •  Elegant frameless glass partitions • Professional sliding installations',
       image: aluminium1
     },
     {
@@ -210,7 +211,7 @@ function Projects() {
       title: 'Aluminium Window Systems',
       category: 'Aluminium & Glass Works',
       location: 'Nairobi, Kenya',
-      description: 'Energy-efficient aluminium windows with double glazing and modern hardware',
+      description: 'Energy-efficient aluminium office dividers with double-glazed glass and sleek, modern hardware',
       image: aluminium2
     },
     {
@@ -732,40 +733,15 @@ function Projects() {
           /* Grid View */
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredProjects.map((project, index) => (
-              <div 
-                key={index} 
-                className="group bg-slate-800/90 backdrop-blur-sm rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2 border border-slate-600"
-              >
-                {/* Project Image */}
-                <div className="relative h-64 overflow-hidden">
-                  <img 
-                    src={project.image} 
-                    alt={project.title} 
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" 
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent"></div>
-                </div>
-
-                {/* Project Info */}
-                <div className="p-6">
-                  <div className="mb-2">
-                    <span className="text-sm text-yellow-400 font-medium">{project.category}</span>
-                  </div>
-                  <h3 className="text-xl font-bold text-white mb-2 group-hover:text-yellow-400 transition-colors duration-300">
-                    {project.title}
-                  </h3>
-                  <div className="flex items-center text-slate-400 text-sm mb-3">
-                    <MapPin size={16} className="mr-1" />
-                    {project.location}
-                  </div>
-                  <p className="text-slate-300 text-sm leading-relaxed mb-4">
-                    {project.description}
-                  </p>
-                  <button className="w-full bg-gradient-to-r from-slate-700 to-slate-600 text-white py-2 rounded-xl font-medium hover:from-yellow-400 hover:to-orange-500 hover:text-slate-900 transition-all duration-300">
-                    View Details
-                  </button>
-                </div>
-              </div>
+              <ExpandableServiceCard
+                key={index}
+                title={project.title}
+                category={project.category}
+                location={project.location}
+                description={project.description}
+                image={project.image}
+                fullDescription={project.description}
+              />
             ))}
           </div>
         ) : (
