@@ -14,11 +14,10 @@ const ExpandableServiceCard = ({ title, category, location, description, image, 
   const [showShareMenu, setShowShareMenu] = useState(false);
   const shareRef = useRef<HTMLDivElement>(null);
 
-  const websiteUrl = 'https://kevwasonga.github.io/K_Builders/';
-  const fullImageUrl = `${websiteUrl}${image.startsWith('/') ? image.slice(1) : image}`;
-  const serviceMessage = `CLAUSE INTERIOR FITS%0A%0A${title}%0A%0A${description}%0A%0AView this project: ${fullImageUrl}`;
+  const websiteUrl = 'https://spontaneous-rabanadas-707a86.netlify.app/';
+  const serviceMessage = `CLAUSE INTERIOR FITS%0A%0A${title}%0A%0A${description}%0A%0AVisit: ${websiteUrl}`;
   const encodedMessage = serviceMessage;
-  const shareUrl = `${websiteUrl}#${encodeURIComponent(title)}`;
+  const shareUrl = websiteUrl;
 
   const shareOptions = [
     { 
@@ -88,7 +87,10 @@ const ExpandableServiceCard = ({ title, category, location, description, image, 
           <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
         </svg>
       ), 
-      action: () => { navigator.clipboard.writeText(shareUrl); alert('Website link copied to clipboard!'); } 
+      action: () => { 
+        navigator.clipboard.writeText(`CLAUSE INTERIOR FITS\n\n${title}\n\n${description}\n\nVisit: ${shareUrl}`);
+        alert('Message copied! Right-click the image above and save it, then attach it when sharing.');
+      } 
     }
   ];
 
