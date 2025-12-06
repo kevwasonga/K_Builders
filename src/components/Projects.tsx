@@ -62,7 +62,7 @@ import glass6 from '../images/glasswork/frameless-glassdoor2.jpeg';
 import glass7 from '../images/glasswork/glasswork_curtainwalling2.jpeg';
 import glass8 from '../images/glasswork/glasswork_modern_windowpane.jpeg';
 import glass9 from '../images/glasswork/glass-partitioned-bathroom-space.jpeg';
-import glass10 from '../images/glasswork/all-glass(tainted-glass)-cubicleshower.jpeg.jpeg';
+import glass10 from '../images/glasswork/tinted_glass_shower.jpg';
 import glass11 from '../images/glasswork/glasswork_sliding_window1.jpeg';
 import glass12 from '../images/glasswork/glasswork_curtainwalling2.jpeg';
 import glass13 from '../images/glasswork/frameless-glassdoor2.jpeg';
@@ -523,10 +523,10 @@ function Projects() {
       image: makeover3
     },
     {
-      title: 'Tainted Glass Shower Systems',
+      title: 'Tinted Glass Shower Cubicles',
       category: 'Glasswork',
       location: 'Mombasa, Kenya',
-      description: 'Premium tainted glass shower cubicles for enhanced privacy and style',
+      description: 'Stylish tinted glass shower cubicles for privacy and modern aesthetics',
       image: glass10
     },
     {
