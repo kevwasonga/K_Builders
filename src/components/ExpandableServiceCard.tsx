@@ -16,6 +16,7 @@ const ExpandableServiceCard = ({ title, category, location, description, image, 
   const [showCTAMenu, setShowCTAMenu] = useState(false);
   const shareRef = useRef<HTMLDivElement>(null);
   const ctaRef = useRef<HTMLDivElement>(null);
+  const cardRef = useRef<HTMLDivElement>(null);
 
   const serviceMessage = `Hello! I'm interested in ${title}. Please share more details and pricing.`;
   const encodedMessage = encodeURIComponent(serviceMessage);
@@ -108,14 +109,31 @@ const ExpandableServiceCard = ({ title, category, location, description, image, 
       if (ctaRef.current && !ctaRef.current.contains(event.target as Node)) {
         setShowCTAMenu(false);
       }
+      // Close expanded card when clicking outside
+      if (isExpanded && cardRef.current && !cardRef.current.contains(event.target as Node)) {
+        setIsExpanded(false);
+      }
+    };
+
+    const handleScroll = () => {
+      if (isExpanded) {
+        setIsExpanded(false);
+        setShowShareMenu(false);
+        setShowCTAMenu(false);
+      }
     };
 
     document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, []);
+    window.addEventListener('scroll', handleScroll, true);
+    
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      window.removeEventListener('scroll', handleScroll, true);
+    };
+  }, [isExpanded]);
 
   return (
-    <div className="relative group">
+    <div ref={cardRef} className="relative group">
       {/* Main Card */}
       <div className={`bg-slate-800/90 backdrop-blur-sm rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 border border-slate-600 ${isExpanded ? 'ring-2 ring-yellow-400' : 'hover:shadow-3xl hover:-translate-y-2'}`}>
         
