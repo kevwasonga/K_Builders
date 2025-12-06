@@ -741,6 +741,8 @@ function Projects() {
                 description={project.description}
                 image={project.image}
                 fullDescription={project.description}
+                allProjects={projects}
+                onCategoryClick={(cat) => setActiveFilter(cat)}
               />
             ))}
           </div>

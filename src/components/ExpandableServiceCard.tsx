@@ -8,9 +8,11 @@ interface ServiceCardProps {
   description: string;
   image: string;
   fullDescription?: string;
+  allProjects?: Array<{title: string; category: string; image: string}>;
+  onCategoryClick?: (category: string) => void;
 }
 
-const ExpandableServiceCard = ({ title, category, location, description, image, fullDescription }: ServiceCardProps) => {
+const ExpandableServiceCard = ({ title, category, location, description, image, fullDescription, allProjects = [], onCategoryClick }: ServiceCardProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [showShareMenu, setShowShareMenu] = useState(false);
   const [showCTAMenu, setShowCTAMenu] = useState(false);
@@ -153,6 +155,30 @@ const ExpandableServiceCard = ({ title, category, location, description, image, 
     }
   ];
 
+  // Get 2 random category teasers
+  const getCategoryTeasers = () => {
+    if (!allProjects.length) return [];
+    
+    // Get unique categories excluding current one
+    const otherCategories = Array.from(new Set(
+      allProjects
+        .filter(p => p.category !== category)
+        .map(p => p.category)
+    ));
+    
+    // Shuffle and pick 2
+    const shuffled = otherCategories.sort(() => Math.random() - 0.5);
+    const selectedCategories = shuffled.slice(0, 2);
+    
+    // Get one hero image per category
+    return selectedCategories.map(cat => {
+      const project = allProjects.find(p => p.category === cat);
+      return project ? { category: cat, image: project.image } : null;
+    }).filter(Boolean);
+  };
+
+  const [categoryTeasers] = useState(getCategoryTeasers());
+
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (shareRef.current && !shareRef.current.contains(event.target as Node)) {
@@ -275,6 +301,50 @@ const ExpandableServiceCard = ({ title, category, location, description, image, 
                 </div>
               )}
             </div>
+
+            {/* Category Teasers - Recommendation Section */}
+            {categoryTeasers.length > 0 && (
+              <div className="mt-6 pt-6 border-t border-slate-700/50">
+                <h5 className="text-sm font-medium text-slate-400 mb-4 flex items-center">
+                  <span className="w-1 h-4 bg-gradient-to-b from-yellow-400 to-orange-500 mr-2 rounded-full"></span>
+                  Explore More Categories
+                </h5>
+                <div className="grid grid-cols-2 gap-4">
+                  {categoryTeasers.map((teaser: any, idx: number) => (
+                    <button
+                      key={idx}
+                      onClick={() => onCategoryClick && onCategoryClick(teaser.category)}
+                      className="relative h-32 rounded-xl overflow-hidden group cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
+                    >
+                      {/* Category Image */}
+                      <img 
+                        src={teaser.image} 
+                        alt={teaser.category}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      />
+                      
+                      {/* Dark Overlay */}
+                      <div className="absolute inset-0 bg-slate-900/70 group-hover:bg-slate-900/50 transition-all duration-300"></div>
+                      
+                      {/* Vertical Category Name */}
+                      <div className="absolute inset-0 flex items-center justify-start pl-3">
+                        <div 
+                          className="text-white font-bold text-sm tracking-wider opacity-60 group-hover:opacity-100 transition-opacity duration-300"
+                          style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}
+                        >
+                          {teaser.category}
+                        </div>
+                      </div>
+                      
+                      {/* Hover Arrow */}
+                      <div className="absolute top-2 right-2 w-6 h-6 bg-yellow-400/0 group-hover:bg-yellow-400 rounded-full flex items-center justify-center transition-all duration-300">
+                        <span className="text-slate-900 text-xs opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+                      </div>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         </div>
 
