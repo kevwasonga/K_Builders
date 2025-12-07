@@ -679,14 +679,14 @@ function Projects() {
         </div>
 
         {/* Controls */}
-        <div className="flex flex-col md:flex-row justify-between items-center mb-12 space-y-4 md:space-y-0">
+        <div className="flex flex-col lg:flex-row justify-between items-center mb-12 gap-6">
           {/* Filter Buttons */}
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap justify-center gap-2 w-full lg:w-auto">
             {categories.map((category) => (
               <button
                 key={category}
                 onClick={() => setActiveFilter(category)}
-                className={`px-4 py-2 rounded-xl font-medium transition-all duration-300 ${
+                className={`px-3 py-2 text-sm sm:px-4 sm:text-base rounded-xl font-medium transition-all duration-300 whitespace-nowrap ${
                   activeFilter === category
                     ? 'bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 shadow-lg'
                     : 'bg-white text-slate-600 hover:bg-slate-50 border border-slate-200 shadow-sm'
