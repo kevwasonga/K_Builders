@@ -79,20 +79,17 @@ function Hero() {
           <div className="text-center">
             <div className={`transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
 
-              {/* Text Content with Background */}
-              <div className="bg-slate-900/30 backdrop-blur-sm rounded-3xl p-6 sm:p-8 md:p-10 mb-8">
-                <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-bold text-white mb-6 sm:mb-8 leading-tight">
-                  Design That
-                  <span className="block bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
-                    Transforms
-                  </span>
-                  Lives
-                </h1>
-                
-                <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-slate-200 leading-relaxed max-w-4xl mx-auto">
-                  Creating exceptional spaces with innovative design, quality craftsmanship, and attention to every detail across Kenya.
-                </p>
-              </div>
+              <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-bold text-white mb-6 sm:mb-8 leading-tight">
+                Design That
+                <span className="block bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
+                  Transforms
+                </span>
+                Lives
+              </h1>
+              
+              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-slate-200 mb-12 leading-relaxed max-w-4xl mx-auto">
+                Creating exceptional spaces with innovative design, quality craftsmanship, and attention to every detail across Kenya.
+              </p>
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
