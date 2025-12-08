@@ -43,7 +43,7 @@ function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-x-hidden">
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ease-out ${
         isScrolled 
           ? 'bg-white/90 backdrop-blur-lg shadow-2xl border-b border-slate-200/50 transform translate-y-0' 
