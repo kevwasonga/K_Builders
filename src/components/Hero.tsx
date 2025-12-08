@@ -149,8 +149,8 @@ function Hero() {
             key={index}
             onClick={() => setCurrentImageIndex(index)}
             className={`w-4 h-4 rounded-full transition-all cursor-pointer hover:cursor-pointer ${
-              index === currentImageIndex 
-                ? 'bg-yellow-400 scale-125 shadow-lg' 
+              currentImageIndex % 2 === index 
+                ? 'bg-yellow-400 scale-125 shadow-lg shadow-yellow-400/50' 
                 : 'bg-white/60 hover:bg-white/80 hover:scale-110'
             }`}
             aria-label={`View hero image ${index + 1}`}
