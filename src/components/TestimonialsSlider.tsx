@@ -17,50 +17,50 @@ function TestimonialsSlider() {
   const testimonials: Testimonial[] = [
     {
       id: "1",
-      name: "James Mwangi",
-      role: "CEO",
-      company: "Mwangi Holdings Ltd",
-      content: "We've worked with several construction companies over the years, but Clause Interior Fits stands out for their innovative approach and unwavering commitment to excellence. They delivered our project ahead of schedule. Outstanding work!",
+      name: "Refine Homes",
+      role: "Client",
+      company: "Nairobi",
+      content: "Clause Interior Fits delivered a beautiful modern redesign for our residential units. Their creativity and attention to detail really stood out, and the workmanship was consistently top-notch. We're grateful for their reliability and the quality of the interior design work they provided here in Nairobi.",
       rating: 5
     },
     {
       id: "2",
-      name: "Sarah Wanjiku",
-      role: "Homeowner",
-      company: "Private Client",
-      content: "Clause Interior Fits transformed our dream home into reality. Their attention to detail, professionalism, and commitment to quality exceeded all our expectations. The project was completed on time and within budget.",
+      name: "Ryder's Enterprise",
+      role: "Client",
+      company: "Kisumu",
+      content: "Working with Clause Interior Fits truly changed our space. They gave us a clean, modern look that fits our brand perfectly, and the whole team was professional and easy to work with. If you're looking for dependable commercial interior designers in Kisumu, they're an excellent choice.",
       rating: 5
     },
     {
       id: "3",
-      name: "Dr. Grace Mutua",
-      role: "Medical Director",
-      company: "Mutua Medical Centre",
-      content: "Building a medical facility requires precision and understanding of specialized requirements. Clause Interior Fits demonstrated exceptional expertise in all these areas. Our new medical center is not just beautiful but also highly functional.",
+      name: "Nebraska Investment",
+      role: "Client",
+      company: "Siaya",
+      content: "We hired Clause Interior Fits for a full interior revamp, and they went above what we expected. The layout, finishes, and overall design completely transformed our property. Their interior renovation services were smooth and professional from beginning to end.",
       rating: 5
     },
     {
       id: "4",
-      name: "Peter Ochieng",
-      role: "Property Developer",
-      company: "Ochieng Properties",
-      content: "As a property developer, I've partnered with Clause Interior Fits on multiple projects. Their consistency in delivering high-quality work, maintaining timelines, and managing costs effectively has made them our go-to construction partner.",
+      name: "InforAfrica Group",
+      role: "Client",
+      company: "Nairobi",
+      content: "Clause Interior Fits gave our office a modern, professional feel that reflects our company well. The new design has boosted both functionality and comfort for the entire team. For anyone needing trusted office interior fit-outs in Nairobi, we definitely recommend them.",
       rating: 5
     },
     {
       id: "5",
-      name: "Mary Njeri",
-      role: "Restaurant Owner",
-      company: "Njeri's Kitchen",
-      content: "Renovating our restaurant while keeping it operational was a complex challenge. Clause Interior Fits managed the project brilliantly, working around our business hours and ensuring minimal disruption to our customers.",
+      name: "Pabari Enterprise",
+      role: "Client",
+      company: "Kisumu",
+      content: "Clause Interior Fits upgraded our premises with a fresh, modern look that really makes a difference. Their workmanship was clean and detailed, and the whole project was handled professionally. A great option for businesses seeking modern interior improvements in Kisumu.",
       rating: 5
     },
     {
       id: "6",
-      name: "Robert Kimani",
-      role: "County Engineer",
-      company: "Kiambu County Government",
-      content: "Clause Interior Fits' work on our county hospital project was exemplary. They navigated complex regulatory requirements and delivered a world-class facility that serves our community with pride.",
+      name: "Gohar Glazier",
+      role: "Client",
+      company: "Kisumu",
+      content: "We're very pleased with the interior design work from Clause Interior Fits. They managed to combine practicality with a modern aesthetic in a way that truly elevated our workspace. Their consistency and expertise make them one of the best teams we've worked with in Kisumu.",
       rating: 5
     }
   ];
