@@ -136,13 +136,7 @@ function Projects() {
       description: 'Luxury marble surfaces for kitchens and bathrooms with professional installation',
       image: marble2
     },
-    {
-      title: 'Aluminium & Glass Works',
-      category: 'Aluminium & Glass Works',
-      location: 'Eldoret, Kenya',
-      description: 'Premium aluminium doors and windows •  Elegant frameless glass partitions • Professional sliding installations',
-      image: aluminium1
-    },
+
     {
       title: 'Modern Kitchen Design',
       category: 'Premium Kitchen Cabinets',
@@ -207,13 +201,7 @@ function Projects() {
       description: 'Complete entertainment wall solutions with integrated lighting and storage',
       image: tvNiche3
     },
-    {
-      title: 'Aluminium Window Systems',
-      category: 'Aluminium & Glass Works',
-      location: 'Nairobi, Kenya',
-      description: 'Energy-efficient aluminium office dividers with double-glazed glass and sleek, modern hardware',
-      image: aluminium2
-    },
+
     {
       title: 'Sliding Door Wardrobes',
       category: 'Wardrobes & Closet Systems',
@@ -347,13 +335,7 @@ function Projects() {
       description: 'Premium frameless glass shower installations • Tempered safety glass • Modern bathroom solutions',
       image: glass1
     },
-    {
-      title: 'Frameless Glass Doors',
-      category: 'Glasswork',
-      location: 'Westlands, Nairobi',
-      description: 'Clear frameless glass door systems for modern architectural designs',
-      image: glass2
-    },
+
     {
       title: 'Glass Curtain Walling',
       category: 'Glasswork',
@@ -460,10 +442,10 @@ function Projects() {
       image: wardrobe12
     },
     {
-      title: 'Aluminium Shower Doors',
-      category: 'Aluminium & Glass Works',
+      title: 'Frameless Glass Cubicle Shower',
+      category: 'Glasswork',
       location: 'Mombasa, Kenya',
-      description: 'Premium aluminium and glass shower door installations for modern bathrooms',
+      description: 'Premium frameless glass cubicle shower installations for modern bathrooms',
       image: aluminium5
     },
 
@@ -481,20 +463,8 @@ function Projects() {
       description: 'Commercial grade glass curtain wall installations for office buildings',
       image: glass7
     },
-    {
-      title: 'Modern Glass Window Panes',
-      category: 'Glasswork',
-      location: 'Westlands, Nairobi',
-      description: 'Contemporary glass window pane installations with energy efficiency',
-      image: glass8
-    },
-    {
-      title: 'Glass Partitioned Bathrooms',
-      category: 'Glasswork',
-      location: 'CBD, Nairobi',
-      description: 'Elegant glass partition systems for modern bathroom designs',
-      image: glass9
-    },
+
+
     {
       title: 'Complete House Makeover',
       category: 'House Makeover',
@@ -523,13 +493,7 @@ function Projects() {
       description: 'Stylish tinted glass shower cubicles for privacy and modern aesthetics',
       image: glass10
     },
-    {
-      title: 'Glass Sliding Window Systems',
-      category: 'Glasswork',
-      location: 'Thika, Kenya',
-      description: 'Modern glass sliding window installations for residential and commercial use',
-      image: glass11
-    },
+
     {
       title: 'Aluminium Office Partitions',
       category: 'Aluminium & Glass Works',
