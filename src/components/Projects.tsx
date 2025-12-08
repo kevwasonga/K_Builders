@@ -336,13 +336,7 @@ function Projects() {
       image: glass1
     },
 
-    {
-      title: 'Glass Curtain Walling',
-      category: 'Glasswork',
-      location: 'CBD, Nairobi',
-      description: 'Commercial glass curtain wall systems for office buildings and facades',
-      image: glass3
-    },
+
     {
       title: 'Glass Roof Installations',
       category: 'Glasswork',
