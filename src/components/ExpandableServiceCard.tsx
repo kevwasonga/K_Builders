@@ -14,7 +14,7 @@ const ExpandableServiceCard = ({ title, category, location, description, image, 
   const [showShareMenu, setShowShareMenu] = useState(false);
   const shareRef = useRef<HTMLDivElement>(null);
 
-  const websiteUrl = 'https://spontaneous-rabanadas-707a86.netlify.app/';
+  const websiteUrl = 'https://kevwasonga.github.io/K_Builders/';
   const serviceMessage = `CLAUSE INTERIOR FITS%0A%0A${title}%0A%0A${description}%0A%0AVisit: ${websiteUrl}`;
   const encodedMessage = serviceMessage;
   const shareUrl = websiteUrl;
