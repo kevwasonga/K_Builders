@@ -144,7 +144,7 @@ function Hero() {
 
       {/* Image Navigation Dots */}
       <div className="absolute bottom-20 right-8 flex flex-col space-y-3">
-        {heroImages.map((_, index) => (
+        {[0, 1].map((index) => (
           <button
             key={index}
             onClick={() => setCurrentImageIndex(index)}
