@@ -64,11 +64,11 @@ import glass8 from '../images/glasswork/glasswork_modern_windowpane.jpeg';
 import glass9 from '../images/glasswork/glass-partitioned-bathroom-space.jpeg';
 import glass10 from '../images/glasswork/tinted_glass_shower.jpg';
 import glass11 from '../images/glasswork/glasswork_sliding_window1.jpeg';
-import glass12 from '../images/glasswork/glasswork_curtainwalling2.jpeg';
+
 import glass13 from '../images/glasswork/frameless-glassdoor2.png';
 import glass14 from '../images/glasswork/all-glass-cubicleshower2.jpeg';
 import glass15 from '../images/glasswork/aluminiumandglass-sliding-window-view-from-inhouse.jpeg';
-import glass16 from '../images/glasswork/aluminiumandglassdoorfor-cubicle-shower.png';
+
 import glass17 from '../images/glasswork/pagola-glass-roof-installation-procedue.jpeg';
 import glass18 from '../images/glasswork/pagola-glass-roof(bluishglass).jpeg';
 import aluminium6 from '../images/glasswork/elegant-glassandaluminium-office-partitioning.jpeg';
@@ -259,8 +259,8 @@ function Projects() {
       image: steel4
     },
     {
-      title: 'Glass Door Installation',
-      category: 'Aluminium & Glass Works',
+      title: 'Sliding Glass Door',
+      category: 'Aluminium Works',
       location: 'Karen, Kenya',
       description: 'Frameless glass doors and sliding systems for modern architectural designs',
       image: aluminium3
@@ -374,7 +374,7 @@ function Projects() {
     },
     {
       title: 'Sliding Window Systems',
-      category: 'Aluminium & Glass Works',
+      category: 'Aluminium Works',
       location: 'Karen, Kenya',
       description: 'Premium aluminium and glass sliding window installations with interior views',
       image: aluminium4
@@ -490,18 +490,12 @@ function Projects() {
 
     {
       title: 'Aluminium Office Partitions',
-      category: 'Aluminium & Glass Works',
+      category: 'Aluminium Works',
       location: 'CBD, Nairobi',
       description: 'Professional aluminium and glass office partition systems for corporate environments',
       image: aluminium6
     },
-    {
-      title: 'Glass Curtain Wall Advanced',
-      category: 'Glasswork',
-      location: 'Westlands, Nairobi',
-      description: 'Advanced glass curtain wall systems for high-rise buildings and commercial facades',
-      image: glass12
-    },
+
     {
       title: 'Frameless Glass Door Premium',
       category: 'Glasswork',
@@ -523,13 +517,7 @@ function Projects() {
       description: 'Premium sliding window glass installations with interior view optimization',
       image: glass15
     },
-    {
-      title: 'Glass Cubicle Shower Doors',
-      category: 'Glasswork',
-      location: 'Kisumu, Kenya',
-      description: 'Professional glass cubicle shower door installations for modern bathrooms',
-      image: glass16
-    },
+
     {
       title: 'Glass Roof Installation Process',
       category: 'Glasswork',
@@ -565,7 +553,7 @@ function Projects() {
   const [activeFilter, setActiveFilter] = useState('All');
   const [viewMode, setViewMode] = useState('grid');
 
-  const categories = ['All', 'Marble Work & Stone', 'Modern TV Niche & Wall Features', 'Premium Kitchen Cabinets', 'Wardrobes & Closet Systems', 'Stainless Steel & Metal Works', 'Office Partitions & Workstations', 'Aluminium & Glass Works', 'Ceiling & Roofing Systems', 'Glasswork', 'House Makeover'];
+  const categories = ['All', 'Marble Work & Stone', 'Modern TV Niche & Wall Features', 'Premium Kitchen Cabinets', 'Wardrobes & Closet Systems', 'Stainless Steel & Metal Works', 'Office Partitions & Workstations', 'Aluminium Works', 'Ceiling & Roofing Systems', 'Glasswork', 'House Makeover'];
 
   const shuffleArray = (array) => {
     const shuffled = [...array];
