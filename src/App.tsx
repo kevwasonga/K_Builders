@@ -47,10 +47,10 @@ function App() {
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ease-out ${
         isScrolled 
           ? 'bg-white/90 backdrop-blur-lg shadow-2xl border-b border-slate-200/50 transform translate-y-0' 
-          : 'bg-slate-900/30 backdrop-blur-sm transform translate-y-0'
+          : 'bg-slate-900/40 backdrop-blur-md border-b-2 border-yellow-400/30 shadow-lg transform translate-y-0'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20">
+          <div className="flex justify-between items-center h-24 sm:h-28">
             {/* Designer Logo */}
             <div 
               className="flex items-center group cursor-pointer" 
