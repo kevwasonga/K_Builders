@@ -202,13 +202,7 @@ function Projects() {
       image: tvNiche3
     },
 
-    {
-      title: 'Sliding Door Wardrobes',
-      category: 'Wardrobes & Closet Systems',
-      location: 'Westlands, Nairobi',
-      description: 'Space-saving sliding door wardrobes with mirror panels and LED lighting',
-      image: wardrobe3
-    },
+
     {
       title: 'Luxury Kitchen Renovation',
       category: 'Premium Kitchen Cabinets',
