@@ -329,10 +329,10 @@ function Projects() {
       image: ceiling8
     },
     {
-      title: 'Frameless Glass Shower Cubicles',
+      title: 'Swing Door Cubicle Shower',
       category: 'Glasswork',
       location: 'Karen, Nairobi',
-      description: 'Premium frameless glass shower installations • Tempered safety glass • Modern bathroom solutions',
+      description: 'Premium swing door cubicle shower installations • Tempered safety glass • Modern bathroom solutions',
       image: glass1
     },
 
