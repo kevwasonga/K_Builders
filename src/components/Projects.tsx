@@ -613,14 +613,14 @@ function Projects() {
           <div className="inline-block px-4 py-2 bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 text-sm font-bold rounded-full mb-6">
             Our Portfolio
           </div>
-          <h2 className="text-3xl xs:text-4xl md:text-5xl font-bold text-slate-800 mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-slate-800 mb-4 sm:mb-6">
             Exceptional
             <span className="block bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
               Projects
             </span>
           </h2>
           <div className="w-32 h-1 bg-gradient-to-r from-yellow-400 to-orange-500 mx-auto mb-8"></div>
-          <p className="text-base xs:text-lg md:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed px-4">
             From concept to completion, we deliver exceptional interior and exterior solutions 
             that transform spaces and exceed expectations.
           </p>
@@ -634,7 +634,7 @@ function Projects() {
               <button
                 key={category}
                 onClick={() => setActiveFilter(category)}
-                className={`px-2 py-1.5 text-xs xs:px-3 xs:py-2 xs:text-sm md:px-4 md:py-2 md:text-base rounded-xl font-medium transition-all duration-300 whitespace-nowrap ${
+                className={`px-2 py-1.5 text-xs sm:px-3 sm:py-2 sm:text-sm md:px-4 md:py-2.5 md:text-base rounded-lg sm:rounded-xl font-medium transition-all duration-300 whitespace-nowrap ${
                   activeFilter === category
                     ? 'bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 shadow-lg'
                     : 'bg-white text-slate-600 hover:bg-slate-50 border border-slate-200 shadow-sm'

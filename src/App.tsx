@@ -64,14 +64,14 @@ function App() {
                   <div className="flex flex-col items-start">
                     <div className="flex items-center">
                       <h1 className={`font-serif font-bold tracking-tight transition-all duration-700 ease-out ${
-                        isScrolled ? 'text-xl xs:text-2xl' : 'text-2xl xs:text-3xl lg:text-4xl'
+                        isScrolled ? 'text-lg sm:text-xl md:text-2xl' : 'text-xl sm:text-2xl md:text-3xl lg:text-4xl'
                       }`} style={{color: '#6A394F', textShadow: '0 2px 4px rgba(0,0,0,0.3)'}}>
                         CLAUSE
                       </h1>
                       <span className="text-yellow-500 text-xs ml-1 font-bold">™</span>
                     </div>
                     <div className={`font-serif font-semibold tracking-widest transition-all duration-700 ease-out ${
-                      isScrolled ? 'text-sm mt-0' : 'text-lg mt-1'
+                      isScrolled ? 'text-xs sm:text-sm mt-0' : 'text-sm sm:text-base md:text-lg mt-1'
                     }`} style={{color: '#0F5C5F', textShadow: '0 1px 2px rgba(0,0,0,0.2)'}}>
                       INTERIOR FITS
                     </div>
@@ -79,7 +79,7 @@ function App() {
                   
                   {/* Flowing Wave Graphic */}
                   <div className={`absolute -bottom-1 left-0 transition-all duration-700 ease-out ${
-                    isScrolled ? 'w-24 h-1 opacity-80' : 'w-32 h-2 opacity-100'
+                    isScrolled ? 'w-16 sm:w-24 h-1 opacity-80' : 'w-24 sm:w-32 h-1.5 sm:h-2 opacity-100'
                   }`}>
                     <svg viewBox="0 0 100 10" className="w-full h-full" style={{fill: '#0F5C5F'}}>
                       <path d="M0,8 Q25,2 50,6 T100,4 L100,10 L0,10 Z" opacity="0.8"/>
@@ -95,7 +95,7 @@ function App() {
                 <button 
                   key={item.id}
                   onClick={() => scrollToSection(item.id)} 
-                  className={`relative px-6 py-3 rounded-xl font-medium transition-all duration-500 ease-out group ${
+                  className={`relative px-3 sm:px-4 md:px-6 py-2 md:py-3 rounded-xl text-sm md:text-base font-medium transition-all duration-500 ease-out group ${
                     isScrolled 
                       ? 'text-slate-700 hover:text-slate-900' 
                       : 'text-white/90 hover:text-white'
@@ -115,7 +115,7 @@ function App() {
                     element.scrollIntoView({ behavior: 'smooth' });
                   }
                 }}
-                className="ml-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 px-6 py-3 rounded-xl font-bold hover:from-yellow-500 hover:to-orange-600 transition-all duration-500 ease-out transform hover:scale-105 shadow-lg"
+                className="ml-2 sm:ml-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 px-3 sm:px-4 md:px-6 py-2 md:py-3 rounded-xl text-sm md:text-base font-bold hover:from-yellow-500 hover:to-orange-600 transition-all duration-500 ease-out transform hover:scale-105 shadow-lg"
               >
                 Get Quote
               </button>

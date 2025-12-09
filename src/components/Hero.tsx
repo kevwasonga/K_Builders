@@ -77,9 +77,9 @@ function Hero() {
       <div className="relative h-full flex items-center justify-center z-10">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className={`transform transition-all duration-1000 mt-20 xs:mt-24 sm:mt-32 lg:mt-36 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+            <div className={`transform transition-all duration-1000 mt-16 sm:mt-24 md:mt-32 lg:mt-36 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
 
-              <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-display font-bold text-white mb-6 sm:mb-8 leading-tight">
+              <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-display font-bold text-white mb-4 sm:mb-6 md:mb-8 leading-tight">
                 Design That
                 <span className="block bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
                   Transforms
@@ -87,15 +87,15 @@ function Hero() {
                 Lives
               </h1>
               
-              <p className="text-base xs:text-lg sm:text-xl md:text-2xl lg:text-3xl text-slate-200 mb-8 xs:mb-12 leading-relaxed max-w-4xl mx-auto">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-slate-200 mb-6 sm:mb-8 md:mb-12 leading-relaxed max-w-4xl mx-auto px-4">
                 Creating exceptional spaces with innovative design, quality craftsmanship, and attention to every detail across Kenya.
               </p>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mb-12 sm:mb-16 px-4">
                 <button
                   onClick={scrollToAbout}
-                  className="bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 px-12 py-5 rounded-2xl text-xl font-bold hover:from-yellow-500 hover:to-orange-600 transition-all transform hover:scale-105 shadow-2xl group"
+                  className="bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 px-6 sm:px-10 md:px-12 py-3 sm:py-4 md:py-5 rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold hover:from-yellow-500 hover:to-orange-600 transition-all transform hover:scale-105 shadow-2xl group"
                 >
                   Start Your Project
                   <span className="ml-3 group-hover:translate-x-2 transition-transform inline-block text-2xl">→</span>
@@ -108,7 +108,7 @@ function Hero() {
                       element.scrollIntoView({ behavior: 'smooth' });
                     }
                   }}
-                  className="bg-white/10 backdrop-blur-lg text-white px-12 py-5 rounded-2xl text-xl font-medium hover:bg-white/20 transition-all border border-white/30 group flex items-center justify-center"
+                  className="bg-white/10 backdrop-blur-lg text-white px-6 sm:px-10 md:px-12 py-3 sm:py-4 md:py-5 rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-medium hover:bg-white/20 transition-all border border-white/30 group flex items-center justify-center"
                 >
                   <Play size={24} className="mr-3" />
                   Watch Our Story
