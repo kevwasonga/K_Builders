@@ -46,7 +46,7 @@ function Hero() {
   };
 
   return (
-    <section id="home" className="relative h-screen overflow-hidden bg-gradient-to-br from-slate-50 to-white">
+    <section id="home" className="relative h-[85vh] xs:h-[90vh] sm:h-[95vh] md:h-screen overflow-hidden bg-gradient-to-br from-slate-50 to-white">
       {/* Background Images with Parallax Effect */}
       <div className="absolute inset-0">
         {heroImages.map((image, index) => (
