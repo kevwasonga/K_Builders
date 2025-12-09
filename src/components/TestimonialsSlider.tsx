@@ -111,7 +111,7 @@ function TestimonialsSlider() {
             </blockquote>
             
             <div className="text-center">
-              <div className="font-semibold text-white text-sm xs:text-base sm:text-lg md:text-xl">
+              <div className="font-semibold text-white text-sm xs:text-base sm:text-lg md:text-xl font-serif">
                 {testimonials[currentTestimonial].name}
               </div>
               <div className="text-white/80 text-[10px] xs:text-xs sm:text-sm md:text-base">
