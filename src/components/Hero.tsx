@@ -124,8 +124,8 @@ function Hero() {
                   <div className="w-16 h-16 bg-gradient-to-r from-yellow-400/20 to-orange-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
                     <Award size={32} className="text-yellow-400" />
                   </div>
-                  <div className="text-3xl font-display font-bold text-white mb-2">7+</div>
-                  <div className="text-slate-300">Years Experience</div>
+                  <div className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-display font-bold text-white mb-2">7+</div>
+                  <div className="text-sm xs:text-base sm:text-lg md:text-xl text-slate-300">Years Experience</div>
                 </div>
                 
                 <a
