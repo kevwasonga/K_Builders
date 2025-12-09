@@ -572,6 +572,13 @@ function Projects() {
     : projects.filter(project => project.category === activeFilter);
 
   useEffect(() => {
+    const element = document.getElementById('projects');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, [activeFilter]);
+
+  useEffect(() => {
     if (isPaused || viewMode === 'grid') return;
     
     const interval = setInterval(() => {
@@ -804,6 +811,7 @@ function Projects() {
               const currentIdx = categories.indexOf(activeFilter);
               const prevIdx = (currentIdx - 1 + categories.length) % categories.length;
               setActiveFilter(categories[prevIdx]);
+              setClickedCategory(categories[prevIdx] === 'All' ? null : categories[prevIdx]);
             }}
             className="w-12 h-12 bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 rounded-full flex items-center justify-center hover:from-yellow-500 hover:to-orange-600 transition-all duration-300 shadow-lg"
           >
@@ -814,6 +822,7 @@ function Projects() {
               const currentIdx = categories.indexOf(activeFilter);
               const nextIdx = (currentIdx + 1) % categories.length;
               setActiveFilter(categories[nextIdx]);
+              setClickedCategory(categories[nextIdx] === 'All' ? null : categories[nextIdx]);
             }}
             className="w-12 h-12 bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 rounded-full flex items-center justify-center hover:from-yellow-500 hover:to-orange-600 transition-all duration-300 shadow-lg"
           >
