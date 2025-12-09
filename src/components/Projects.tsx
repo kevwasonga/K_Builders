@@ -545,6 +545,7 @@ function Projects() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const [activeFilter, setActiveFilter] = useState('All');
+  const [clickedCategory, setClickedCategory] = useState(null);
   const [viewMode, setViewMode] = useState('grid');
 
   const categories = ['All', 'Marble Work & Stone', 'Modern TV Niche & Wall Features', 'Premium Kitchen Cabinets', 'Wardrobes & Closet Systems', 'Stainless Steel & Metal Works', 'Office Partitions & Workstations', 'Aluminium Works', 'Ceiling & Roofing Systems', 'Glasswork', 'House Makeover'];
@@ -628,9 +629,9 @@ function Projects() {
           <div className="mt-6 sm:mt-8 md:mt-12 max-w-5xl mx-auto">
             <div className="flex flex-wrap justify-center gap-2">
               <button
-                onClick={() => setActiveFilter('All')}
+                onClick={() => { setActiveFilter('All'); setClickedCategory(null); }}
                 className={`w-full tablet:w-auto px-2 py-1.5 text-[10px] xs:text-xs tablet:px-3 tablet:py-2 tablet:text-sm md:px-4 md:py-2.5 md:text-base lg:text-lg rounded-lg tablet:rounded-xl font-medium transition-all duration-300 whitespace-nowrap mb-2 tablet:mb-0 ${
-                  activeFilter === 'All'
+                  clickedCategory === null
                     ? 'bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 shadow-lg'
                     : 'bg-white text-slate-600 hover:bg-slate-50 border border-slate-200 shadow-sm'
                 }`}
@@ -638,13 +639,13 @@ function Projects() {
                 All
               </button>
             </div>
-            <div className="grid grid-cols-2 tablet:flex tablet:flex-wrap justify-center gap-2 mt-2 tablet:mt-2">
-              {categories.slice(1).map((category) => (
+            <div className="grid grid-cols-2 tablet:grid-cols-5 lg:grid-cols-5 justify-center gap-2 mt-2 tablet:mt-2">
+              {categories.slice(1, 6).map((category) => (
                 <button
                   key={category}
-                  onClick={() => setActiveFilter(category)}
-                  className={`px-2 py-1.5 text-[9px] xs:text-[10px] tablet:px-3 tablet:py-2 tablet:text-sm md:px-4 md:py-2.5 md:text-base lg:text-lg rounded-lg tablet:rounded-xl font-medium transition-all duration-300 whitespace-nowrap overflow-hidden text-ellipsis ${
-                    activeFilter === category
+                  onClick={() => { setActiveFilter(category); setClickedCategory(category); }}
+                  className={`px-1.5 py-1.5 text-[8px] xs:text-[9px] tablet:px-2 tablet:py-2 tablet:text-xs md:px-3 md:py-2 md:text-sm lg:text-base rounded-lg tablet:rounded-xl font-medium transition-all duration-300 leading-tight ${
+                    clickedCategory === category
                       ? 'bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 shadow-lg'
                       : 'bg-white text-slate-600 hover:bg-slate-50 border border-slate-200 shadow-sm'
                   }`}
@@ -653,6 +654,38 @@ function Projects() {
                 </button>
               ))}
             </div>
+            <div className="grid grid-cols-2 tablet:grid-cols-3 lg:grid-cols-5 justify-center gap-2 mt-2">
+              {categories.slice(6, 11).map((category) => (
+                <button
+                  key={category}
+                  onClick={() => { setActiveFilter(category); setClickedCategory(category); }}
+                  className={`px-1.5 py-1.5 text-[8px] xs:text-[9px] tablet:px-2 tablet:py-2 tablet:text-xs md:px-3 md:py-2 md:text-sm lg:text-base rounded-lg tablet:rounded-xl font-medium transition-all duration-300 leading-tight ${
+                    clickedCategory === category
+                      ? 'bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 shadow-lg'
+                      : 'bg-white text-slate-600 hover:bg-slate-50 border border-slate-200 shadow-sm'
+                  }`}
+                >
+                  {category}
+                </button>
+              ))}
+            </div>
+            {categories.length > 11 && (
+              <div className="grid grid-cols-2 tablet:grid-cols-3 lg:grid-cols-5 justify-center gap-2 mt-2">
+                {categories.slice(11).map((category) => (
+                  <button
+                    key={category}
+                    onClick={() => { setActiveFilter(category); setClickedCategory(category); }}
+                    className={`px-1.5 py-1.5 text-[8px] xs:text-[9px] tablet:px-2 tablet:py-2 tablet:text-xs md:px-3 md:py-2 md:text-sm lg:text-base rounded-lg tablet:rounded-xl font-medium transition-all duration-300 leading-tight ${
+                      clickedCategory === category
+                        ? 'bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 shadow-lg'
+                        : 'bg-white text-slate-600 hover:bg-slate-50 border border-slate-200 shadow-sm'
+                    }`}
+                  >
+                    {category}
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
 
           {/* View Mode Toggle */}
