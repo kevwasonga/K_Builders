@@ -27,63 +27,41 @@ function About() {
         {/* Three Column Layout */}
         <div className="grid md:grid-cols-3 gap-8 mb-20">
           {/* Our Story */}
-          <div className="card-elegant">
+          <div className="card-elegant text-center">
             <div className="flex justify-center mb-6">
               <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center">
                 <Lightbulb size={28} className="text-white" />
               </div>
             </div>
             <h3 className="text-2xl font-display font-bold text-slate-800 mb-4">Our Story</h3>
-            <p className="text-slate-600 leading-relaxed mb-4">
-              Clause Interior Fits began with a simple belief: every space has the potential to be extraordinary. 
-              Founded in 2017, we've grown from a small team with big dreams to Kenya's trusted partner in 
-              interior transformation.
-            </p>
             <p className="text-slate-600 leading-relaxed">
-              Our journey spans across Western Kenya and beyond, where we've had the privilege of transforming 
-              homes, offices, and commercial spaces.
+              Clause Interior Fits began with a simple belief: every space has the potential to be extraordinary. Founded in 2017, we've grown from a small team with big dreams to Kenya's trusted partner in interior transformation. Our journey spans across Western Kenya and beyond, where we've had the privilege of transforming homes, offices, and commercial spaces.
             </p>
           </div>
 
           {/* Mission */}
-          <div className="card-elegant">
+          <div className="card-elegant text-center">
             <div className="flex justify-center mb-6">
               <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center">
                 <Target size={28} className="text-white" />
               </div>
             </div>
             <h3 className="text-2xl font-display font-bold text-slate-800 mb-4">Our Mission</h3>
-            <p className="text-slate-600 leading-relaxed mb-6">
-              To provide consistent, quality interior and exterior services while maintaining safe practices 
-              and ensuring every client feels satisfied with the final result.
+            <p className="text-slate-600 leading-relaxed">
+              To provide consistent, quality interior services while maintaining safe practices and ensuring every client feels satisfied with the final result.
             </p>
-            <div className="space-y-3">
-              <div className="flex items-center">
-                <div className="w-2 h-2 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full mr-3"></div>
-                <span className="text-sm text-slate-600">Premium materials and expert craftsmanship</span>
-              </div>
-              <div className="flex items-center">
-                <div className="w-2 h-2 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full mr-3"></div>
-                <span className="text-sm text-slate-600">Your vision is our priority</span>
-              </div>
-            </div>
           </div>
 
           {/* Vision */}
-          <div className="card-elegant">
+          <div className="card-elegant text-center">
             <div className="flex justify-center mb-6">
               <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-violet-600 rounded-2xl flex items-center justify-center">
                 <Eye size={28} className="text-white" />
               </div>
             </div>
             <h3 className="text-2xl font-display font-bold text-slate-800 mb-4">Our Vision</h3>
-            <p className="text-slate-600 leading-relaxed mb-4">
-              To become Kenya's most trusted and dependable provider of interior and exterior solutions, 
-              known for innovative designs, quality work, and reliable service that exceeds expectations.
-            </p>
             <p className="text-slate-600 leading-relaxed">
-              We envision a future where every space we touch becomes a testament to exceptional design 
-              and functionality, inspiring others and setting new standards in the industry.
+              Our vision is to become Kenya's most trusted partner for innovative and high-quality interior design solutions. We strive to set the standard in modern aesthetics, reliable service, and exceptional craftsmanship—creating functional, beautiful spaces that reflect each client's lifestyle and goals. By embracing new technologies and delivering every project with integrity, we aim to shape inspiring homes, offices, and commercial interiors across the country.
             </p>
           </div>
 
