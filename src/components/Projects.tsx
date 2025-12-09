@@ -609,7 +609,7 @@ function Projects() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
-        <div className="text-center mb-8 sm:mb-12 md:mb-16">
+        <div className="text-center mb-4 sm:mb-6 md:mb-8">
           <div className="inline-block px-4 py-2 bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 text-sm font-bold rounded-full mb-6">
             Our Portfolio
           </div>

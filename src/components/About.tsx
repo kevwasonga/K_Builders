@@ -25,7 +25,7 @@ function About() {
         </div>
 
         {/* Three Column Layout */}
-        <div className="grid md:grid-cols-3 gap-6 sm:gap-8 mb-10 sm:mb-14 md:mb-20">
+        <div className="grid md:grid-cols-3 gap-6 sm:gap-8 mb-5 sm:mb-7 md:mb-10">
           {/* Our Story */}
           <div className="card-elegant">
             <div className="flex items-center mb-6">
