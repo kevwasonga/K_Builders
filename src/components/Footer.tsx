@@ -7,7 +7,7 @@ function Footer() {
       <div id="contact" className="py-12 sm:py-16 md:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 sm:mb-10 md:mb-12">
-            <h3 className="text-2xl sm:text-3xl md:text-4xl font-display font-bold text-slate-800 mb-4 xs:mb-6">Send Us a Message</h3>
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-slate-800 mb-4 xs:mb-6">Send Us a Message</h3>
             <p className="text-base sm:text-lg md:text-xl text-slate-600 mb-6 xs:mb-8 md:mb-12 max-w-3xl mx-auto px-4">
               Tell us about your project and we'll get back to you within 24 hours
             </p>
@@ -85,7 +85,7 @@ function Footer() {
           <div className="grid grid-cols-2 gap-3 xs:gap-4 sm:gap-6 md:grid-cols-4 md:gap-8 lg:gap-12">
             {/* Brand */}
             <div className="col-span-1 md:col-span-1">
-              <h3 className="text-[7px] xs:text-[8px] sm:text-[9px] md:text-[10px] lg:text-xs font-display font-bold text-white mb-1 sm:mb-1.5 whitespace-nowrap overflow-hidden text-ellipsis">CLAUSE INTERIOR FITS</h3>
+              <h3 className="text-[7px] xs:text-[8px] sm:text-[9px] md:text-[10px] lg:text-xs font-serif font-bold text-white mb-1 sm:mb-1.5 whitespace-nowrap overflow-hidden text-ellipsis">CLAUSE INTERIOR FITS</h3>
               <p className="text-[6px] xs:text-[7px] sm:text-[8px] md:text-[9px] lg:text-[10px] text-slate-300 mb-1.5 sm:mb-2 whitespace-nowrap overflow-hidden text-ellipsis">Where Function Meets Aesthetics</p>
               <div className="flex flex-nowrap gap-1 xs:gap-1.5 sm:gap-2 overflow-x-auto scrollbar-hide">
                 <a href="https://www.instagram.com/clausedesigninteriorfits/?igsh=cWdjYm1qdm8zZHhj" target="_blank" rel="noopener noreferrer" className="w-5 h-5 xs:w-6 xs:h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-gradient-to-r from-pink-500 to-purple-600 rounded-lg flex items-center justify-center hover:scale-110 transition-transform flex-shrink-0">
@@ -118,7 +118,7 @@ function Footer() {
             
             {/* Quick Links */}
             <div className="col-span-1 md:col-span-1">
-              <h4 className="text-[10px] xs:text-xs sm:text-sm md:text-base font-bold text-white mb-1.5 sm:mb-2 whitespace-nowrap overflow-hidden text-ellipsis">Quick Links</h4>
+              <h4 className="text-[10px] xs:text-xs sm:text-sm md:text-base font-bold text-white mb-1.5 sm:mb-2 whitespace-nowrap overflow-hidden text-ellipsis font-serif">Quick Links</h4>
               <ul className="space-y-0.5 sm:space-y-1 text-[9px] xs:text-[10px] sm:text-xs md:text-sm text-slate-300">
                 <li><a href="#home" className="hover:text-orange-500 transition-colors whitespace-nowrap">Home</a></li>
                 <li><a href="#about" className="hover:text-orange-500 transition-colors whitespace-nowrap">About</a></li>
@@ -129,7 +129,7 @@ function Footer() {
             
             {/* Services */}
             <div className="col-span-1 md:col-span-1">
-              <h4 className="text-[10px] xs:text-xs sm:text-sm md:text-base font-bold text-white mb-1.5 sm:mb-2 whitespace-nowrap overflow-hidden text-ellipsis">Services</h4>
+              <h4 className="text-[10px] xs:text-xs sm:text-sm md:text-base font-bold text-white mb-1.5 sm:mb-2 whitespace-nowrap overflow-hidden text-ellipsis font-serif">Services</h4>
               <ul className="space-y-0.5 sm:space-y-1 text-[9px] xs:text-[10px] sm:text-xs md:text-sm text-slate-300">
                 <li className="whitespace-nowrap">Kitchen Cabinets</li>
                 <li className="whitespace-nowrap">Marble Work</li>
@@ -140,7 +140,7 @@ function Footer() {
             
             {/* Contact Info */}
             <div className="col-span-1 md:col-span-1">
-              <h4 className="text-[10px] xs:text-xs sm:text-sm md:text-base font-bold text-white mb-1.5 sm:mb-2 whitespace-nowrap overflow-hidden text-ellipsis">Contact Info</h4>
+              <h4 className="text-[10px] xs:text-xs sm:text-sm md:text-base font-bold text-white mb-1.5 sm:mb-2 whitespace-nowrap overflow-hidden text-ellipsis font-serif">Contact Info</h4>
               <div className="space-y-1 sm:space-y-1.5 text-[9px] xs:text-[10px] sm:text-xs md:text-sm text-slate-300">
                 <div className="flex items-start">
                   <Phone size={10} className="mr-1 sm:mr-1.5 mt-0.5 text-orange-500 flex-shrink-0" />

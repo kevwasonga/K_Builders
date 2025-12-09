@@ -624,7 +624,7 @@ function Projects() {
           <div className="inline-block px-4 py-2 bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 text-sm font-bold rounded-full mb-3">
             Our Portfolio
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-800 mb-2 sm:mb-3">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-800 mb-2 sm:mb-3 font-serif">
             Exceptional
             <span className="block bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
               Projects
