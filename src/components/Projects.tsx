@@ -82,14 +82,14 @@ function Projects() {
   const projects = [
     {
       title: 'Marble Work & Stone Installations',
-      category: 'Marble Work & Stone',
+      category: 'Marble & Stone Work',
       location: 'Karen, Nairobi',
       description: 'Premium marble countertops, natural stone flooring, wall cladding, and custom stone work',
       image: marble1
     },
     {
       title: 'Modern TV Niche & Wall Features',
-      category: 'Modern TV Niche & Wall Features',
+      category: 'Modern TV Niche',
       location: 'Karen, Nairobi',
       description: 'Custom TV niches, backdrop panels, floating units, media walls with LED, and textured accent walls',
       image: tvNiche1
@@ -103,7 +103,7 @@ function Projects() {
     },
     {
       title: 'Premium Kitchen Cabinets',
-      category: 'Premium Kitchen Cabinets',
+      category: 'Kitchen Cabinets',
       location: 'Westlands, Nairobi',
       description: 'Luxury cabinetry, soft-close modular cabinets, heat-resistant boards, custom islands, and smart storage',
       image: kitchen1
@@ -131,7 +131,7 @@ function Projects() {
     },
     {
       title: 'Marble Countertops & Surfaces',
-      category: 'Marble Work & Stone',
+      category: 'Marble & Stone Work',
       location: 'Westlands, Nairobi',
       description: 'Luxury marble surfaces for kitchens and bathrooms with professional installation',
       image: marble2
@@ -139,14 +139,14 @@ function Projects() {
 
     {
       title: 'Modern Kitchen Design',
-      category: 'Premium Kitchen Cabinets',
+      category: 'Kitchen Cabinets',
       location: 'Karen, Nairobi',
       description: 'Contemporary kitchen layouts with premium finishes and smart storage solutions',
       image: kitchen2
     },
     {
       title: 'TV Wall Mount & Media Center',
-      category: 'Modern TV Niche & Wall Features',
+      category: 'Modern TV Niche',
       location: 'Westlands, Nairobi',
       description: 'Professional TV mounting with cable management and custom media wall designs',
       image: tvNiche2
@@ -175,7 +175,7 @@ function Projects() {
     },
     {
       title: 'Kitchen Island & Countertops',
-      category: 'Premium Kitchen Cabinets',
+      category: 'Kitchen Cabinets',
       location: 'Kiambu, Kenya',
       description: 'Custom kitchen islands with marble countertops and integrated appliances',
       image: kitchen3
@@ -189,14 +189,14 @@ function Projects() {
     },
     {
       title: 'Stone Cladding & Features',
-      category: 'Marble Work & Stone',
+      category: 'Marble & Stone Work',
       location: 'Nakuru, Kenya',
       description: 'Decorative stone work and marble feature walls for elegant interior designs',
       image: marble3
     },
     {
       title: 'Entertainment Wall Design',
-      category: 'Modern TV Niche & Wall Features',
+      category: 'Modern TV Niche',
       location: 'Nakuru, Kenya',
       description: 'Complete entertainment wall solutions with integrated lighting and storage',
       image: tvNiche3
@@ -205,7 +205,7 @@ function Projects() {
 
     {
       title: 'Luxury Kitchen Renovation',
-      category: 'Premium Kitchen Cabinets',
+      category: 'Kitchen Cabinets',
       location: 'Thika, Kenya',
       description: 'Complete kitchen makeover with high-end cabinetry and modern appliances',
       image: kitchen4
@@ -233,7 +233,7 @@ function Projects() {
     },
     {
       title: 'Kitchen Storage Solutions',
-      category: 'Premium Kitchen Cabinets',
+      category: 'Kitchen Cabinets',
       location: 'Eldoret, Kenya',
       description: 'Maximized storage with pull-out drawers and corner cabinet solutions',
       image: kitchen5
@@ -268,7 +268,7 @@ function Projects() {
     },
     {
       title: 'Contemporary Kitchen Setup',
-      category: 'Premium Kitchen Cabinets',
+      category: 'Kitchen Cabinets',
       location: 'Mombasa, Kenya',
       description: 'Sleek modern kitchen with handleless cabinets and integrated lighting',
       image: kitchen6
@@ -282,7 +282,7 @@ function Projects() {
     },
     {
       title: 'Kitchen Marble Installation',
-      category: 'Marble Work & Stone',
+      category: 'Marble & Stone Work',
       location: 'Kiambu, Kenya',
       description: 'Professional kitchen marble work with seamless joints and polished finishes',
       image: marble4
@@ -528,14 +528,14 @@ function Projects() {
     },
     {
       title: 'Designer Kitchen Interiors',
-      category: 'Premium Kitchen Cabinets',
+      category: 'Kitchen Cabinets',
       location: 'Karen, Nairobi',
       description: 'Designer kitchen interior projects with premium finishes and modern appliances',
       image: kitchen7
     },
     {
       title: 'Custom Kitchen Cabinet Solutions',
-      category: 'Premium Kitchen Cabinets',
+      category: 'Kitchen Cabinets',
       location: 'CBD, Nairobi',
       description: 'Custom kitchen cabinet solutions with optimized storage and elegant design',
       image: kitchen8
@@ -548,10 +548,10 @@ function Projects() {
   const [clickedCategory, setClickedCategory] = useState(null);
   const [viewMode, setViewMode] = useState('grid');
 
-  const categories = ['All', 'Aluminium Works', 'Ceiling & Roofing Systems', 'Glasswork', 'House Makeover', 'Marble Work & Stone', 'Modern TV Niche & Wall Features', 'Office Partitions & Workstations', 'Premium Kitchen Cabinets', 'Stainless Steel & Metal Works', 'Wardrobes & Closet Systems'];
+  const categories = ['All', 'Aluminium Works', 'Ceiling & Roofing Systems', 'Glasswork', 'House Makeover', 'Marble & Stone Work', 'Modern TV Niche', 'Office Partitions & Workstations', 'Kitchen Cabinets', 'Stainless Steel & Metal Works', 'Wardrobes & Closet Systems'];
   
-  const topRowCategories = ['All', 'Aluminium Works', 'Ceiling & Roofing Systems', 'Glasswork', 'House Makeover', 'Marble Work & Stone'];
-  const bottomRowCategories = ['Modern TV Niche & Wall Features', 'Office Partitions & Workstations', 'Premium Kitchen Cabinets', 'Stainless Steel & Metal Works', 'Wardrobes & Closet Systems'];
+  const topRowCategories = ['All', 'Aluminium Works', 'Ceiling & Roofing Systems', 'Glasswork', 'House Makeover', 'Marble & Stone Work'];
+  const bottomRowCategories = ['Modern TV Niche', 'Office Partitions & Workstations', 'Kitchen Cabinets', 'Stainless Steel & Metal Works', 'Wardrobes & Closet Systems'];
 
   const shuffleArray = (array) => {
     const shuffled = [...array];
@@ -637,40 +637,30 @@ function Projects() {
 
           {/* Filter Buttons */}
           <div className="mt-3 sm:mt-4 md:mt-6 w-full max-w-7xl mx-auto px-2">
-            <div className="flex flex-col gap-1">
-              <div className="flex gap-0.5 tablet:gap-1 justify-center">
-                {topRowCategories.map((category) => (
-                  <button
-                    key={category}
-                    onClick={() => { 
-                      setActiveFilter(category); 
-                      setClickedCategory(category === 'All' ? null : category); 
-                    }}
-                    className={`flex-1 px-1.5 py-2 text-[8px] xs:text-[9px] tablet:px-2 tablet:py-3.5 tablet:text-[10px] md:px-2.5 md:py-4 md:text-[11px] lg:px-3 lg:py-5 lg:text-xs rounded-lg tablet:rounded-xl font-bold transition-all duration-300 whitespace-nowrap overflow-hidden text-ellipsis ${
-                      (category === 'All' && clickedCategory === null) || clickedCategory === category
-                        ? 'bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 shadow-lg'
-                        : 'bg-white text-slate-600 hover:bg-slate-50 border border-slate-200 shadow-sm'
-                    }`}
-                  >
-                    {category}
-                  </button>
-                ))}
-              </div>
-              <div className="flex gap-0.5 tablet:gap-1 justify-center">
-                {bottomRowCategories.map((category) => (
-                  <button
-                    key={category}
-                    onClick={() => { setActiveFilter(category); setClickedCategory(category); }}
-                    className={`flex-1 px-1.5 py-2 text-[8px] xs:text-[9px] tablet:px-2 tablet:py-3.5 tablet:text-[10px] md:px-2.5 md:py-4 md:text-[11px] lg:px-3 lg:py-5 lg:text-xs rounded-lg tablet:rounded-xl font-bold transition-all duration-300 whitespace-nowrap overflow-hidden text-ellipsis ${
-                      clickedCategory === category
-                        ? 'bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 shadow-lg'
-                        : 'bg-white text-slate-600 hover:bg-slate-50 border border-slate-200 shadow-sm'
-                    }`}
-                  >
-                    {category}
-                  </button>
-                ))}
-              </div>
+            <div className="flex flex-wrap gap-2 justify-center">
+              {categories.map((category) => (
+                <button
+                  key={category}
+                  onClick={() => { 
+                    setActiveFilter(category); 
+                    setClickedCategory(category === 'All' ? null : category); 
+                  }}
+                  className={`px-3 py-2 sm:px-4 sm:py-2.5 md:px-5 md:py-3 rounded-xl font-bold transition-all duration-300 text-center leading-tight ${
+                    (category === 'All' && clickedCategory === null) || clickedCategory === category
+                      ? 'bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 shadow-lg'
+                      : 'bg-white text-slate-600 hover:bg-slate-50 border border-slate-200 shadow-sm'
+                  }`}
+                  style={{
+                    minWidth: '120px',
+                    maxWidth: '100%',
+                    fontSize: 'clamp(11px, 1.5vw, 16px)',
+                    whiteSpace: 'normal',
+                    lineHeight: '1.3'
+                  }}
+                >
+                  {category}
+                </button>
+              ))}
             </div>
           </div>
 
