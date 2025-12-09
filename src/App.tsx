@@ -50,7 +50,9 @@ function App() {
           : 'bg-gradient-to-b from-slate-900/40 via-yellow-900/10 to-slate-900/30 backdrop-blur-md border-b-2 border-yellow-400/30 shadow-lg shadow-yellow-400/5 transform translate-y-0'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16 xs:h-20 md:h-24 lg:h-28">
+          <div className={`flex justify-between items-center transition-all duration-700 ease-out ${
+            isScrolled ? 'h-14 xs:h-16 md:h-18' : 'h-16 xs:h-20 md:h-24 lg:h-28'
+          }`}>
             {/* Designer Logo */}
             <a 
               href="#home"
