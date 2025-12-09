@@ -20,7 +20,7 @@ function About() {
           </h2>
           <div className="w-32 h-1 bg-gradient-to-r from-yellow-400 to-orange-500 mx-auto mb-8"></div>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            For over seven years, we've been transforming visions into reality, creating spaces that inspire and endure.
+            For over seven years, Clause Interior Fits has delivered premium interior design and turnkey fit-out solutions across Kenya—transforming client visions into functional, elegant spaces that inspire, elevate, and stand the test of time.
           </p>
         </div>
 
