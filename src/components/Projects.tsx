@@ -630,7 +630,7 @@ function Projects() {
             <div className="flex flex-wrap justify-center gap-2">
               <button
                 onClick={() => { setActiveFilter('All'); setClickedCategory(null); }}
-                className={`w-full tablet:w-auto px-2 py-1.5 text-[10px] xs:text-xs tablet:px-3 tablet:py-2 tablet:text-sm md:px-4 md:py-2.5 md:text-base lg:text-lg rounded-lg tablet:rounded-xl font-medium transition-all duration-300 whitespace-nowrap mb-2 tablet:mb-0 ${
+                className={`w-full tablet:w-auto px-1 py-1.5 text-[7px] xs:text-[8px] tablet:px-1.5 tablet:py-2 tablet:text-[10px] md:px-2 md:py-2 md:text-xs lg:px-2.5 lg:text-[13px] rounded-lg tablet:rounded-xl font-medium transition-all duration-300 whitespace-nowrap mb-2 tablet:mb-0 ${
                   clickedCategory === null
                     ? 'bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 shadow-lg'
                     : 'bg-white text-slate-600 hover:bg-slate-50 border border-slate-200 shadow-sm'
@@ -644,7 +644,7 @@ function Projects() {
                 <button
                   key={category}
                   onClick={() => { setActiveFilter(category); setClickedCategory(category); }}
-                  className={`px-1.5 py-1.5 text-[8px] xs:text-[9px] tablet:px-2 tablet:py-2 tablet:text-xs md:px-3 md:py-2 md:text-sm lg:text-base rounded-lg tablet:rounded-xl font-medium transition-all duration-300 leading-tight ${
+                  className={`px-1 py-1.5 text-[7px] xs:text-[8px] tablet:px-1.5 tablet:py-2 tablet:text-[10px] md:px-2 md:py-2 md:text-xs lg:px-2.5 lg:text-[13px] rounded-lg tablet:rounded-xl font-medium transition-all duration-300 leading-tight whitespace-nowrap overflow-hidden text-ellipsis ${
                     clickedCategory === category
                       ? 'bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 shadow-lg'
                       : 'bg-white text-slate-600 hover:bg-slate-50 border border-slate-200 shadow-sm'
@@ -659,7 +659,7 @@ function Projects() {
                 <button
                   key={category}
                   onClick={() => { setActiveFilter(category); setClickedCategory(category); }}
-                  className={`px-1.5 py-1.5 text-[8px] xs:text-[9px] tablet:px-2 tablet:py-2 tablet:text-xs md:px-3 md:py-2 md:text-sm lg:text-base rounded-lg tablet:rounded-xl font-medium transition-all duration-300 leading-tight ${
+                  className={`px-1 py-1.5 text-[7px] xs:text-[8px] tablet:px-1.5 tablet:py-2 tablet:text-[10px] md:px-2 md:py-2 md:text-xs lg:px-2.5 lg:text-[13px] rounded-lg tablet:rounded-xl font-medium transition-all duration-300 leading-tight whitespace-nowrap overflow-hidden text-ellipsis ${
                     clickedCategory === category
                       ? 'bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 shadow-lg'
                       : 'bg-white text-slate-600 hover:bg-slate-50 border border-slate-200 shadow-sm'
@@ -675,7 +675,7 @@ function Projects() {
                   <button
                     key={category}
                     onClick={() => { setActiveFilter(category); setClickedCategory(category); }}
-                    className={`px-1.5 py-1.5 text-[8px] xs:text-[9px] tablet:px-2 tablet:py-2 tablet:text-xs md:px-3 md:py-2 md:text-sm lg:text-base rounded-lg tablet:rounded-xl font-medium transition-all duration-300 leading-tight ${
+                    className={`px-1 py-1.5 text-[7px] xs:text-[8px] tablet:px-1.5 tablet:py-2 tablet:text-[10px] md:px-2 md:py-2 md:text-xs lg:px-2.5 lg:text-[13px] rounded-lg tablet:rounded-xl font-medium transition-all duration-300 leading-tight whitespace-nowrap overflow-hidden text-ellipsis ${
                       clickedCategory === category
                         ? 'bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 shadow-lg'
                         : 'bg-white text-slate-600 hover:bg-slate-50 border border-slate-200 shadow-sm'
