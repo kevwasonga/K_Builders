@@ -46,7 +46,7 @@ function Hero() {
   };
 
   return (
-    <section id="home" className="relative h-[85vh] xs:h-[90vh] sm:h-[95vh] md:h-screen overflow-hidden bg-gradient-to-br from-slate-50 to-white">
+    <section id="home" className="relative h-screen overflow-hidden bg-gradient-to-br from-slate-50 to-white">
       {/* Background Images with Parallax Effect */}
       <div className="absolute inset-0">
         {heroImages.map((image, index) => (
@@ -74,12 +74,12 @@ function Hero() {
       </div>
 
       {/* Main Content */}
-      <div className="relative h-full flex items-center justify-center z-10">
+      <div className="relative h-full flex items-start justify-center z-10 pt-32 sm:pt-36 md:pt-40">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className={`transform transition-all duration-1000 mt-12 xs:mt-16 sm:mt-20 md:mt-24 lg:mt-28 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+            <div className={`transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
 
-              <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-display font-bold text-white mb-4 sm:mb-6 md:mb-8 leading-tight">
+              <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-display font-bold text-white mb-4 sm:mb-6 md:mb-8 leading-tight">
                 Design That
                 <span className="block bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
                   Transforms
@@ -87,19 +87,19 @@ function Hero() {
                 Lives
               </h1>
               
-              <p className="text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-slate-200 mb-6 sm:mb-8 md:mb-12 leading-relaxed max-w-4xl mx-auto px-4">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-slate-200 mb-6 sm:mb-8 md:mb-12 leading-relaxed max-w-4xl mx-auto px-4">
                 Creating exceptional spaces with innovative design, quality craftsmanship, and attention to every detail across Kenya.
               </p>
 
               {/* CTA Buttons */}
-              <div className="flex flex-row gap-2 xs:gap-3 sm:gap-4 md:gap-6 justify-center mb-12 sm:mb-16 px-2 xs:px-4">
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mb-12 sm:mb-16 px-4">
                 <a
                   href="#about"
                   onClick={(e) => { e.preventDefault(); scrollToAbout(); }}
-                  className="flex-1 bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 px-3 xs:px-4 sm:px-6 md:px-8 py-2 xs:py-3 sm:py-4 md:py-5 rounded-lg xs:rounded-xl sm:rounded-2xl text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl font-bold hover:from-yellow-500 hover:to-orange-600 transition-all transform hover:scale-105 shadow-2xl group inline-block text-center whitespace-nowrap"
+                  className="bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 px-6 sm:px-10 md:px-12 py-3 sm:py-4 md:py-5 rounded-xl sm:rounded-2xl text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl font-bold hover:from-yellow-500 hover:to-orange-600 transition-all transform hover:scale-105 shadow-2xl group inline-block"
                 >
-                  Start Project
-                  <span className="ml-1 xs:ml-2 group-hover:translate-x-2 transition-transform inline-block text-base xs:text-lg sm:text-xl md:text-2xl">→</span>
+                  Start Your Project
+                  <span className="ml-3 group-hover:translate-x-2 transition-transform inline-block text-2xl">→</span>
                 </a>
                 
                 <a 
@@ -111,32 +111,31 @@ function Hero() {
                       element.scrollIntoView({ behavior: 'smooth' });
                     }
                   }}
-                  className="flex-1 bg-white/10 backdrop-blur-lg text-white px-3 xs:px-4 sm:px-6 md:px-8 py-2 xs:py-3 sm:py-4 md:py-5 rounded-lg xs:rounded-xl sm:rounded-2xl text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl font-medium hover:bg-white/20 transition-all border border-white/30 group flex items-center justify-center whitespace-nowrap"
+                  className="bg-white/10 backdrop-blur-lg text-white px-6 sm:px-10 md:px-12 py-3 sm:py-4 md:py-5 rounded-xl sm:rounded-2xl text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl font-medium hover:bg-white/20 transition-all border border-white/30 group flex items-center justify-center"
                 >
-                  <Play size={16} className="xs:w-5 xs:h-5 sm:w-6 sm:h-6 mr-1 xs:mr-2" />
-                  <span className="hidden xs:inline">Watch Our Story</span>
-                  <span className="xs:hidden">Story</span>
+                  <Play size={24} className="mr-3" />
+                  Watch Our Story
                 </a>
               </div>
 
               {/* Stats and Scroll Indicator */}
               <div className="flex flex-col items-center">
-                <div className="text-center mb-4 sm:mb-6 md:mb-8">
-                  <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-r from-yellow-400/20 to-orange-500/20 rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4">
-                    <Award size={24} className="sm:w-7 sm:h-7 md:w-8 md:h-8 text-yellow-400" />
+                <div className="text-center mb-8">
+                  <div className="w-16 h-16 bg-gradient-to-r from-yellow-400/20 to-orange-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                    <Award size={32} className="text-yellow-400" />
                   </div>
-                  <div className="text-xl xs:text-2xl sm:text-3xl md:text-4xl font-display font-bold text-white mb-2">7+</div>
-                  <div className="text-xs xs:text-sm md:text-base text-slate-300">Years Experience</div>
+                  <div className="text-3xl font-display font-bold text-white mb-2">7+</div>
+                  <div className="text-slate-300">Years Experience</div>
                 </div>
                 
                 <a
                   href="#about"
                   onClick={(e) => { e.preventDefault(); scrollToAbout(); }}
-                  className="text-white animate-bounce group cursor-pointer block"
+                  className="text-white animate-bounce group cursor-pointer"
                 >
                   <div className="flex flex-col items-center">
-                    <span className="text-xs xs:text-sm md:text-base mb-2 opacity-75 group-hover:opacity-100 transition-opacity">Scroll to explore</span>
-                    <ChevronDown size={24} className="sm:w-7 sm:h-7 md:w-8 md:h-8 group-hover:text-yellow-400 transition-colors" />
+                    <span className="text-sm mb-2 opacity-75 group-hover:opacity-100 transition-opacity">Scroll to explore</span>
+                    <ChevronDown size={32} className="group-hover:text-yellow-400 transition-colors" />
                   </div>
                 </a>
               </div>
