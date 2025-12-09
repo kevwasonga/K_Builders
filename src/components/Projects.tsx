@@ -626,22 +626,24 @@ function Projects() {
 
           {/* Filter Buttons */}
           <div className="mt-6 sm:mt-8 md:mt-12 max-w-5xl mx-auto">
-            <button
-              onClick={() => setActiveFilter('All')}
-              className={`w-full tablet:w-auto px-2 py-1.5 text-[10px] xs:text-xs sm:px-3 sm:py-2 sm:text-sm md:px-4 md:py-2.5 md:text-base lg:text-lg rounded-lg sm:rounded-xl font-medium transition-all duration-300 whitespace-nowrap mb-2 ${
-                activeFilter === 'All'
-                  ? 'bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 shadow-lg'
-                  : 'bg-white text-slate-600 hover:bg-slate-50 border border-slate-200 shadow-sm'
-              }`}
-            >
-              All
-            </button>
-            <div className="grid grid-cols-2 tablet:flex tablet:flex-wrap justify-center gap-2 mt-2 tablet:mt-0">
+            <div className="flex flex-wrap justify-center gap-2">
+              <button
+                onClick={() => setActiveFilter('All')}
+                className={`w-full tablet:w-auto px-2 py-1.5 text-[10px] xs:text-xs tablet:px-3 tablet:py-2 tablet:text-sm md:px-4 md:py-2.5 md:text-base lg:text-lg rounded-lg tablet:rounded-xl font-medium transition-all duration-300 whitespace-nowrap mb-2 tablet:mb-0 ${
+                  activeFilter === 'All'
+                    ? 'bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 shadow-lg'
+                    : 'bg-white text-slate-600 hover:bg-slate-50 border border-slate-200 shadow-sm'
+                }`}
+              >
+                All
+              </button>
+            </div>
+            <div className="grid grid-cols-2 tablet:flex tablet:flex-wrap justify-center gap-2 mt-2 tablet:mt-2">
               {categories.slice(1).map((category) => (
                 <button
                   key={category}
                   onClick={() => setActiveFilter(category)}
-                  className={`px-2 py-1.5 text-[9px] xs:text-[10px] sm:px-3 sm:py-2 sm:text-xs md:px-4 md:py-2.5 md:text-sm lg:text-base rounded-lg sm:rounded-xl font-medium transition-all duration-300 whitespace-nowrap overflow-hidden text-ellipsis ${
+                  className={`px-2 py-1.5 text-[9px] xs:text-[10px] tablet:px-3 tablet:py-2 tablet:text-sm md:px-4 md:py-2.5 md:text-base lg:text-lg rounded-lg tablet:rounded-xl font-medium transition-all duration-300 whitespace-nowrap overflow-hidden text-ellipsis ${
                     activeFilter === category
                       ? 'bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 shadow-lg'
                       : 'bg-white text-slate-600 hover:bg-slate-50 border border-slate-200 shadow-sm'
