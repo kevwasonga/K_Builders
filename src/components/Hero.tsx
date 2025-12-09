@@ -59,7 +59,7 @@ function Hero() {
             <img
               src={image}
               alt="Interior Design"
-              className="w-full h-full object-cover scale-110 animate-slow-zoom"
+              className="w-full h-full object-cover object-center scale-110 animate-slow-zoom"
             />
           </div>
         ))}

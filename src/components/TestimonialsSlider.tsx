@@ -91,8 +91,8 @@ function TestimonialsSlider() {
   };
 
   return (
-    <div className="text-center mt-12 sm:mt-16 md:mt-20">
-      <div className="bg-gradient-to-r from-slate-800/90 to-slate-700/90 backdrop-blur-lg rounded-2xl p-4 xs:p-6 sm:p-8 md:p-12 border border-slate-500 shadow-2xl max-w-4xl mx-auto">
+    <div className="text-center mt-6 sm:mt-8 md:mt-10">
+      <div className="bg-gradient-to-r from-slate-800/90 to-slate-700/90 backdrop-blur-lg rounded-2xl p-2 xs:p-3 sm:p-4 md:p-6 border border-slate-500 shadow-2xl w-full mx-auto">
         <h3 className="text-base xs:text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white mb-2 xs:mb-3 sm:mb-4">What Our Clients Say</h3>
         <p className="text-xs xs:text-sm sm:text-base md:text-lg text-slate-300 mb-4 xs:mb-6 sm:mb-8 max-w-2xl mx-auto px-2 xs:px-4">
           Real stories from real clients who trusted us with their construction dreams
