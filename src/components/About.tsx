@@ -48,7 +48,7 @@ function About() {
             </div>
             <h3 className="text-2xl font-display font-bold text-slate-800 mb-4">Our Mission</h3>
             <p className="text-slate-600 leading-relaxed">
-              To provide consistent, quality interior services while maintaining safe practices and ensuring every client feels satisfied with the final result.
+              To provide consistent, quality interior design services while maintaining safe practices and ensuring every client feels satisfied with the final result.
             </p>
           </div>
 
@@ -61,7 +61,7 @@ function About() {
             </div>
             <h3 className="text-2xl font-display font-bold text-slate-800 mb-4">Our Vision</h3>
             <p className="text-slate-600 leading-relaxed">
-              Our vision is to become Kenya's most trusted partner for innovative and high-quality interior design solutions. We strive to set the standard in modern aesthetics, reliable service, and exceptional craftsmanship—creating functional, beautiful spaces that reflect each client's lifestyle and goals. By embracing new technologies and delivering every project with integrity, we aim to shape inspiring homes, offices, and commercial interiors across the country.
+              To become Kenya's most dependable interior solutions provider by delivering innovative designs, exceptional craftsmanship, and reliable service that consistently exceeds client expectations. We aspire to create functional, beautiful spaces that inspire confidence, enhance everyday living, and set new standards of quality across the industry.
             </p>
           </div>
 
