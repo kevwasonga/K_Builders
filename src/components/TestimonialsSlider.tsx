@@ -93,8 +93,8 @@ function TestimonialsSlider() {
   return (
     <div className="text-center mt-20">
       <div className="bg-gradient-to-r from-slate-800/90 to-slate-700/90 backdrop-blur-lg rounded-2xl p-12 border border-slate-500 shadow-2xl">
-        <h3 className="text-3xl font-bold text-white mb-4">What Our Clients Say</h3>
-        <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
+        <h3 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">What Our Clients Say</h3>
+        <p className="text-sm xs:text-base sm:text-lg md:text-xl text-slate-300 mb-6 xs:mb-8 max-w-2xl mx-auto px-4">
           Real stories from real clients who trusted us with their construction dreams
         </p>
         
@@ -106,15 +106,15 @@ function TestimonialsSlider() {
               ))}
             </div>
             
-            <blockquote className="text-xl md:text-2xl text-center text-white/95 leading-relaxed mb-8 font-light italic">
+            <blockquote className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl text-center text-white/95 leading-relaxed mb-6 xs:mb-8 font-light italic">
               "{testimonials[currentTestimonial].content}"
             </blockquote>
             
             <div className="text-center">
-              <div className="font-semibold text-white text-lg">
+              <div className="font-semibold text-white text-base xs:text-lg md:text-xl">
                 {testimonials[currentTestimonial].name}
               </div>
-              <div className="text-white/80 text-sm">
+              <div className="text-white/80 text-xs xs:text-sm md:text-base">
                 {testimonials[currentTestimonial].role}, {testimonials[currentTestimonial].company}
               </div>
             </div>

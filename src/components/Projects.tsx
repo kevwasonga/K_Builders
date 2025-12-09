@@ -613,40 +613,49 @@ function Projects() {
           <div className="inline-block px-4 py-2 bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 text-sm font-bold rounded-full mb-6">
             Our Portfolio
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-slate-800 mb-4 sm:mb-6">
+          <h2 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-slate-800 mb-4 sm:mb-6">
             Exceptional
             <span className="block bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
               Projects
             </span>
           </h2>
-          <div className="w-32 h-1 bg-gradient-to-r from-yellow-400 to-orange-500 mx-auto mb-8"></div>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed px-4">
-            From concept to completion, we deliver exceptional interior and exterior solutions 
-            that transform spaces and exceed expectations.
+          <div className="w-24 xs:w-32 h-1 bg-gradient-to-r from-yellow-400 to-orange-500 mx-auto mb-6 xs:mb-8"></div>
+          <p className="text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-slate-600 max-w-3xl mx-auto leading-relaxed px-4">
+            From concept to completion, Clause Interior Fits delivers exceptional interior fit-out solutions that transform spaces and elevate your environment beyond the ordinary.
           </p>
-        </div>
 
-        {/* Controls */}
-        <div className="flex flex-col lg:flex-row justify-between items-center mb-12 gap-6">
           {/* Filter Buttons */}
-          <div className="grid grid-cols-2 sm:flex sm:flex-wrap justify-center gap-2 w-full lg:w-auto">
-            {categories.map((category) => (
+          <div className="mt-12 max-w-5xl mx-auto">
+            <div className="flex flex-wrap justify-center gap-2">
               <button
-                key={category}
-                onClick={() => setActiveFilter(category)}
-                className={`px-2 py-1.5 text-xs sm:px-3 sm:py-2 sm:text-sm md:px-4 md:py-2.5 md:text-base rounded-lg sm:rounded-xl font-medium transition-all duration-300 whitespace-nowrap ${
-                  activeFilter === category
+                onClick={() => setActiveFilter('All')}
+                className={`w-full sm:w-auto px-2 py-1.5 text-[10px] xs:text-xs sm:px-3 sm:py-2 sm:text-sm md:px-4 md:py-2.5 md:text-base lg:text-lg rounded-lg sm:rounded-xl font-medium transition-all duration-300 whitespace-nowrap ${
+                  activeFilter === 'All'
                     ? 'bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 shadow-lg'
                     : 'bg-white text-slate-600 hover:bg-slate-50 border border-slate-200 shadow-sm'
                 }`}
               >
-                {category}
+                All
               </button>
-            ))}
+              {categories.slice(1).map((category) => (
+                <button
+                  key={category}
+                  onClick={() => setActiveFilter(category)}
+                  className={`px-2 py-1.5 text-[10px] xs:text-xs sm:px-3 sm:py-2 sm:text-sm md:px-4 md:py-2.5 md:text-base lg:text-lg rounded-lg sm:rounded-xl font-medium transition-all duration-300 whitespace-nowrap ${
+                    activeFilter === category
+                      ? 'bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 shadow-lg'
+                      : 'bg-white text-slate-600 hover:bg-slate-50 border border-slate-200 shadow-sm'
+                  }`}
+                >
+                  {category}
+                </button>
+              ))}
+            </div>
           </div>
 
           {/* View Mode Toggle */}
-          <div className="flex items-center space-x-2 bg-white p-1 rounded-xl border border-slate-200 shadow-sm">
+          <div className="flex justify-center mt-6">
+            <div className="flex items-center space-x-2 bg-white p-1 rounded-xl border border-slate-200 shadow-sm">
             <button
               onClick={() => setViewMode('carousel')}
               className={`p-2 rounded-lg transition-all duration-300 ${
@@ -667,10 +676,12 @@ function Projects() {
             >
               <Grid size={20} />
             </button>
+            </div>
           </div>
         </div>
 
         {/* Projects Display */}
+        <div className="mb-12"></div>
         {viewMode === 'grid' ? (
           /* Grid View */
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 max-w-7xl mx-auto">
@@ -701,10 +712,10 @@ function Projects() {
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
                   </div>
                   <div className="p-6">
-                    <div className="text-sm text-yellow-400 mb-2 font-medium">{project.category}</div>
-                    <h3 className="text-lg font-bold text-white mb-2">{project.title}</h3>
-                    <div className="text-sm text-slate-400 mb-3">{project.location}</div>
-                    <p className="text-slate-300 text-sm leading-relaxed">{project.description}</p>
+                    <div className="text-xs xs:text-sm md:text-base text-yellow-400 mb-2 font-medium">{project.category}</div>
+                    <h3 className="text-base xs:text-lg md:text-xl font-bold text-white mb-2">{project.title}</h3>
+                    <div className="text-xs xs:text-sm md:text-base text-slate-400 mb-3">{project.location}</div>
+                    <p className="text-slate-300 text-xs xs:text-sm md:text-base leading-relaxed">{project.description}</p>
                   </div>
                 </div>
               ))}
@@ -746,7 +757,7 @@ function Projects() {
 
         {/* Location Tagline */}
         <div className="text-center mt-16 mb-8">
-          <p className="text-lg sm:text-xl bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent italic font-medium">
+          <p className="text-base xs:text-lg sm:text-xl md:text-2xl bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent italic font-medium">
             Clause Interior Fits | Kisumu, serving all Kenya
           </p>
         </div>

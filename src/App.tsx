@@ -52,9 +52,10 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16 xs:h-20 md:h-24 lg:h-28">
             {/* Designer Logo */}
-            <div 
+            <a 
+              href="#home"
               className="flex items-center group cursor-pointer" 
-              onClick={() => scrollToSection('home')}
+              onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}
             >
               <div className={`transition-all duration-700 ease-out ${
                 isScrolled ? 'scale-75 opacity-95' : 'scale-100 opacity-100'
@@ -64,14 +65,14 @@ function App() {
                   <div className="flex flex-col items-start">
                     <div className="flex items-center">
                       <h1 className={`font-serif font-bold tracking-tight transition-all duration-700 ease-out ${
-                        isScrolled ? 'text-lg sm:text-xl md:text-2xl' : 'text-xl sm:text-2xl md:text-3xl lg:text-4xl'
+                        isScrolled ? 'text-base xs:text-lg sm:text-xl md:text-2xl' : 'text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl'
                       }`} style={{color: '#6A394F', textShadow: '0 2px 4px rgba(0,0,0,0.3)'}}>
                         CLAUSE
                       </h1>
-                      <span className="text-yellow-500 text-xs ml-1 font-bold">™</span>
+                      <span className="text-yellow-500 text-[10px] xs:text-xs ml-1 font-bold">™</span>
                     </div>
                     <div className={`font-serif font-semibold tracking-widest transition-all duration-700 ease-out ${
-                      isScrolled ? 'text-xs sm:text-sm mt-0' : 'text-sm sm:text-base md:text-lg mt-1'
+                      isScrolled ? 'text-[10px] xs:text-xs sm:text-sm mt-0' : 'text-xs xs:text-sm sm:text-base md:text-lg mt-1'
                     }`} style={{color: '#0F5C5F', textShadow: '0 1px 2px rgba(0,0,0,0.2)'}}>
                       INTERIOR FITS
                     </div>
@@ -87,15 +88,16 @@ function App() {
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-1">
               {navItems.map((item) => (
-                <button 
+                <a 
                   key={item.id}
-                  onClick={() => scrollToSection(item.id)} 
-                  className={`relative px-3 sm:px-4 md:px-6 py-2 md:py-3 rounded-xl text-sm md:text-base font-medium transition-all duration-500 ease-out group ${
+                  href={`#${item.id}`}
+                  onClick={(e) => { e.preventDefault(); scrollToSection(item.id); }} 
+                  className={`relative px-3 sm:px-4 md:px-6 py-2 md:py-3 rounded-xl text-xs xs:text-sm md:text-base lg:text-lg font-medium transition-all duration-500 ease-out group ${
                     isScrolled 
                       ? 'text-slate-700 hover:text-slate-900' 
                       : 'text-white/90 hover:text-white'
@@ -104,21 +106,23 @@ function App() {
                   <span className="relative z-10">{item.label}</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/20 to-orange-500/20 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out"></div>
                   <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-yellow-400 to-orange-500 group-hover:w-8 transition-all duration-500 ease-out"></div>
-                </button>
+                </a>
               ))}
               
               {/* CTA Button */}
-              <button 
-                onClick={() => {
+              <a 
+                href="#contact"
+                onClick={(e) => {
+                  e.preventDefault();
                   const element = document.getElementById('contact');
                   if (element) {
                     element.scrollIntoView({ behavior: 'smooth' });
                   }
                 }}
-                className="ml-2 sm:ml-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 px-3 sm:px-4 md:px-6 py-2 md:py-3 rounded-xl text-sm md:text-base font-bold hover:from-yellow-500 hover:to-orange-600 transition-all duration-500 ease-out transform hover:scale-105 shadow-lg"
+                className="ml-2 sm:ml-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 px-3 sm:px-4 md:px-6 py-2 md:py-3 rounded-xl text-xs xs:text-sm md:text-base lg:text-lg font-bold hover:from-yellow-500 hover:to-orange-600 transition-all duration-500 ease-out transform hover:scale-105 shadow-lg inline-block"
               >
                 Get Quote
-              </button>
+              </a>
             </div>
 
             {/* Mobile Menu Button */}
@@ -138,25 +142,28 @@ function App() {
           <div className="md:hidden bg-white/95 backdrop-blur-lg border-t border-slate-200/50 animate-in slide-in-from-top duration-500">
             <div className="px-4 py-6 space-y-2">
               {navItems.map((item) => (
-                <button 
+                <a 
                   key={item.id}
-                  onClick={() => scrollToSection(item.id)} 
-                  className="block w-full text-left px-4 py-3 text-slate-700 hover:text-slate-900 hover:bg-gradient-to-r hover:from-yellow-400/10 hover:to-orange-500/10 rounded-xl transition-all duration-400 ease-out font-medium"
+                  href={`#${item.id}`}
+                  onClick={(e) => { e.preventDefault(); scrollToSection(item.id); }} 
+                  className="block w-full text-left px-4 py-3 text-sm xs:text-base text-slate-700 hover:text-slate-900 hover:bg-gradient-to-r hover:from-yellow-400/10 hover:to-orange-500/10 rounded-xl transition-all duration-400 ease-out font-medium"
                 >
                   {item.label}
-                </button>
+                </a>
               ))}
-              <button 
-                onClick={() => {
+              <a 
+                href="#contact"
+                onClick={(e) => {
+                  e.preventDefault();
                   const element = document.getElementById('contact');
                   if (element) {
                     element.scrollIntoView({ behavior: 'smooth' });
                   }
                 }}
-                className="w-full mt-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 px-6 py-3 rounded-xl font-bold hover:from-yellow-500 hover:to-orange-600 transition-all duration-300"
+                className="w-full mt-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 px-6 py-3 rounded-xl text-sm xs:text-base font-bold hover:from-yellow-500 hover:to-orange-600 transition-all duration-300 block text-center"
               >
                 Get Quote
-              </button>
+              </a>
             </div>
           </div>
         )}

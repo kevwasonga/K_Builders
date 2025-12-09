@@ -79,7 +79,7 @@ function Hero() {
           <div className="text-center">
             <div className={`transform transition-all duration-1000 mt-16 sm:mt-24 md:mt-32 lg:mt-36 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
 
-              <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-display font-bold text-white mb-4 sm:mb-6 md:mb-8 leading-tight">
+              <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-display font-bold text-white mb-4 sm:mb-6 md:mb-8 leading-tight">
                 Design That
                 <span className="block bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
                   Transforms
@@ -87,32 +87,35 @@ function Hero() {
                 Lives
               </h1>
               
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-slate-200 mb-6 sm:mb-8 md:mb-12 leading-relaxed max-w-4xl mx-auto px-4">
+              <p className="text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-slate-200 mb-6 sm:mb-8 md:mb-12 leading-relaxed max-w-4xl mx-auto px-4">
                 Creating exceptional spaces with innovative design, quality craftsmanship, and attention to every detail across Kenya.
               </p>
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mb-12 sm:mb-16 px-4">
-                <button
-                  onClick={scrollToAbout}
-                  className="bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 px-6 sm:px-10 md:px-12 py-3 sm:py-4 md:py-5 rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold hover:from-yellow-500 hover:to-orange-600 transition-all transform hover:scale-105 shadow-2xl group"
+                <a
+                  href="#about"
+                  onClick={(e) => { e.preventDefault(); scrollToAbout(); }}
+                  className="bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 px-6 sm:px-10 md:px-12 py-3 sm:py-4 md:py-5 rounded-xl sm:rounded-2xl text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl font-bold hover:from-yellow-500 hover:to-orange-600 transition-all transform hover:scale-105 shadow-2xl group inline-block"
                 >
                   Start Your Project
                   <span className="ml-3 group-hover:translate-x-2 transition-transform inline-block text-2xl">→</span>
-                </button>
+                </a>
                 
-                <button 
-                  onClick={() => {
+                <a 
+                  href="#projects"
+                  onClick={(e) => {
+                    e.preventDefault();
                     const element = document.getElementById('projects');
                     if (element) {
                       element.scrollIntoView({ behavior: 'smooth' });
                     }
                   }}
-                  className="bg-white/10 backdrop-blur-lg text-white px-6 sm:px-10 md:px-12 py-3 sm:py-4 md:py-5 rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-medium hover:bg-white/20 transition-all border border-white/30 group flex items-center justify-center"
+                  className="bg-white/10 backdrop-blur-lg text-white px-6 sm:px-10 md:px-12 py-3 sm:py-4 md:py-5 rounded-xl sm:rounded-2xl text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl font-medium hover:bg-white/20 transition-all border border-white/30 group flex items-center justify-center"
                 >
                   <Play size={24} className="mr-3" />
                   Watch Our Story
-                </button>
+                </a>
               </div>
 
               {/* Stats and Scroll Indicator */}
@@ -121,19 +124,20 @@ function Hero() {
                   <div className="w-16 h-16 bg-gradient-to-r from-yellow-400/20 to-orange-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
                     <Award size={32} className="text-yellow-400" />
                   </div>
-                  <div className="text-3xl font-display font-bold text-white mb-2">7+</div>
-                  <div className="text-slate-300">Years Experience</div>
+                  <div className="text-2xl xs:text-3xl md:text-4xl font-display font-bold text-white mb-2">7+</div>
+                  <div className="text-xs xs:text-sm md:text-base text-slate-300">Years Experience</div>
                 </div>
                 
-                <button
-                  onClick={scrollToAbout}
-                  className="text-white animate-bounce group"
+                <a
+                  href="#about"
+                  onClick={(e) => { e.preventDefault(); scrollToAbout(); }}
+                  className="text-white animate-bounce group cursor-pointer"
                 >
                   <div className="flex flex-col items-center">
-                    <span className="text-sm mb-2 opacity-75 group-hover:opacity-100 transition-opacity">Scroll to explore</span>
+                    <span className="text-xs xs:text-sm mb-2 opacity-75 group-hover:opacity-100 transition-opacity">Scroll to explore</span>
                     <ChevronDown size={32} className="group-hover:text-yellow-400 transition-colors" />
                   </div>
-                </button>
+                </a>
               </div>
             </div>
 

@@ -123,24 +123,30 @@ const ExpandableServiceCard = ({ title, category, location, description, image, 
 
         <div className="p-3 sm:p-4 md:p-5 lg:p-6">
           <div className="mb-2">
-            <span className="text-sm text-yellow-400 font-medium">{category}</span>
+            <span className="text-xs xs:text-sm md:text-base text-yellow-400 font-medium">{category}</span>
           </div>
-          <h3 className="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-white mb-2 group-hover:text-yellow-400 transition-colors duration-300">
+          <h3 className="text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl font-bold text-white mb-2 group-hover:text-yellow-400 transition-colors duration-300">
             {title}
           </h3>
-          <div className="flex items-center text-slate-400 text-sm mb-3">
-            <MapPin size={16} className="mr-1" />
+          <div className="flex items-center text-slate-400 text-[10px] xs:text-xs sm:text-sm mb-3">
+            <MapPin size={14} className="mr-1" />
             {location}
           </div>
-          <p className="text-slate-300 text-sm leading-relaxed mb-4 line-clamp-2">
+          <p className="text-slate-300 text-[10px] xs:text-xs sm:text-sm md:text-base leading-relaxed mb-4 line-clamp-2">
             {description}
           </p>
           <div className="flex items-center gap-3">
-            <button 
-              className="flex-1 bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-slate-900 py-2 rounded-xl font-bold transition-all duration-300"
+            <a 
+              href="#contact"
+              onClick={(e) => {
+                e.preventDefault();
+                const element = document.getElementById('contact');
+                if (element) element.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="flex-1 bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-slate-900 py-2 rounded-xl text-[10px] xs:text-xs sm:text-sm md:text-base font-bold transition-all duration-300 text-center"
             >
               Start Your Project
-            </button>
+            </a>
             <div className="relative" ref={shareRef}>
               <button
                 onClick={() => setShowShareMenu(!showShareMenu)}
@@ -158,7 +164,7 @@ const ExpandableServiceCard = ({ title, category, location, description, image, 
                       className="w-full px-4 py-3 flex items-center space-x-3 hover:bg-slate-700/50 transition-all duration-200 text-left border-b border-slate-700/30"
                     >
                       <span className="text-yellow-400">{option.icon}</span>
-                      <span className="text-slate-200 text-sm font-medium">{option.name}</span>
+                      <span className="text-slate-200 text-xs xs:text-sm font-medium">{option.name}</span>
                     </button>
                   ))}
                   <button
@@ -166,7 +172,7 @@ const ExpandableServiceCard = ({ title, category, location, description, image, 
                     className="w-full px-4 py-3 flex items-center space-x-3 bg-gradient-to-r from-yellow-400/10 to-orange-500/10 hover:from-yellow-400/20 hover:to-orange-500/20 transition-all duration-200 text-left border-t-2 border-yellow-400/30"
                   >
                     <span className="text-yellow-400">{shareOptions[shareOptions.length - 1].icon}</span>
-                    <span className="text-yellow-400 text-sm font-bold">{shareOptions[shareOptions.length - 1].name}</span>
+                    <span className="text-yellow-400 text-xs xs:text-sm font-bold">{shareOptions[shareOptions.length - 1].name}</span>
                   </button>
                 </div>
               )}
