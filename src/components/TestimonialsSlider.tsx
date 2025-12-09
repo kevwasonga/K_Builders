@@ -91,51 +91,51 @@ function TestimonialsSlider() {
   };
 
   return (
-    <div className="text-center mt-20">
-      <div className="bg-gradient-to-r from-slate-800/90 to-slate-700/90 backdrop-blur-lg rounded-2xl p-12 border border-slate-500 shadow-2xl">
-        <h3 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">What Our Clients Say</h3>
-        <p className="text-sm xs:text-base sm:text-lg md:text-xl text-slate-300 mb-6 xs:mb-8 max-w-2xl mx-auto px-4">
+    <div className="text-center mt-12 sm:mt-16 md:mt-20">
+      <div className="bg-gradient-to-r from-slate-800/90 to-slate-700/90 backdrop-blur-lg rounded-2xl p-4 xs:p-6 sm:p-8 md:p-12 border border-slate-500 shadow-2xl max-w-4xl mx-auto">
+        <h3 className="text-base xs:text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white mb-2 xs:mb-3 sm:mb-4">What Our Clients Say</h3>
+        <p className="text-xs xs:text-sm sm:text-base md:text-lg text-slate-300 mb-4 xs:mb-6 sm:mb-8 max-w-2xl mx-auto px-2 xs:px-4">
           Real stories from real clients who trusted us with their construction dreams
         </p>
         
         <div className="max-w-3xl mx-auto">
-          <div className="bg-gradient-to-br from-slate-100/20 to-slate-300/20 backdrop-blur-sm rounded-xl p-6 md:p-8 mb-6">
-            <div className="flex items-center justify-center mb-6">
+          <div className="bg-gradient-to-br from-slate-100/20 to-slate-300/20 backdrop-blur-sm rounded-xl p-3 xs:p-4 sm:p-6 md:p-8 mb-4 sm:mb-6">
+            <div className="flex items-center justify-center mb-3 xs:mb-4 sm:mb-6">
               {[1, 2, 3, 4, 5].map((star) => (
-                <Star key={star} size={24} className="text-orange-500 fill-current mx-1" />
+                <Star key={star} size={16} className="xs:w-5 xs:h-5 sm:w-6 sm:h-6 text-orange-500 fill-current mx-0.5 xs:mx-1" />
               ))}
             </div>
             
-            <blockquote className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl text-center text-white/95 leading-relaxed mb-6 xs:mb-8 font-light italic">
+            <blockquote className="text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl text-center text-white/95 leading-relaxed mb-4 xs:mb-6 sm:mb-8 font-light italic">
               "{testimonials[currentTestimonial].content}"
             </blockquote>
             
             <div className="text-center">
-              <div className="font-semibold text-white text-base xs:text-lg md:text-xl">
+              <div className="font-semibold text-white text-sm xs:text-base sm:text-lg md:text-xl">
                 {testimonials[currentTestimonial].name}
               </div>
-              <div className="text-white/80 text-xs xs:text-sm md:text-base">
+              <div className="text-white/80 text-[10px] xs:text-xs sm:text-sm md:text-base">
                 {testimonials[currentTestimonial].role}, {testimonials[currentTestimonial].company}
               </div>
             </div>
           </div>
           
           {/* Navigation Controls */}
-          <div className="flex items-center justify-center space-x-4">
+          <div className="flex items-center justify-center space-x-2 xs:space-x-3 sm:space-x-4">
             <button 
               onClick={prevTestimonial}
-              className="w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300"
+              className="w-8 h-8 xs:w-10 xs:h-10 sm:w-12 sm:h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300"
             >
-              <ChevronLeft size={20} className="text-white" />
+              <ChevronLeft size={16} className="xs:w-5 xs:h-5 sm:w-6 sm:h-6 text-white" />
             </button>
             
             {/* Dots Indicator */}
-            <div className="flex space-x-2">
+            <div className="flex space-x-1 xs:space-x-1.5 sm:space-x-2">
               {testimonials.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => goToTestimonial(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  className={`w-2 h-2 xs:w-2.5 xs:h-2.5 sm:w-3 sm:h-3 rounded-full transition-all duration-300 ${
                     index === currentTestimonial ? 'bg-white' : 'bg-white/30 hover:bg-white/50'
                   }`}
                 />
@@ -144,9 +144,9 @@ function TestimonialsSlider() {
             
             <button 
               onClick={nextTestimonial}
-              className="w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300"
+              className="w-8 h-8 xs:w-10 xs:h-10 sm:w-12 sm:h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300"
             >
-              <ChevronRight size={20} className="text-white" />
+              <ChevronRight size={16} className="xs:w-5 xs:h-5 sm:w-6 sm:h-6 text-white" />
             </button>
           </div>
         </div>
