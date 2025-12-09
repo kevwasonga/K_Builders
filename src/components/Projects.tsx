@@ -601,7 +601,7 @@ function Projects() {
   };
 
   return (
-    <section id="projects" className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-slate-50 to-white relative overflow-hidden">
+    <section id="projects" className="py-6 sm:py-8 md:py-10 bg-gradient-to-br from-slate-50 to-white relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 right-10 w-64 h-64 border border-yellow-400 rotate-12 animate-float"></div>
@@ -610,23 +610,23 @@ function Projects() {
 
       <div className="max-w-full 2xl:max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-16 2xl:px-20 relative z-10">
         {/* Header */}
-        <div className="text-center mb-4 sm:mb-6 md:mb-8">
-          <div className="inline-block px-4 py-2 bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 text-sm font-bold rounded-full mb-6">
+        <div className="text-center mb-2 sm:mb-3 md:mb-4">
+          <div className="inline-block px-4 py-2 bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 text-sm font-bold rounded-full mb-3">
             Our Portfolio
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-800 mb-4 sm:mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-800 mb-2 sm:mb-3">
             Exceptional
             <span className="block bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
               Projects
             </span>
           </h2>
-          <div className="w-24 xs:w-32 h-1 bg-gradient-to-r from-yellow-400 to-orange-500 mx-auto mb-6 xs:mb-8"></div>
+          <div className="w-24 xs:w-32 h-1 bg-gradient-to-r from-yellow-400 to-orange-500 mx-auto mb-3 xs:mb-4"></div>
           <p className="text-base sm:text-lg md:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed px-4">
             From concept to completion, Clause Interior Fits delivers exceptional interior fit-out solutions that transform spaces and elevate your environment beyond the ordinary.
           </p>
 
           {/* Filter Buttons */}
-          <div className="mt-6 sm:mt-8 md:mt-12 max-w-5xl mx-auto">
+          <div className="mt-3 sm:mt-4 md:mt-6 max-w-5xl mx-auto">
             <div className="flex flex-wrap justify-center gap-2">
               <button
                 onClick={() => { setActiveFilter('All'); setClickedCategory(null); }}
@@ -689,7 +689,7 @@ function Projects() {
           </div>
 
           {/* View Mode Toggle */}
-          <div className="flex justify-center mt-4 sm:mt-5 md:mt-6">
+          <div className="flex justify-center mt-2 sm:mt-2.5 md:mt-3">
             <div className="flex items-center space-x-2 bg-white p-1 rounded-xl border border-slate-200 shadow-sm">
             <button
               onClick={() => setViewMode('carousel')}
@@ -716,7 +716,7 @@ function Projects() {
         </div>
 
         {/* Projects Display */}
-        <div className="mb-6 sm:mb-8 md:mb-12"></div>
+        <div className="mb-3 sm:mb-4 md:mb-6"></div>
         {viewMode === 'grid' ? (
           /* Grid View */
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 max-w-7xl mx-auto">
@@ -791,14 +791,14 @@ function Projects() {
         )}
 
         {/* Location Tagline */}
-        <div className="text-center mt-16 mb-8">
+        <div className="text-center mt-8 mb-4">
           <p className="text-sm sm:text-base md:text-lg lg:text-xl bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent italic font-medium whitespace-nowrap overflow-hidden text-ellipsis px-4">
             Clause Interior Fits | Kisumu, serving all Kenya
           </p>
         </div>
 
         {/* Category Navigation Arrows */}
-        <div className="flex justify-center items-center gap-4 mt-8 mb-12">
+        <div className="flex justify-center items-center gap-4 mt-4 mb-6">
           <button
             onClick={() => {
               const currentIdx = categories.indexOf(activeFilter);
