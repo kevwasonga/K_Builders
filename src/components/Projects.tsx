@@ -559,12 +559,11 @@ function Projects() {
   };
 
   const getCardCount = () => {
-    if (typeof window === 'undefined') return 12;
+    if (typeof window === 'undefined') return 9;
     const width = window.innerWidth;
     if (width < 768) return 6;   // xs/sm: 1 col × 6 rows
     if (width < 1024) return 6;  // md: 2 cols × 3 rows
-    if (width < 1440) return 9;  // lg: 3 cols × 3 rows
-    return 12;                   // xl/2xl: 4 cols × 3 rows
+    return 9;                    // lg/xl/2xl: 3 cols × 3 rows (max 3 width)
   };
 
   const filteredProjects = activeFilter === 'All' 
@@ -674,7 +673,7 @@ function Projects() {
         {/* Projects Display */}
         {viewMode === 'grid' ? (
           /* Grid View */
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 max-w-[1600px] mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 max-w-7xl mx-auto">
             {filteredProjects.map((project, index) => (
               <ExpandableServiceCard
                 key={index}
