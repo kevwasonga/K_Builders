@@ -158,7 +158,11 @@ function Footer() {
             </div>
           </div>
           
-          <div className="border-t border-slate-700 pt-8 mt-12 text-center text-slate-400">
+          <div className="text-center mt-12 mb-8">
+            <p className="text-yellow-400 italic text-sm sm:text-base">Clause Interior Fits | Kisumu, serving all Kenya</p>
+          </div>
+          
+          <div className="border-t border-slate-700 pt-8 text-center text-slate-400">
             <p>&copy; 2025 Clause Interior Fits. All rights reserved.</p>
           </div>
         </div>

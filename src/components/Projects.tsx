@@ -84,49 +84,49 @@ function Projects() {
       title: 'Marble Work & Stone Installations',
       category: 'Marble Work & Stone',
       location: 'Karen, Nairobi',
-      description: 'Premium marble countertops • Natural stone flooring • Marble wall cladding • Custom stone work',
+      description: 'Premium marble countertops, natural stone flooring, wall cladding, and custom stone work',
       image: marble1
     },
     {
       title: 'Modern TV Niche & Wall Features',
       category: 'Modern TV Niche & Wall Features',
       location: 'Karen, Nairobi',
-      description: 'Custom TV Niches & Backdrop Panels • Modern Floating TV Units • Media Walls with LED & Hidden Wiring • Textured & Slatted TV Accent Walls',
+      description: 'Custom TV niches, backdrop panels, floating units, media walls with LED, and textured accent walls',
       image: tvNiche1
     },
     {
       title: 'Office Partitions & Workstations',
       category: 'Office Partitions & Workstations',
       location: 'Kisumu, Kenya',
-      description: 'Glass & Drywall Office Partitions • Office Cubicles & Custom Workstations • Boardroom Enclosures & Dividers',
+      description: 'Glass and drywall partitions, office cubicles, custom workstations, and boardroom enclosures',
       image: office1
     },
     {
       title: 'Premium Kitchen Cabinets',
       category: 'Premium Kitchen Cabinets',
       location: 'Westlands, Nairobi',
-      description: 'Luxury Kitchen Cabinetry • Soft-Close Modular Cabinets • Water & Heat-Resistant Kitchen Boards • Custom Kitchen Island Designs • Smart Kitchen Storage Integration',
+      description: 'Luxury cabinetry, soft-close modular cabinets, heat-resistant boards, custom islands, and smart storage',
       image: kitchen1
     },
     {
       title: 'Ceiling Systems',
       category: 'Ceiling & Roofing Systems',
       location: 'Thika, Kenya',
-      description: 'Gypsum Ceiling Designs • Acoustic Ceiling Panels • Decorative Drop Ceiling Installations',
+      description: 'Gypsum ceiling designs, acoustic panels, and decorative drop ceiling installations',
       image: ceiling1
     },
     {
       title: 'Wardrobes & Closet Systems',
       category: 'Wardrobes & Closet Systems',
       location: 'Nakuru, Kenya',
-      description: 'Built-in Wardrobes • Walk-in Closet Designs • Sliding & Hinge Wardrobe Systems • Mirror-Finish Wardrobe Panels • Wardrobes with Integrated Lighting',
+      description: 'Built-in wardrobes, walk-in closets, sliding systems, mirror-finish panels, and integrated lighting',
       image: wardrobe1
     },
     {
       title: 'Stainless Steel & Metal Works',
       category: 'Stainless Steel & Metal Works',
       location: 'Mombasa, Kenya',
-      description: 'Stainless Steel Railings & Handles • Metal Brackets, Frames & Holders • Decorative Metal Screens • Stainless Steel Counter Enhancements',
+      description: 'Stainless steel railings, handles, metal brackets, frames, decorative screens, and counter enhancements',
       image: steel1
     },
     {
@@ -326,7 +326,7 @@ function Projects() {
       title: 'Swing Door Cubicle Shower',
       category: 'Glasswork',
       location: 'Karen, Nairobi',
-      description: 'Premium swing door cubicle shower installations • Tempered safety glass • Modern bathroom solutions',
+      description: 'Premium swing door cubicle showers with tempered safety glass for modern bathrooms',
       image: glass1
     },
 
