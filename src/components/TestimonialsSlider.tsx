@@ -91,22 +91,22 @@ function TestimonialsSlider() {
   };
 
   return (
-    <div className="text-center mt-6 sm:mt-8 md:mt-10">
-      <div className="bg-gradient-to-r from-slate-800/90 to-slate-700/90 backdrop-blur-lg rounded-2xl p-2 xs:p-3 sm:p-4 md:p-6 border border-slate-500 shadow-2xl w-full mx-auto">
+    <div className="text-center mt-4 sm:mt-6 md:mt-10">
+      <div className="bg-gradient-to-r from-slate-800/90 to-slate-700/90 backdrop-blur-lg rounded-2xl border border-slate-500 shadow-2xl w-full mx-auto" style={{padding: 'clamp(12px, 3vw, 24px)'}}>
         <h3 className="text-base xs:text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white mb-2 xs:mb-3 sm:mb-4 font-serif">What Our Clients Say</h3>
         <p className="text-xs xs:text-sm sm:text-base md:text-lg text-slate-300 mb-4 xs:mb-6 sm:mb-8 max-w-2xl mx-auto px-2 xs:px-4">
           Real stories from real clients who trusted us with their interior construction dreams
         </p>
         
         <div className="max-w-3xl mx-auto">
-          <div className="bg-gradient-to-br from-slate-100/20 to-slate-300/20 backdrop-blur-sm rounded-xl p-3 xs:p-4 sm:p-6 md:p-8 mb-4 sm:mb-6">
-            <div className="flex items-center justify-center mb-3 xs:mb-4 sm:mb-6">
+          <div className="bg-gradient-to-br from-slate-100/20 to-slate-300/20 backdrop-blur-sm rounded-xl p-4 sm:p-6 md:p-8 mb-4 sm:mb-6" style={{minHeight: '160px'}}>
+            <div className="flex items-center justify-center mb-3 sm:mb-4">
               {[1, 2, 3, 4, 5].map((star) => (
                 <Star key={star} size={16} className="xs:w-5 xs:h-5 sm:w-6 sm:h-6 text-orange-500 fill-current mx-0.5 xs:mx-1" />
               ))}
             </div>
             
-            <blockquote className="text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl text-center text-white/95 leading-relaxed mb-4 xs:mb-6 sm:mb-8 font-light italic">
+            <blockquote className="text-xs xs:text-sm sm:text-base md:text-lg text-center text-white/95 leading-relaxed mb-4 sm:mb-6 font-light italic line-clamp-5">
               "{testimonials[currentTestimonial].content}"
             </blockquote>
             
@@ -124,7 +124,8 @@ function TestimonialsSlider() {
           <div className="flex items-center justify-center space-x-2 xs:space-x-3 sm:space-x-4">
             <button 
               onClick={prevTestimonial}
-              className="w-8 h-8 xs:w-10 xs:h-10 sm:w-12 sm:h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300"
+              className="w-10 h-10 sm:w-12 sm:h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300"
+              aria-label="Previous testimonial"
             >
               <ChevronLeft size={16} className="xs:w-5 xs:h-5 sm:w-6 sm:h-6 text-white" />
             </button>
@@ -135,16 +136,18 @@ function TestimonialsSlider() {
                 <button
                   key={index}
                   onClick={() => goToTestimonial(index)}
-                  className={`w-2 h-2 xs:w-2.5 xs:h-2.5 sm:w-3 sm:h-3 rounded-full transition-all duration-300 ${
+                  className={`w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full transition-all duration-300 ${
                     index === currentTestimonial ? 'bg-white' : 'bg-white/30 hover:bg-white/50'
                   }`}
+                  aria-label={`Go to testimonial ${index + 1}`}
                 />
               ))}
             </div>
             
             <button 
               onClick={nextTestimonial}
-              className="w-8 h-8 xs:w-10 xs:h-10 sm:w-12 sm:h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300"
+              className="w-10 h-10 sm:w-12 sm:h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-all duration-300"
+              aria-label="Next testimonial"
             >
               <ChevronRight size={16} className="xs:w-5 xs:h-5 sm:w-6 sm:h-6 text-white" />
             </button>

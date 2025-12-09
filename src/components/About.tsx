@@ -2,7 +2,7 @@ import { Target, Eye, Lightbulb } from 'lucide-react';
 
 function About() {
   return (
-    <section id="about" className="pt-24 sm:pt-28 md:pt-32 pb-12 sm:pb-16 md:pb-20 bg-gradient-to-br from-slate-50 to-white relative overflow-hidden">
+    <section id="about" className="pt-20 sm:pt-24 md:pt-32 pb-12 sm:pb-16 md:pb-24 bg-gradient-to-br from-slate-50 to-white relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-10 w-64 h-64 border border-yellow-400 rotate-45 animate-float"></div>
@@ -25,7 +25,7 @@ function About() {
         </div>
 
         {/* Three Column Layout */}
-        <div className="grid md:grid-cols-3 gap-6 sm:gap-8 mb-5 sm:mb-7 md:mb-10">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12 md:mb-16">
           {/* Our Story */}
           <div className="card-elegant">
             <div className="flex items-center mb-6">

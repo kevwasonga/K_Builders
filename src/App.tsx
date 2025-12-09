@@ -99,13 +99,13 @@ function App() {
                   key={item.id}
                   href={`#${item.id}`}
                   onClick={(e) => { e.preventDefault(); scrollToSection(item.id); }} 
-                  className={`relative px-3 sm:px-4 md:px-6 py-2 md:py-3 rounded-xl text-xs xs:text-sm md:text-base lg:text-lg font-medium transition-all duration-500 ease-out group ${
+                  className={`relative px-3 sm:px-4 md:px-6 py-2 md:py-3 rounded-xl font-medium transition-all duration-500 ease-out group ${
                     isScrolled 
                       ? 'text-slate-700 hover:text-slate-900' 
                       : 'text-white/90 hover:text-white'
                   }`}
                 >
-                  <span className="relative z-10">{item.label}</span>
+                  <span className="relative z-10" style={{fontSize: 'clamp(13px, 1.5vw, 18px)'}}>{item.label}</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/20 to-orange-500/20 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out"></div>
                   <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-yellow-400 to-orange-500 group-hover:w-8 transition-all duration-500 ease-out"></div>
                 </a>
@@ -121,7 +121,8 @@ function App() {
                     element.scrollIntoView({ behavior: 'smooth' });
                   }
                 }}
-                className="ml-2 sm:ml-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 px-3 sm:px-4 md:px-6 py-2 md:py-3 rounded-xl text-xs xs:text-sm md:text-base lg:text-lg font-bold hover:from-yellow-500 hover:to-orange-600 transition-all duration-500 ease-out transform hover:scale-105 shadow-lg inline-block"
+                className="ml-2 sm:ml-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 px-3 sm:px-4 md:px-6 py-2 md:py-3 rounded-xl font-bold hover:from-yellow-500 hover:to-orange-600 transition-all duration-500 ease-out transform hover:scale-105 shadow-lg inline-block"
+                style={{fontSize: 'clamp(13px, 1.5vw, 18px)'}}
               >
                 Get Quote
               </a>
@@ -148,7 +149,8 @@ function App() {
                   key={item.id}
                   href={`#${item.id}`}
                   onClick={(e) => { e.preventDefault(); scrollToSection(item.id); }} 
-                  className="block w-full text-left px-4 py-3 text-sm xs:text-base text-slate-700 hover:text-slate-900 hover:bg-gradient-to-r hover:from-yellow-400/10 hover:to-orange-500/10 rounded-xl transition-all duration-400 ease-out font-medium"
+                  className="block w-full text-left px-4 py-3 text-slate-700 hover:text-slate-900 hover:bg-gradient-to-r hover:from-yellow-400/10 hover:to-orange-500/10 rounded-xl transition-all duration-400 ease-out font-medium"
+                  style={{fontSize: 'clamp(14px, 2vw, 18px)'}}
                 >
                   {item.label}
                 </a>
@@ -162,7 +164,8 @@ function App() {
                     element.scrollIntoView({ behavior: 'smooth' });
                   }
                 }}
-                className="w-full mt-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 px-6 py-3 rounded-xl text-sm xs:text-base font-bold hover:from-yellow-500 hover:to-orange-600 transition-all duration-300 block text-center"
+                className="w-full mt-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 px-6 py-3 rounded-xl font-bold hover:from-yellow-500 hover:to-orange-600 transition-all duration-300 block text-center"
+                style={{fontSize: 'clamp(14px, 2vw, 18px)'}}
               >
                 Get Quote
               </a>

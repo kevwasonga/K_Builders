@@ -46,7 +46,7 @@ function Hero() {
   };
 
   return (
-    <section id="home" className="relative h-screen overflow-hidden bg-gradient-to-br from-slate-50 to-white">
+    <section id="home" className="relative overflow-hidden bg-gradient-to-br from-slate-50 to-white" style={{minHeight: '60vh', height: '100vh'}}>
       {/* Background Images with Parallax Effect */}
       <div className="absolute inset-0">
         {heroImages.map((image, index) => (
@@ -79,7 +79,7 @@ function Hero() {
           <div className="text-center">
             <div className={`transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
 
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-4 sm:mb-6 md:mb-8 leading-tight">
+              <h1 className="font-display font-bold text-white mb-4 sm:mb-6 md:mb-8 leading-tight" style={{fontSize: 'clamp(28px, 5vw, 60px)'}}>
                 Design That
                 <span className="block bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
                   Transforms
@@ -87,16 +87,17 @@ function Hero() {
                 Lives
               </h1>
               
-              <p className="text-base sm:text-lg md:text-xl text-slate-200 mb-6 sm:mb-8 md:mb-12 leading-relaxed max-w-4xl mx-auto px-4">
+              <p className="text-slate-200 mb-6 sm:mb-8 md:mb-12 leading-relaxed max-w-4xl mx-auto px-4" style={{fontSize: 'clamp(15px, 2vw, 20px)', maxWidth: '90%'}}>
                 Creating exceptional spaces with innovative design, quality craftsmanship, and attention to every detail across Kenya.
               </p>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mb-12 sm:mb-16 px-4">
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mb-8 sm:mb-12 md:mb-16 px-4 w-full max-w-2xl mx-auto">
                 <a
                   href="#about"
                   onClick={(e) => { e.preventDefault(); scrollToAbout(); }}
-                  className="bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 px-6 sm:px-10 md:px-12 py-3 sm:py-4 md:py-5 rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold hover:from-yellow-500 hover:to-orange-600 transition-all transform hover:scale-105 shadow-2xl group inline-block"
+                  className="bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 px-6 sm:px-10 md:px-12 py-3 sm:py-4 md:py-5 rounded-xl sm:rounded-2xl font-bold hover:from-yellow-500 hover:to-orange-600 transition-all transform hover:scale-105 shadow-2xl group text-center"
+                  style={{fontSize: 'clamp(15px, 2vw, 20px)', minHeight: '44px'}}
                 >
                   Start Your Project
                   <span className="ml-3 group-hover:translate-x-2 transition-transform inline-block text-2xl">→</span>
@@ -111,7 +112,8 @@ function Hero() {
                       element.scrollIntoView({ behavior: 'smooth' });
                     }
                   }}
-                  className="bg-white/10 backdrop-blur-lg text-white px-6 sm:px-10 md:px-12 py-3 sm:py-4 md:py-5 rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-medium hover:bg-white/20 transition-all border border-white/30 group flex items-center justify-center"
+                  className="bg-white/10 backdrop-blur-lg text-white px-6 sm:px-10 md:px-12 py-3 sm:py-4 md:py-5 rounded-xl sm:rounded-2xl font-medium hover:bg-white/20 transition-all border border-white/30 group flex items-center justify-center"
+                  style={{fontSize: 'clamp(15px, 2vw, 20px)', minHeight: '44px'}}
                 >
                   <Play size={24} className="mr-3" />
                   Watch Our Story

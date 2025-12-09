@@ -112,11 +112,12 @@ const ExpandableServiceCard = ({ title, category, location, description, image, 
     <div className="relative group">
       <div className="bg-slate-800/90 backdrop-blur-sm rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 border border-slate-600 hover:shadow-3xl hover:-translate-y-2">
         
-        <div className="relative h-44 sm:h-52 md:h-60 lg:h-64 overflow-hidden">
+        <div className="aspect-16-9 relative overflow-hidden">
           <img 
             src={image} 
             alt={title} 
             className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
+            loading="lazy"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent"></div>
         </div>
@@ -132,7 +133,7 @@ const ExpandableServiceCard = ({ title, category, location, description, image, 
             <MapPin size={14} className="mr-1" />
             {location}
           </div>
-          <p className="text-slate-300 text-[10px] xs:text-xs sm:text-sm md:text-base leading-relaxed mb-4 line-clamp-2">
+          <p className="text-slate-300 text-[10px] xs:text-xs sm:text-sm md:text-base leading-relaxed mb-4 line-clamp-3">
             {description}
           </p>
           <div className="flex items-center gap-3">

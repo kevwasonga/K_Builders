@@ -611,7 +611,7 @@ function Projects() {
   };
 
   return (
-    <section id="projects" className="py-6 sm:py-8 md:py-10 bg-gradient-to-br from-slate-50 to-white relative overflow-hidden">
+    <section id="projects" className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-slate-50 to-white relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 right-10 w-64 h-64 border border-yellow-400 rotate-12 animate-float"></div>
@@ -620,7 +620,7 @@ function Projects() {
 
       <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
-        <div className="text-center mb-2 sm:mb-3 md:mb-4">
+        <div className="text-center mb-8 sm:mb-12 md:mb-16">
           <div className="inline-block px-4 py-2 bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 text-sm font-bold rounded-full mb-3">
             Our Portfolio
           </div>
@@ -655,7 +655,8 @@ function Projects() {
                     maxWidth: '100%',
                     fontSize: 'clamp(11px, 1.5vw, 16px)',
                     whiteSpace: 'normal',
-                    lineHeight: '1.3'
+                    lineHeight: '1.3',
+                    minHeight: '44px'
                   }}
                 >
                   {category}
@@ -692,10 +693,10 @@ function Projects() {
         </div>
 
         {/* Projects Display */}
-        <div className="mb-3 sm:mb-4 md:mb-6"></div>
+        <div className="mb-6 sm:mb-8 md:mb-10"></div>
         {viewMode === 'grid' ? (
           /* Grid View */
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-7xl mx-auto">
             {filteredProjects.map((project, index) => (
               <ExpandableServiceCard
                 key={index}
@@ -718,8 +719,8 @@ function Projects() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {getVisibleProjects().map((project, index) => (
                 <div key={index} className="bg-slate-800/90 backdrop-blur-sm rounded-2xl overflow-hidden shadow-2xl border border-slate-600">
-                  <div className="h-48 relative">
-                    <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
+                  <div className="aspect-16-9 relative">
+                    <img src={project.image} alt={project.title} className="w-full h-full object-cover" loading="lazy" />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
                   </div>
                   <div className="p-6">

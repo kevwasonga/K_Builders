@@ -249,6 +249,10 @@ src-tauri/target/
 
 # Design prompts and documentation
 prompt.txt
+QA_IMPROVEMENTS_SUMMARY.md
+RESPONSIVE_UTILITIES_GUIDE.md
+BEFORE_AFTER_COMPARISON.md
+TESTING_CHECKLIST.md
 
 # Test files
 coverage/
