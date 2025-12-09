@@ -12,6 +12,10 @@ function App() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     let ticking = false;
     const handleScroll = () => {
       if (!ticking) {
