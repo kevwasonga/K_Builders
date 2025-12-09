@@ -549,6 +549,9 @@ function Projects() {
   const [viewMode, setViewMode] = useState('grid');
 
   const categories = ['All', 'Aluminium Works', 'Ceiling & Roofing Systems', 'Glasswork', 'House Makeover', 'Marble Work & Stone', 'Modern TV Niche & Wall Features', 'Office Partitions & Workstations', 'Premium Kitchen Cabinets', 'Stainless Steel & Metal Works', 'Wardrobes & Closet Systems'];
+  
+  const topRowCategories = ['All', 'Aluminium Works', 'Ceiling & Roofing Systems', 'Glasswork', 'House Makeover', 'Marble Work & Stone'];
+  const bottomRowCategories = ['Modern TV Niche & Wall Features', 'Office Partitions & Workstations', 'Premium Kitchen Cabinets', 'Stainless Steel & Metal Works', 'Wardrobes & Closet Systems'];
 
   const shuffleArray = (array) => {
     const shuffled = [...array];
@@ -634,30 +637,40 @@ function Projects() {
 
           {/* Filter Buttons */}
           <div className="mt-3 sm:mt-4 md:mt-6 w-full max-w-7xl mx-auto px-2">
-            <div className="grid grid-cols-2 tablet:grid-cols-6 gap-0.5 tablet:gap-1">
-              <button
-                onClick={() => { setActiveFilter('All'); setClickedCategory(null); }}
-                className={`px-1.5 py-2 text-[7px] xs:text-[8px] tablet:px-2 tablet:py-3.5 tablet:text-[9px] md:px-2.5 md:py-4 md:text-[10px] lg:px-3 lg:py-5 lg:text-[11px] rounded-lg tablet:rounded-xl font-bold transition-all duration-300 whitespace-nowrap overflow-hidden text-ellipsis ${
-                  clickedCategory === null
-                    ? 'bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 shadow-lg'
-                    : 'bg-white text-slate-600 hover:bg-slate-50 border border-slate-200 shadow-sm'
-                }`}
-              >
-                All
-              </button>
-              {categories.slice(1).map((category) => (
-                <button
-                  key={category}
-                  onClick={() => { setActiveFilter(category); setClickedCategory(category); }}
-                  className={`px-1.5 py-2 text-[7px] xs:text-[8px] tablet:px-2 tablet:py-3.5 tablet:text-[9px] md:px-2.5 md:py-4 md:text-[10px] lg:px-3 lg:py-5 lg:text-[11px] rounded-lg tablet:rounded-xl font-bold transition-all duration-300 whitespace-nowrap overflow-hidden text-ellipsis ${
-                    clickedCategory === category
-                      ? 'bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 shadow-lg'
-                      : 'bg-white text-slate-600 hover:bg-slate-50 border border-slate-200 shadow-sm'
-                  }`}
-                >
-                  {category}
-                </button>
-              ))}
+            <div className="flex flex-col gap-1">
+              <div className="flex gap-0.5 tablet:gap-1 justify-center">
+                {topRowCategories.map((category) => (
+                  <button
+                    key={category}
+                    onClick={() => { 
+                      setActiveFilter(category); 
+                      setClickedCategory(category === 'All' ? null : category); 
+                    }}
+                    className={`flex-1 px-1.5 py-2 text-[8px] xs:text-[9px] tablet:px-2 tablet:py-3.5 tablet:text-[10px] md:px-2.5 md:py-4 md:text-[11px] lg:px-3 lg:py-5 lg:text-xs rounded-lg tablet:rounded-xl font-bold transition-all duration-300 whitespace-nowrap overflow-hidden text-ellipsis ${
+                      (category === 'All' && clickedCategory === null) || clickedCategory === category
+                        ? 'bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 shadow-lg'
+                        : 'bg-white text-slate-600 hover:bg-slate-50 border border-slate-200 shadow-sm'
+                    }`}
+                  >
+                    {category}
+                  </button>
+                ))}
+              </div>
+              <div className="flex gap-0.5 tablet:gap-1 justify-center">
+                {bottomRowCategories.map((category) => (
+                  <button
+                    key={category}
+                    onClick={() => { setActiveFilter(category); setClickedCategory(category); }}
+                    className={`flex-1 px-1.5 py-2 text-[8px] xs:text-[9px] tablet:px-2 tablet:py-3.5 tablet:text-[10px] md:px-2.5 md:py-4 md:text-[11px] lg:px-3 lg:py-5 lg:text-xs rounded-lg tablet:rounded-xl font-bold transition-all duration-300 whitespace-nowrap overflow-hidden text-ellipsis ${
+                      clickedCategory === category
+                        ? 'bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 shadow-lg'
+                        : 'bg-white text-slate-600 hover:bg-slate-50 border border-slate-200 shadow-sm'
+                    }`}
+                  >
+                    {category}
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
 
