@@ -629,7 +629,7 @@ function Projects() {
         {/* Controls */}
         <div className="flex flex-col lg:flex-row justify-between items-center mb-12 gap-6">
           {/* Filter Buttons */}
-          <div className="flex flex-wrap justify-center gap-2 w-full lg:w-auto">
+          <div className="grid grid-cols-2 sm:flex sm:flex-wrap justify-center gap-2 w-full lg:w-auto">
             {categories.map((category) => (
               <button
                 key={category}
