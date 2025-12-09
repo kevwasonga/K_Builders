@@ -148,7 +148,7 @@ function Footer() {
                 </div>
                 <div className="flex items-start">
                   <Mail size={10} className="mr-1 sm:mr-1.5 mt-0.5 text-orange-500 flex-shrink-0" />
-                  <span className="whitespace-nowrap overflow-hidden text-ellipsis">Clauseinteriorfits@gmail.com</span>
+                  <span className="whitespace-nowrap overflow-hidden text-ellipsis">clauseinteriorfits@gmail.com</span>
                 </div>
                 <div className="flex items-start">
                   <MapPin size={10} className="mr-1 sm:mr-1.5 mt-0.5 text-orange-500 flex-shrink-0" />
