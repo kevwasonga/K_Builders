@@ -77,9 +77,9 @@ function Hero() {
       <div className="relative h-full flex items-center justify-center z-10">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className={`transform transition-all duration-1000 mt-32 sm:mt-36 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+            <div className={`transform transition-all duration-1000 mt-20 xs:mt-24 sm:mt-32 lg:mt-36 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
 
-              <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-bold text-white mb-6 sm:mb-8 leading-tight">
+              <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-display font-bold text-white mb-6 sm:mb-8 leading-tight">
                 Design That
                 <span className="block bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
                   Transforms
@@ -87,7 +87,7 @@ function Hero() {
                 Lives
               </h1>
               
-              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-slate-200 mb-12 leading-relaxed max-w-4xl mx-auto">
+              <p className="text-base xs:text-lg sm:text-xl md:text-2xl lg:text-3xl text-slate-200 mb-8 xs:mb-12 leading-relaxed max-w-4xl mx-auto">
                 Creating exceptional spaces with innovative design, quality craftsmanship, and attention to every detail across Kenya.
               </p>
 

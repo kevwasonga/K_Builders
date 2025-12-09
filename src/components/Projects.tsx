@@ -558,8 +558,17 @@ function Projects() {
     return shuffled;
   };
 
+  const getCardCount = () => {
+    if (typeof window === 'undefined') return 12;
+    const width = window.innerWidth;
+    if (width < 768) return 6;   // xs/sm: 1 col × 6 rows
+    if (width < 1024) return 6;  // md: 2 cols × 3 rows
+    if (width < 1440) return 9;  // lg: 3 cols × 3 rows
+    return 12;                   // xl/2xl: 4 cols × 3 rows
+  };
+
   const filteredProjects = activeFilter === 'All' 
-    ? shuffleArray(projects).slice(0, 9)
+    ? shuffleArray(projects).slice(0, getCardCount())
     : projects.filter(project => project.category === activeFilter);
 
   useEffect(() => {
@@ -605,14 +614,14 @@ function Projects() {
           <div className="inline-block px-4 py-2 bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 text-sm font-bold rounded-full mb-6">
             Our Portfolio
           </div>
-          <h2 className="text-5xl font-bold text-slate-800 mb-6">
+          <h2 className="text-3xl xs:text-4xl md:text-5xl font-bold text-slate-800 mb-6">
             Exceptional
             <span className="block bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
               Projects
             </span>
           </h2>
           <div className="w-32 h-1 bg-gradient-to-r from-yellow-400 to-orange-500 mx-auto mb-8"></div>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base xs:text-lg md:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
             From concept to completion, we deliver exceptional interior and exterior solutions 
             that transform spaces and exceed expectations.
           </p>
@@ -626,7 +635,7 @@ function Projects() {
               <button
                 key={category}
                 onClick={() => setActiveFilter(category)}
-                className={`px-3 py-2 text-sm sm:px-4 sm:text-base rounded-xl font-medium transition-all duration-300 whitespace-nowrap ${
+                className={`px-2 py-1.5 text-xs xs:px-3 xs:py-2 xs:text-sm md:px-4 md:py-2 md:text-base rounded-xl font-medium transition-all duration-300 whitespace-nowrap ${
                   activeFilter === category
                     ? 'bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 shadow-lg'
                     : 'bg-white text-slate-600 hover:bg-slate-50 border border-slate-200 shadow-sm'
@@ -665,7 +674,7 @@ function Projects() {
         {/* Projects Display */}
         {viewMode === 'grid' ? (
           /* Grid View */
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 max-w-[1600px] mx-auto">
             {filteredProjects.map((project, index) => (
               <ExpandableServiceCard
                 key={index}

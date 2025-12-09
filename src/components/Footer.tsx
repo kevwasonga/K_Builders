@@ -7,13 +7,13 @@ function Footer() {
       <div id="contact" className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h3 className="text-5xl font-display font-bold text-slate-800 mb-6">Send Us a Message</h3>
-            <p className="text-xl text-slate-600 mb-12 max-w-3xl mx-auto">
+            <h3 className="text-2xl xs:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-slate-800 mb-6">Send Us a Message</h3>
+            <p className="text-base xs:text-lg md:text-xl text-slate-600 mb-8 xs:mb-12 max-w-3xl mx-auto">
               Tell us about your project and we'll get back to you within 24 hours
             </p>
           </div>
           
-          <form name="contact" method="POST" data-netlify="true" className="grid md:grid-cols-2 gap-6">
+          <form name="contact" method="POST" data-netlify="true" className="grid grid-cols-1 md:grid-cols-2 gap-4 xs:gap-6">
             <div>
               <label className="block text-slate-800 mb-2 font-medium">Name</label>
               <input
@@ -82,7 +82,7 @@ function Footer() {
       {/* Footer */}
       <div className="border-t border-slate-200/50 bg-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="grid md:grid-cols-4 gap-12">
+          <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-8 xs:gap-10 lg:gap-12">
             <div>
               <h3 className="text-2xl font-display font-bold text-white mb-4">CLAUSE INTERIOR FITS</h3>
               <p className="text-slate-300 mb-6">Where Function Meets Aesthetics</p>

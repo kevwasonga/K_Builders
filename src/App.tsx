@@ -50,7 +50,7 @@ function App() {
           : 'bg-gradient-to-b from-slate-900/40 via-yellow-900/10 to-slate-900/30 backdrop-blur-md border-b-2 border-yellow-400/30 shadow-lg shadow-yellow-400/5 transform translate-y-0'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-24 sm:h-28">
+          <div className="flex justify-between items-center h-16 xs:h-20 md:h-24 lg:h-28">
             {/* Designer Logo */}
             <div 
               className="flex items-center group cursor-pointer" 
@@ -64,7 +64,7 @@ function App() {
                   <div className="flex flex-col items-start">
                     <div className="flex items-center">
                       <h1 className={`font-serif font-bold tracking-tight transition-all duration-700 ease-out ${
-                        isScrolled ? 'text-2xl' : 'text-4xl'
+                        isScrolled ? 'text-xl xs:text-2xl' : 'text-2xl xs:text-3xl lg:text-4xl'
                       }`} style={{color: '#6A394F', textShadow: '0 2px 4px rgba(0,0,0,0.3)'}}>
                         CLAUSE
                       </h1>
