@@ -82,6 +82,7 @@ function About() {
           </div>
 
         </div>
+
       </div>
     </section>
   );

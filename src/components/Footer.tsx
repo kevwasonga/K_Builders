@@ -82,9 +82,9 @@ function Footer() {
       {/* Footer */}
       <div className="border-t border-slate-200/50 bg-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-          <div className="grid grid-cols-2 gap-6 sm:gap-8 lg:grid-cols-4 lg:gap-12">
+          <div className="grid grid-cols-2 gap-6 sm:gap-8 md:grid-cols-4 md:gap-12">
             {/* Brand */}
-            <div className="col-span-1 lg:col-span-1">
+            <div className="col-span-1 md:col-span-1">
               <h3 className="text-xl sm:text-2xl font-display font-bold text-white mb-3 sm:mb-4">CLAUSE INTERIOR FITS</h3>
               <p className="text-sm sm:text-base text-slate-300 mb-4 sm:mb-6">Where Function Meets Aesthetics</p>
               <div className="flex flex-wrap gap-3 sm:gap-4">
@@ -117,7 +117,7 @@ function Footer() {
             </div>
             
             {/* Quick Links */}
-            <div className="col-span-1 lg:col-span-1">
+            <div className="col-span-1 md:col-span-1">
               <h4 className="text-base sm:text-lg font-bold text-white mb-3 sm:mb-4">Quick Links</h4>
               <ul className="space-y-2 text-sm sm:text-base text-slate-300">
                 <li><a href="#home" className="hover:text-orange-500 transition-colors">Home</a></li>
@@ -128,7 +128,7 @@ function Footer() {
             </div>
             
             {/* Services */}
-            <div className="col-span-1 lg:col-span-1">
+            <div className="col-span-1 md:col-span-1">
               <h4 className="text-base sm:text-lg font-bold text-white mb-3 sm:mb-4">Services</h4>
               <ul className="space-y-2 text-sm sm:text-base text-slate-300">
                 <li>Kitchen Cabinets</li>
@@ -139,7 +139,7 @@ function Footer() {
             </div>
             
             {/* Contact Info */}
-            <div className="col-span-1 lg:col-span-1">
+            <div className="col-span-1 md:col-span-1">
               <h4 className="text-base sm:text-lg font-bold text-white mb-3 sm:mb-4">Contact Info</h4>
               <div className="space-y-3 sm:space-y-4 text-sm sm:text-base text-slate-300">
                 <div className="flex items-start">
@@ -158,11 +158,7 @@ function Footer() {
             </div>
           </div>
           
-          <div className="text-center mt-12 mb-8">
-            <p className="text-yellow-400 italic text-sm sm:text-base">Clause Interior Fits | Kisumu, serving all Kenya</p>
-          </div>
-          
-          <div className="border-t border-slate-700 pt-8 text-center text-slate-400">
+          <div className="border-t border-slate-700 pt-8 mt-12 text-center text-slate-400">
             <p>&copy; 2025 Clause Interior Fits. All rights reserved.</p>
           </div>
         </div>

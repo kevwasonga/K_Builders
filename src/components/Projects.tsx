@@ -744,8 +744,15 @@ function Projects() {
           </div>
         )}
 
+        {/* Location Tagline */}
+        <div className="text-center mt-16 mb-8">
+          <p className="text-lg sm:text-xl bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent italic font-medium">
+            Clause Interior Fits | Kisumu, serving all Kenya
+          </p>
+        </div>
+
         {/* Category Navigation Arrows */}
-        <div className="flex justify-center items-center gap-4 mt-16 mb-12">
+        <div className="flex justify-center items-center gap-4 mt-8 mb-12">
           <button
             onClick={() => {
               const currentIdx = categories.indexOf(activeFilter);
