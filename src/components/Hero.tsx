@@ -77,7 +77,7 @@ function Hero() {
       <div className="relative h-full flex items-center justify-center z-10">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className={`transform transition-all duration-1000 mt-16 sm:mt-24 md:mt-32 lg:mt-36 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+            <div className={`transform transition-all duration-1000 mt-12 xs:mt-16 sm:mt-20 md:mt-24 lg:mt-28 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
 
               <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-display font-bold text-white mb-4 sm:mb-6 md:mb-8 leading-tight">
                 Design That
@@ -121,22 +121,22 @@ function Hero() {
 
               {/* Stats and Scroll Indicator */}
               <div className="flex flex-col items-center">
-                <div className="text-center mb-8">
-                  <div className="w-16 h-16 bg-gradient-to-r from-yellow-400/20 to-orange-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                    <Award size={32} className="text-yellow-400" />
+                <div className="text-center mb-4 sm:mb-6 md:mb-8">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gradient-to-r from-yellow-400/20 to-orange-500/20 rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                    <Award size={24} className="sm:w-7 sm:h-7 md:w-8 md:h-8 text-yellow-400" />
                   </div>
-                  <div className="text-2xl xs:text-3xl md:text-4xl font-display font-bold text-white mb-2">7+</div>
+                  <div className="text-xl xs:text-2xl sm:text-3xl md:text-4xl font-display font-bold text-white mb-2">7+</div>
                   <div className="text-xs xs:text-sm md:text-base text-slate-300">Years Experience</div>
                 </div>
                 
                 <a
                   href="#about"
                   onClick={(e) => { e.preventDefault(); scrollToAbout(); }}
-                  className="text-white animate-bounce group cursor-pointer"
+                  className="text-white animate-bounce group cursor-pointer block"
                 >
                   <div className="flex flex-col items-center">
-                    <span className="text-xs xs:text-sm mb-2 opacity-75 group-hover:opacity-100 transition-opacity">Scroll to explore</span>
-                    <ChevronDown size={32} className="group-hover:text-yellow-400 transition-colors" />
+                    <span className="text-xs xs:text-sm md:text-base mb-2 opacity-75 group-hover:opacity-100 transition-opacity">Scroll to explore</span>
+                    <ChevronDown size={24} className="sm:w-7 sm:h-7 md:w-8 md:h-8 group-hover:text-yellow-400 transition-colors" />
                   </div>
                 </a>
               </div>
