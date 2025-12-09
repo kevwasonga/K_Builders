@@ -7,60 +7,60 @@ function Footer() {
       <div id="contact" className="py-12 sm:py-16 md:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 sm:mb-10 md:mb-12">
-            <h3 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-slate-800 mb-4 xs:mb-6">Send Us a Message</h3>
-            <p className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl text-slate-600 mb-6 xs:mb-8 md:mb-12 max-w-3xl mx-auto px-4">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-display font-bold text-slate-800 mb-4 xs:mb-6">Send Us a Message</h3>
+            <p className="text-base sm:text-lg md:text-xl text-slate-600 mb-6 xs:mb-8 md:mb-12 max-w-3xl mx-auto px-4">
               Tell us about your project and we'll get back to you within 24 hours
             </p>
           </div>
           
           <form name="contact" method="POST" data-netlify="true" className="grid grid-cols-1 md:grid-cols-2 gap-4 xs:gap-6">
             <div>
-              <label className="block text-xs xs:text-sm md:text-base text-slate-800 mb-2 font-medium">Name</label>
+              <label className="block text-sm text-slate-800 mb-2 font-medium">Name</label>
               <input
                 type="text"
                 name="name"
                 required
-                className="w-full px-3 xs:px-4 py-2 xs:py-3 text-xs xs:text-sm md:text-base bg-white border border-slate-300 rounded-xl text-slate-800 placeholder-slate-500 focus:outline-none focus:border-orange-500 focus:bg-white hover:shadow-xl hover:shadow-orange-500/30 transition-all"
+                className="w-full px-3 xs:px-4 py-2 xs:py-3 text-base bg-white border border-slate-300 rounded-xl text-slate-800 placeholder-slate-500 focus:outline-none focus:border-orange-500 focus:bg-white hover:shadow-xl hover:shadow-orange-500/30 transition-all"
                 placeholder="Your name"
               />
             </div>
             <div>
-              <label className="block text-xs xs:text-sm md:text-base text-slate-800 mb-2 font-medium">Phone</label>
+              <label className="block text-sm text-slate-800 mb-2 font-medium">Phone</label>
               <input
                 type="tel"
                 name="phone"
                 required
-                className="w-full px-3 xs:px-4 py-2 xs:py-3 text-xs xs:text-sm md:text-base bg-white border border-slate-300 rounded-xl text-slate-800 placeholder-slate-500 focus:outline-none focus:border-orange-500 focus:bg-white hover:shadow-xl hover:shadow-orange-500/30 transition-all"
+                className="w-full px-3 xs:px-4 py-2 xs:py-3 text-base bg-white border border-slate-300 rounded-xl text-slate-800 placeholder-slate-500 focus:outline-none focus:border-orange-500 focus:bg-white hover:shadow-xl hover:shadow-orange-500/30 transition-all"
                 placeholder="Your phone"
               />
             </div>
             <div>
-              <label className="block text-xs xs:text-sm md:text-base text-slate-800 mb-2 font-medium">Email</label>
+              <label className="block text-sm text-slate-800 mb-2 font-medium">Email</label>
               <input
                 type="email"
                 name="email"
                 required
-                className="w-full px-3 xs:px-4 py-2 xs:py-3 text-xs xs:text-sm md:text-base bg-white border border-slate-300 rounded-xl text-slate-800 placeholder-slate-500 focus:outline-none focus:border-orange-500 focus:bg-white hover:shadow-xl hover:shadow-orange-500/30 transition-all"
+                className="w-full px-3 xs:px-4 py-2 xs:py-3 text-base bg-white border border-slate-300 rounded-xl text-slate-800 placeholder-slate-500 focus:outline-none focus:border-orange-500 focus:bg-white hover:shadow-xl hover:shadow-orange-500/30 transition-all"
                 placeholder="your@email.com"
               />
             </div>
             <div>
-              <label className="block text-xs xs:text-sm md:text-base text-slate-800 mb-2 font-medium">Subject</label>
+              <label className="block text-sm text-slate-800 mb-2 font-medium">Subject</label>
               <input
                 type="text"
                 name="subject"
                 required
-                className="w-full px-3 xs:px-4 py-2 xs:py-3 text-xs xs:text-sm md:text-base bg-white border border-slate-300 rounded-xl text-slate-800 placeholder-slate-500 focus:outline-none focus:border-orange-500 focus:bg-white hover:shadow-xl hover:shadow-orange-500/30 transition-all"
+                className="w-full px-3 xs:px-4 py-2 xs:py-3 text-base bg-white border border-slate-300 rounded-xl text-slate-800 placeholder-slate-500 focus:outline-none focus:border-orange-500 focus:bg-white hover:shadow-xl hover:shadow-orange-500/30 transition-all"
                 placeholder="Project inquiry"
               />
             </div>
             <div className="md:col-span-2">
-              <label className="block text-xs xs:text-sm md:text-base text-slate-800 mb-2 font-medium">Message</label>
+              <label className="block text-sm text-slate-800 mb-2 font-medium">Message</label>
               <textarea
                 rows={4}
                 name="message"
                 required
-                className="w-full px-3 xs:px-4 py-2 xs:py-3 text-xs xs:text-sm md:text-base bg-white border border-slate-300 rounded-xl text-slate-800 placeholder-slate-500 focus:outline-none focus:border-orange-500 focus:bg-white hover:shadow-xl hover:shadow-orange-500/30 transition-all resize-none"
+                className="w-full px-3 xs:px-4 py-2 xs:py-3 text-base bg-white border border-slate-300 rounded-xl text-slate-800 placeholder-slate-500 focus:outline-none focus:border-orange-500 focus:bg-white hover:shadow-xl hover:shadow-orange-500/30 transition-all resize-none"
                 placeholder="Tell us about your project..."
               ></textarea>
             </div>
@@ -68,7 +68,7 @@ function Footer() {
             <div className="md:col-span-2 text-center">
               <button
                 type="submit"
-                className="bg-orange-500 text-white px-8 xs:px-12 py-3 xs:py-4 rounded-2xl text-base xs:text-lg md:text-xl font-bold hover:bg-orange-600 transition-all transform hover:scale-105"
+                className="bg-orange-500 text-white px-8 xs:px-12 py-3 xs:py-4 rounded-2xl text-base sm:text-lg font-bold hover:bg-orange-600 transition-all transform hover:scale-105"
               >
                 Send Message
               </button>

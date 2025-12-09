@@ -614,14 +614,14 @@ function Projects() {
           <div className="inline-block px-4 py-2 bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 text-sm font-bold rounded-full mb-6">
             Our Portfolio
           </div>
-          <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-slate-800 mb-4 sm:mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-800 mb-4 sm:mb-6">
             Exceptional
             <span className="block bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
               Projects
             </span>
           </h2>
           <div className="w-24 xs:w-32 h-1 bg-gradient-to-r from-yellow-400 to-orange-500 mx-auto mb-6 xs:mb-8"></div>
-          <p className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl text-slate-600 max-w-3xl mx-auto leading-relaxed px-4">
+          <p className="text-base sm:text-lg md:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed px-4">
             From concept to completion, Clause Interior Fits delivers exceptional interior fit-out solutions that transform spaces and elevate your environment beyond the ordinary.
           </p>
 
@@ -792,7 +792,7 @@ function Projects() {
 
         {/* Location Tagline */}
         <div className="text-center mt-16 mb-8">
-          <p className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent italic font-medium">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent italic font-medium whitespace-nowrap overflow-hidden text-ellipsis px-4">
             Clause Interior Fits | Kisumu, serving all Kenya
           </p>
         </div>
