@@ -25,20 +25,7 @@ function About() {
         </div>
 
         {/* Three Column Layout */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12 md:mb-16">
-          {/* Our Story */}
-          <div className="card-elegant">
-            <div className="flex items-center mb-6">
-              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center">
-                <Lightbulb size={28} className="text-white" />
-              </div>
-            </div>
-            <h3 className="text-xl sm:text-2xl font-serif font-bold text-slate-800 mb-4">Our Story</h3>
-            <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-              Clause Interior Fits began with a simple belief: every space has the potential to be extraordinary. We've grown from a small team with big dreams to Kenya's trusted partner in interior transformation. Our journey spans across Western Kenya and beyond, where we've had the privilege of transforming homes, offices, and commercial spaces.
-            </p>
-          </div>
-
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12 md:mb-16">
           {/* Mission */}
           <div className="card-elegant">
             <div className="flex items-center mb-6">
@@ -62,6 +49,19 @@ function About() {
             <h3 className="text-xl sm:text-2xl font-serif font-bold text-slate-800 mb-4">Our Vision</h3>
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
               To become Kenya's most dependable interior solutions provider by delivering innovative designs, exceptional craftsmanship, and reliable service that consistently exceeds client expectations. We aspire to create functional, beautiful spaces that inspire confidence, enhance everyday living, and set new standards of quality across the industry.
+            </p>
+          </div>
+
+          {/* Our Story */}
+          <div className="card-elegant col-span-2 md:col-span-1">
+            <div className="flex items-center mb-6">
+              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center">
+                <Lightbulb size={28} className="text-white" />
+              </div>
+            </div>
+            <h3 className="text-xl sm:text-2xl font-serif font-bold text-slate-800 mb-4">Our Story</h3>
+            <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
+              Clause Interior Fits began with a simple belief: every space has the potential to be extraordinary. We've grown from a small team with big dreams to Kenya's trusted partner in interior transformation. Our journey spans across Western Kenya and beyond, where we've had the privilege of transforming homes, offices, and commercial spaces.
             </p>
           </div>
 
