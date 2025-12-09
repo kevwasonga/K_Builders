@@ -92,14 +92,14 @@ function Hero() {
               </p>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mb-12 sm:mb-16 px-4">
+              <div className="flex flex-row gap-2 xs:gap-3 sm:gap-4 md:gap-6 justify-center mb-12 sm:mb-16 px-2 xs:px-4">
                 <a
                   href="#about"
                   onClick={(e) => { e.preventDefault(); scrollToAbout(); }}
-                  className="bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 px-6 sm:px-10 md:px-12 py-3 sm:py-4 md:py-5 rounded-xl sm:rounded-2xl text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl font-bold hover:from-yellow-500 hover:to-orange-600 transition-all transform hover:scale-105 shadow-2xl group inline-block"
+                  className="flex-1 bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 px-3 xs:px-4 sm:px-6 md:px-8 py-2 xs:py-3 sm:py-4 md:py-5 rounded-lg xs:rounded-xl sm:rounded-2xl text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl font-bold hover:from-yellow-500 hover:to-orange-600 transition-all transform hover:scale-105 shadow-2xl group inline-block text-center whitespace-nowrap"
                 >
-                  Start Your Project
-                  <span className="ml-3 group-hover:translate-x-2 transition-transform inline-block text-2xl">→</span>
+                  Start Project
+                  <span className="ml-1 xs:ml-2 group-hover:translate-x-2 transition-transform inline-block text-base xs:text-lg sm:text-xl md:text-2xl">→</span>
                 </a>
                 
                 <a 
@@ -111,10 +111,11 @@ function Hero() {
                       element.scrollIntoView({ behavior: 'smooth' });
                     }
                   }}
-                  className="bg-white/10 backdrop-blur-lg text-white px-6 sm:px-10 md:px-12 py-3 sm:py-4 md:py-5 rounded-xl sm:rounded-2xl text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl font-medium hover:bg-white/20 transition-all border border-white/30 group flex items-center justify-center"
+                  className="flex-1 bg-white/10 backdrop-blur-lg text-white px-3 xs:px-4 sm:px-6 md:px-8 py-2 xs:py-3 sm:py-4 md:py-5 rounded-lg xs:rounded-xl sm:rounded-2xl text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl font-medium hover:bg-white/20 transition-all border border-white/30 group flex items-center justify-center whitespace-nowrap"
                 >
-                  <Play size={24} className="mr-3" />
-                  Watch Our Story
+                  <Play size={16} className="xs:w-5 xs:h-5 sm:w-6 sm:h-6 mr-1 xs:mr-2" />
+                  <span className="hidden xs:inline">Watch Our Story</span>
+                  <span className="xs:hidden">Story</span>
                 </a>
               </div>
 
