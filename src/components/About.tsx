@@ -20,7 +20,7 @@ function About() {
           </h2>
           <div className="w-32 h-1 bg-gradient-to-r from-yellow-400 to-orange-500 mx-auto mb-8"></div>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            For over seven years, Clause Interior Fits has delivered premium interior design and turnkey fit-out solutions across Kenya—transforming client visions into functional, elegant spaces that inspire, elevate, and stand the test of time.
+            For over seven years, we've been delivering premium interior design and turnkey fit-out solutions across Kenya, transforming visions into functional, elegant spaces that inspire, elevate, and stand the test of time.
           </p>
         </div>
 
@@ -28,8 +28,10 @@ function About() {
         <div className="grid md:grid-cols-3 gap-8 mb-20">
           {/* Our Story */}
           <div className="card-elegant">
-            <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mb-6">
-              <Lightbulb size={28} className="text-white" />
+            <div className="flex justify-center mb-6">
+              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center">
+                <Lightbulb size={28} className="text-white" />
+              </div>
             </div>
             <h3 className="text-2xl font-display font-bold text-slate-800 mb-4">Our Story</h3>
             <p className="text-slate-600 leading-relaxed mb-4">
@@ -45,8 +47,10 @@ function About() {
 
           {/* Mission */}
           <div className="card-elegant">
-            <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center mb-6">
-              <Target size={28} className="text-white" />
+            <div className="flex justify-center mb-6">
+              <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center">
+                <Target size={28} className="text-white" />
+              </div>
             </div>
             <h3 className="text-2xl font-display font-bold text-slate-800 mb-4">Our Mission</h3>
             <p className="text-slate-600 leading-relaxed mb-6">
@@ -67,8 +71,10 @@ function About() {
 
           {/* Vision */}
           <div className="card-elegant">
-            <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-violet-600 rounded-2xl flex items-center justify-center mb-6">
-              <Eye size={28} className="text-white" />
+            <div className="flex justify-center mb-6">
+              <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-violet-600 rounded-2xl flex items-center justify-center">
+                <Eye size={28} className="text-white" />
+              </div>
             </div>
             <h3 className="text-2xl font-display font-bold text-slate-800 mb-4">Our Vision</h3>
             <p className="text-slate-600 leading-relaxed mb-4">
