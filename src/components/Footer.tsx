@@ -4,9 +4,9 @@ function Footer() {
   return (
     <div className="bg-gradient-to-b from-slate-100 via-slate-200 to-slate-300">
       {/* Send Us a Message Section */}
-      <div id="contact" className="py-20">
+      <div id="contact" className="py-12 sm:py-16 md:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8 sm:mb-10 md:mb-12">
             <h3 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-slate-800 mb-4 xs:mb-6">Send Us a Message</h3>
             <p className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl text-slate-600 mb-6 xs:mb-8 md:mb-12 max-w-3xl mx-auto px-4">
               Tell us about your project and we'll get back to you within 24 hours

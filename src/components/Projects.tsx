@@ -600,7 +600,7 @@ function Projects() {
   };
 
   return (
-    <section id="projects" className="py-20 bg-gradient-to-br from-slate-50 to-white relative overflow-hidden">
+    <section id="projects" className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-slate-50 to-white relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 right-10 w-64 h-64 border border-yellow-400 rotate-12 animate-float"></div>
@@ -609,7 +609,7 @@ function Projects() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-8 sm:mb-12 md:mb-16">
           <div className="inline-block px-4 py-2 bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 text-sm font-bold rounded-full mb-6">
             Our Portfolio
           </div>
@@ -625,7 +625,7 @@ function Projects() {
           </p>
 
           {/* Filter Buttons */}
-          <div className="mt-12 max-w-5xl mx-auto">
+          <div className="mt-6 sm:mt-8 md:mt-12 max-w-5xl mx-auto">
             <div className="flex flex-wrap justify-center gap-2">
               <button
                 onClick={() => setActiveFilter('All')}
@@ -654,7 +654,7 @@ function Projects() {
           </div>
 
           {/* View Mode Toggle */}
-          <div className="flex justify-center mt-6">
+          <div className="flex justify-center mt-4 sm:mt-5 md:mt-6">
             <div className="flex items-center space-x-2 bg-white p-1 rounded-xl border border-slate-200 shadow-sm">
             <button
               onClick={() => setViewMode('carousel')}
@@ -681,7 +681,7 @@ function Projects() {
         </div>
 
         {/* Projects Display */}
-        <div className="mb-12"></div>
+        <div className="mb-6 sm:mb-8 md:mb-12"></div>
         {viewMode === 'grid' ? (
           /* Grid View */
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 max-w-7xl mx-auto">
