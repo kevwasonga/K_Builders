@@ -13,7 +13,11 @@ function Footer() {
             </p>
           </div>
           
-          <form name="contact" method="POST" data-netlify="true" className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <form 
+            action="https://formspree.io/f/clauseinteriorfits@gmail.com" 
+            method="POST"
+            className="grid grid-cols-1 md:grid-cols-2 gap-6"
+          >
             <div>
               <label className="block text-sm text-slate-800 mb-2 font-medium">Name</label>
               <input
@@ -68,7 +72,7 @@ function Footer() {
                 placeholder="Tell us about your project..."
               ></textarea>
             </div>
-            <input type="hidden" name="form-name" value="contact" />
+
             <div className="md:col-span-2 text-center">
               <button
                 type="submit"
