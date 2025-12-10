@@ -73,6 +73,8 @@ function Footer() {
               ></textarea>
             </div>
 
+
+            <input type="hidden" name="_next" value="https://kevwasonga.github.io/K_Builders/#contact" />
             <div className="md:col-span-2 text-center">
               <button
                 type="submit"
