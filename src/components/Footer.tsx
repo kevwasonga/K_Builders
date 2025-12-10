@@ -1,6 +1,31 @@
 import { Phone, Mail, MapPin } from 'lucide-react';
+import { useState } from 'react';
 
 function Footer() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    
+    const formData = new FormData(e.target);
+    
+    try {
+      await fetch('https://formspree.io/f/xjknagdv', {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      });
+      setSubmitted(true);
+      e.target.reset();
+      setTimeout(() => setSubmitted(false), 3000);
+    } catch (error) {
+      console.error('Error:', error);
+    }
+    setIsSubmitting(false);
+  };
+
   return (
     <div className="bg-gradient-to-b from-slate-100 via-slate-200 to-slate-300">
       {/* Send Us a Message Section */}
@@ -14,8 +39,7 @@ function Footer() {
           </div>
           
           <form 
-            action="https://formspree.io/f/xjknagdv" 
-            method="POST"
+            onSubmit={handleSubmit}
             className="grid grid-cols-1 md:grid-cols-2 gap-6"
           >
             <div>
@@ -74,14 +98,15 @@ function Footer() {
             </div>
 
 
-            <input type="hidden" name="_next" value="https://kevwasonga.github.io/K_Builders/#contact" />
+
             <div className="md:col-span-2 text-center">
               <button
                 type="submit"
-                className="bg-orange-500 text-white px-12 py-4 rounded-2xl text-base sm:text-lg font-bold hover:bg-orange-600 transition-all transform hover:scale-105 w-full md:w-auto"
+                disabled={isSubmitting}
+                className="bg-orange-500 text-white px-12 py-4 rounded-2xl text-base sm:text-lg font-bold hover:bg-orange-600 transition-all transform hover:scale-105 w-full md:w-auto disabled:opacity-50"
                 style={{minHeight: '44px'}}
               >
-                Send Message
+                {isSubmitting ? 'Sending...' : submitted ? 'Message Sent!' : 'Send Message'}
               </button>
             </div>
           </form>
