@@ -14,7 +14,7 @@ function Footer() {
           </div>
           
           <form 
-            action="https://formspree.io/f/clauseinteriorfits@gmail.com" 
+            action="https://formspree.io/f/xjknagdv" 
             method="POST"
             className="grid grid-cols-1 md:grid-cols-2 gap-6"
           >
