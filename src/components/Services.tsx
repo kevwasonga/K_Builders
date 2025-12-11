@@ -2,7 +2,6 @@ import { Package, Wrench, Square, Layers, Building2, Eye, Home, Briefcase, Tv, P
 import { useState } from 'react';
 
 function Services() {
-  const [hoveredService, setHoveredService] = useState<number | null>(null);
   const [currentSlide, setCurrentSlide] = useState(0);
   const totalSlides = 2;
 

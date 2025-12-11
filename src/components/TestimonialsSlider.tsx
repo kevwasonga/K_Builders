@@ -10,11 +10,7 @@ interface Testimonial {
   rating: number;
 }
 
-function TestimonialsSlider() {
-  const [currentTestimonial, setCurrentTestimonial] = useState(0);
-  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
-
-  const testimonials: Testimonial[] = [
+const testimonials: Testimonial[] = [
     {
       id: "1",
       name: "Refine Homes",
@@ -63,7 +59,11 @@ function TestimonialsSlider() {
       content: "We're very pleased with the interior design work from Clause Interior Fits. They managed to combine practicality with a modern aesthetic in a way that truly elevated our workspace. Their consistency and expertise make them one of the best teams we've worked with in Kisumu.",
       rating: 5
     }
-  ];
+];
+
+function TestimonialsSlider() {
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
   useEffect(() => {
     if (!isAutoPlaying) return;

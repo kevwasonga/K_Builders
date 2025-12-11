@@ -118,13 +118,7 @@ function App() {
               {/* CTA Button */}
               <a 
                 href="#contact"
-                onClick={(e) => {
-                  e.preventDefault();
-                  const element = document.getElementById('contact');
-                  if (element) {
-                    element.scrollIntoView({ behavior: 'smooth' });
-                  }
-                }}
+                onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}
                 className="ml-2 sm:ml-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 px-3 sm:px-4 md:px-6 py-2 md:py-3 rounded-xl font-bold hover:from-yellow-500 hover:to-orange-600 transition-all duration-500 ease-out transform hover:scale-105 shadow-lg inline-block"
                 style={{fontSize: 'clamp(13px, 1.5vw, 18px)'}}
               >
@@ -161,13 +155,7 @@ function App() {
               ))}
               <a 
                 href="#contact"
-                onClick={(e) => {
-                  e.preventDefault();
-                  const element = document.getElementById('contact');
-                  if (element) {
-                    element.scrollIntoView({ behavior: 'smooth' });
-                  }
-                }}
+                onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}
                 className="w-full mt-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-slate-900 px-6 py-3 rounded-xl font-bold hover:from-yellow-500 hover:to-orange-600 transition-all duration-300 block text-center"
                 style={{fontSize: 'clamp(14px, 2vw, 18px)'}}
               >

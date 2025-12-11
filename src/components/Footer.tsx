@@ -5,23 +5,29 @@ function Footer() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    const formData = new FormData(e.target);
+    const formData = new FormData(e.target as HTMLFormElement);
     
     try {
-      await fetch('https://formspree.io/f/xjknagdv', {
+      const response = await fetch('https://formspree.io/f/xjknagdv', {
         method: 'POST',
         body: formData,
         headers: { 'Accept': 'application/json' }
       });
-      setSubmitted(true);
-      e.target.reset();
-      setTimeout(() => setSubmitted(false), 3000);
+      
+      if (response.ok) {
+        setSubmitted(true);
+        (e.target as HTMLFormElement).reset();
+        setTimeout(() => setSubmitted(false), 3000);
+      } else {
+        throw new Error('Form submission failed');
+      }
     } catch (error) {
       console.error('Error:', error);
+      alert('Failed to send message. Please try again.');
     }
     setIsSubmitting(false);
   };
